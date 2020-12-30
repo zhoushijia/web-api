@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="网易云音乐，音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单，识别音乐，收藏，分享音乐，音乐互动，高音质，320K，音乐社交，官网，music.163.com" />
+    <meta name="description" content="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>主播电台-网易云音乐</title>
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="../css/base.css" />
+    <!-- 引入部分公共样式 -->
+    <link rel="stylesheet" href="../css/common.css" />
+    <!-- 引入当前页面的样式 -->
+    <link rel="stylesheet" href="../css/djradio.css" />
+    <!-- 引入部分公共样式 -->
+    <link rel="stylesheet" href="../css/common2.css" />
+
+    <!-- 引入jquery库 -->
+    <script src="../js/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- 头部制作开始 -->
+    <header>
+      <div class="wrap">
+        <h1 class="logo">
+          <a href="index.html">网易云音乐</a>
+        </h1>
+        <ul class="m-nav">
+          <li>
+            <a href="#" class="z-slt"><em>发现音乐</em><sub class="cor"></sub></a>
+          </li>
+          <li>
+            <a href="myMusic.html"><em>我的音乐</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li>
+            <a href="friends.html"><em>朋友</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li>
+            <a href="#"><em>商城</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li>
+            <a href="./musician.html"><em>音乐人</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li class="last">
+            <a href="./app.html"><em>下载客户端</em><sub class="cor" style="display: none"></sub></a>
+            <sup class="hot"></sup>
+          </li>
+        </ul>
+        <div class="userBox">
+          <div class="user">
+            <img src="../images/user.jpg" alt="" />
+            <i>4</i>
+          </div>
+          <div class="userinfo">
+            <ul>
+              <li>
+                <a href="#"><i class="icn icn-hm"></i> <em>我的主页</em></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-msg"></i>
+                  <em>我的消息</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-lv"></i>
+                  <em>我的等级</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-mbr"></i>
+                  <em>VIP会员</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-st"></i>
+                  <em>个人设置</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-verify"></i>
+                  <em>实名认证</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-ex"></i>
+                  <em>退出</em>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="creator">创作者中心</a>
+        <div class="search">
+          <div class="searchInfo">
+            <span class="parent">
+              <input type="text" class="txt" placeholder="音乐/视频/电台/用户" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 头部制作结束 -->
+
+    <!-- 导航模块开始 -->
+    <nav>
+      <div class="wrap">
+        <ul class="nav">
+          <li>
+            <a href="index.html"><em>推荐</em></a>
+          </li>
+          <li>
+            <a href="./ranklist.html"><em>排行榜</em></a>
+          </li>
+          <li>
+            <a href="./song sheet.html"
+              ><em class="list">歌单 <span class="icon"></span> </em
+            ></a>
+          </li>
+          <li>
+            <a href="./djradio.html"  class="z-slt"><em>主播电台</em></a>
+          </li>
+          <li>
+            <a href="./singer.html"><em>歌手</em></a>
+          </li>
+          <li>
+            <a href="./album.html"><em>新碟上架</em></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 导航模块结束 -->
+
+    <!-- 电台主体部分 开始 -->
+    <div class="w radio_content">
+      <!-- 主体导航栏部分 -->
+
+      <ul class="top_list">
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>情感调频</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>音乐故事</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>声音恋人</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>创作翻唱</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>声之剧场</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>脱口秀</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>侃侃而谈</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>电音趴</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>助眠解压</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>你好爱豆</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>铃声</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>其他</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>常见问题</em>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;">
+            <div></div>
+            <em>我要做主播</em>
+          </a>
+        </li>
+      </ul>
+
+      <!-- 推荐节目和节目排行榜 -->
+      <div class="radtop clearfix">
+        <!-- 推荐节目 -->
+        <div class="radtop_fl clearfix">
+          <!-- 推荐节目 标题 -->
+          <div class="rt_td">
+            <h3><a href="javascript:;">推荐节目</a></h3>
+            <a href="javascript:;">更多&gt;</a>
+          </div>
+          <!-- 推荐节目 主体内容 -->
+          <div class="rt_bd">
+            <ul>
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram1.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="《被嫌弃的松子的一生》：“生而为人，对不起”">《被嫌弃的松子的一生》：“生而为人，对不起”</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="毒舌电影">毒舌电影</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">侃侃而谈</a>
+              </li>
+
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram2.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="Box.016 Sound Art 纯粹聆听的世界">Box.016 Sound Art 纯粹聆听的世界</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="拆盒子">拆盒子</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">侃侃而谈</a>
+              </li>
+
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram3.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="《过春天》越界少女的“涉险”初体验">《过春天》越界少女的“涉险”初体验</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="棕熊电影">棕熊电影</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">侃侃而谈</a>
+              </li>
+
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram4.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="36 即兴：这个时代的文化盲盒？| 小老虎&健崔">36 即兴：这个时代的文化盲盒？| 小老虎&健崔</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="跳岛FM">跳岛FM</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">侃侃而谈</a>
+              </li>
+
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram5.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="vol.75.聊聊吓死人不偿命的恐怖密室">vol.75.聊聊吓死人不偿命的恐怖密室</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="钱粮胡同">钱粮胡同</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">侃侃而谈</a>
+              </li>
+
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram6.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="E07：跟美国、加拿大、挪威的朋友聊聊今年的疫情">E07：跟美国、加拿大、挪威的朋友聊聊今年的疫情</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="九木侃">九木侃</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">侃侃而谈</a>
+              </li>
+
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram7.jpg" alt="播放" />
+                  <i></i>
+                </a>
+
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="EP38 陳大天 #有作品就是有作品，沒作品就是沒作品">EP38 陳大天 #有作品就是有作品，沒作品就是沒作品</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="韦礼安跟你鸟鸟天 Season 01">韦礼安跟你鸟鸟天 Season 01</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">音乐故事</a>
+              </li>
+
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram8.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="vol.61：他让我染上艾滋病，但我并不恨他">vol.61：他让我染上艾滋病，但我并不恨他</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="黑熊电台 | This Amoiensis Life">黑熊电台 | This Amoiensis Life</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">侃侃而谈</a>
+              </li>
+
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram9.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="张赫宣の声音回执">张赫宣の声音回执</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="张赫宣的独家音乐播客">张赫宣的独家音乐播客</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">音乐故事</a>
+              </li>
+
+              <li class="itm">
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram10.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="The Drone Pilots 017 - War on Science">The Drone Pilots 017 - War on Science</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="The Drone Pilots">The Drone Pilots</a>
+                  </p>
+                </div>
+                <a href="javascript:;" class="control">电音趴</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="radtop_fr clearfix">
+          <div class="rt_td">
+            <h3><a href="javascript:;">节目排行榜</a></h3>
+            <a href="javascript:;">更多&gt;</a>
+          </div>
+          <!-- 推荐节目 主体内容 -->
+          <div class="rt_bd">
+            <ul>
+              <li class="itm">
+                <div class="rank fl">
+                  <em>01</em>
+                  <span><i class="noChange"></i>0</span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram11.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="茫">茫</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="网瘾少女叽">网瘾少女叽</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+
+              <li class="itm">
+                <div class="rank fl">
+                  <em>02</em>
+                  <span><i class="up"></i> 3</span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram12.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="又見">又見</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="该快乐了吧">该快乐了吧</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+
+              <li class="itm">
+                <div class="rank fl">
+                  <em>03</em>
+                  <span><i class="up"></i>19</span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram13.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="现代爱情恐怖故事：我翻了女友的手机">现代爱情恐怖故事：我翻了女友的手机</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="故事FM">故事FM</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+
+              <li class="itm">
+                <div class="rank fl">
+                  <em>04</em>
+                  <span><i class="new"></i></span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram14.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="把普通的ri子过得浪漫些 我的意思是和你">把普通的ri子过得浪漫些 我的意思是和你</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="云边有个小卖铺☁️">云边有个小卖铺☁️</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+
+              <li class="itm">
+                <div class="rank fl">
+                  <em>05</em>
+                  <span><i class="up"></i>102</span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram15.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="vol.323 龚琳娜：自歌自舞不忐忑">vol.323 龚琳娜：自歌自舞不忐忑</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="日谈公园">日谈公园</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+
+              <li class="itm">
+                <div class="rank fl">
+                  <em>06</em>
+                  <span><i class="noChange"></i>0</span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram16.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="Best Friend">Best Friend</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="心灵捕手·">心灵捕手·</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+
+              <li class="itm">
+                <div class="rank fl">
+                  <em>07</em>
+                  <span><i class="new"></i></span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram17.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="Felis">Felis</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="Arcaea (韵律源点)">Arcaea (韵律源点)</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+
+              <li class="itm">
+                <div class="rank fl">
+                  <em>08</em>
+                  <span><i class="down"></i>3</span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram18.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="Hillsong Y&F - Wake(Back Up)">Hillsong Y&F - Wake(Back Up)</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="ZERO_CHEN的电台">ZERO_CHEN的电台</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+
+              <li class="itm">
+                <div class="rank fl">
+                  <em>09</em>
+                  <span><i class="noChange"></i>0</span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram19.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="云泥">云泥</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="枝芽">枝芽</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+
+              <li class="itm">
+                <div class="rank fl">
+                  <em>10</em>
+                  <span><i class="new"></i></span>
+                </div>
+                <a class="fl cvr" href="javascript:;" title="播放">
+                  <img src="../images/d_minprogram20.jpg" alt="播放" />
+                  <i></i>
+                </a>
+                <div class="fl cnt">
+                  <h3>
+                    <a href="javascript:;" title="2020最后一个月，要好好爱自己">2020最后一个月，要好好爱自己</a>
+                  </h3>
+                  <p>
+                    <a href="javascript:;" title="狮子小茶馆">狮子小茶馆</a>
+                  </p>
+                </div>
+                <span class="fl">
+                  <i></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 音乐故事电台 -->
+      <div class="radmore">
+        <div class="radmore_td">
+          <h3><a href="javascript:;">音乐故事</a>·电台</h3>
+          <a href="javascript:;">更多&gt;</a>
+        </div>
+        <ul class="radmore_bd clearfix">
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore1.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="晓苏•解忧唱片行">晓苏•解忧唱片行</a>
+              </h3>
+              <p>音乐是我的解药，也是你的良药</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore2.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="嘎电台">嘎电台</a>
+              </h3>
+              <p>宁静嘎嘎的音乐态度</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore3.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="李峙的不老歌">李峙的不老歌</a>
+              </h3>
+              <p>听听老歌，好好生活</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore4.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="在云端">在云端</a>
+              </h3>
+              <p>林海私人分享，品质音乐推荐</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 助眠故事电台 -->
+      <div class="radmore">
+        <div class="radmore_td">
+          <h3><a href="javascript:;">助眠解压</a>·电台</h3>
+          <a href="javascript:;">更多&gt;</a>
+        </div>
+        <ul class="radmore_bd clearfix">
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore5.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="轻松 · 冥想情绪包">轻松 · 冥想情绪包</a>
+              </h3>
+              <p>跟陈鸿宇一起，让奔忙心停下来</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore6.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="白噪音奇境之旅，梦中环游大自然">白噪音奇境之旅，梦中环游大自然</a>
+              </h3>
+              <p>精选自然音，放松心情，缓解压力</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore7.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="Now畅谈">Now畅谈</a>
+              </h3>
+              <p>用冥想智慧 解读习以为常的世界</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore8.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="【学习BGM】在霍格沃茨读书是什么样的体验">【学习BGM】在霍格沃茨读书是什么样的体验</a>
+              </h3>
+              <p>争当学霸，向格兰杰小姐学习</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 侃侃而谈 电台 -->
+      <div class="radmore">
+        <div class="radmore_td">
+          <h3><a href="javascript:;">侃侃而谈</a>·电台</h3>
+          <a href="javascript:;">更多&gt;</a>
+        </div>
+        <ul class="radmore_bd clearfix">
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore9.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="2082FM">2082FM</a>
+              </h3>
+              <p>四个不同时期的沙龙型闲谈播客</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore10.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="想·聊天 Think Talk">想·聊天 Think Talk</a>
+              </h3>
+              <p>跟爱想、会聊天的你，来场灵魂相遇</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore11.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="棕熊电影">棕熊电影</a>
+              </h3>
+              <p>带你探秘电影丛林，体验不一样的迷影文化！</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore12.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="《贝望录》">《贝望录》</a>
+              </h3>
+              <p>广告营销行业的声音笔记</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 情感调频 电台 -->
+      <div class="radmore">
+        <div class="radmore_td">
+          <h3><a href="javascript:;">情感调频</a>·电台</h3>
+          <a href="javascript:;">更多&gt;</a>
+        </div>
+        <ul class="radmore_bd clearfix">
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore13.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="话不多电台">话不多电台</a>
+              </h3>
+              <!-- <p>四个不同时期的沙龙型闲谈播客</p> -->
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore14.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="【林一电台】">【林一电台】</a>
+              </h3>
+              <!-- <p>跟爱想、会聊天的你，来场灵魂相遇</p> -->
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore15.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="鼓的奶特">鼓的奶特</a>
+              </h3>
+              <!-- <p>带你探秘电影丛林，体验不一样的迷影文化！</p> -->
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore16.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="亲密之旅·亲电台">亲密之旅·亲电台</a>
+              </h3>
+              <!-- <p>广告营销行业的声音笔记</p> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 创作翻唱 电台 -->
+      <div class="radmore">
+        <div class="radmore_td">
+          <h3><a href="javascript:;">创作翻唱</a>·电台</h3>
+          <a href="javascript:;">更多&gt;</a>
+        </div>
+        <ul class="radmore_bd clearfix">
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore17.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="HHW.">HHW.</a>
+              </h3>
+              <p>原创歌手的温柔翻唱后花园</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore18.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="齐申璋翻唱集">齐申璋翻唱集</a>
+              </h3>
+              <p>深情男嗓，拥抱你的不快乐</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore19.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="聆听（亦轩）">聆听（亦轩）</a>
+              </h3>
+              <!-- <p>带你探秘电影丛林，体验不一样的迷影文化！</p> -->
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore20.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="你这么爱听音乐，来一杯网愈云吧，Don't live hard">你这么爱听音乐，来一杯网愈云吧，Don't live hard</a>
+              </h3>
+              <p>吉他指弹，一位听歌爱好者，治愈</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 其他 电台 -->
+      <div class="radmore">
+        <div class="radmore_td">
+          <h3><a href="javascript:;">其他</a>·电台</h3>
+          <a href="javascript:;">更多&gt;</a>
+        </div>
+        <ul class="radmore_bd clearfix">
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore21.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="谜醉韩语">谜醉韩语</a>
+              </h3>
+              <p>用最简单的方式带你走进韩语世界</p>
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore22.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="爆笑脱口秀| 沙丁鱼说财经">爆笑脱口秀| 沙丁鱼说财经</a>
+              </h3>
+              <!-- <p>跟爱想、会聊天的你，来场灵魂相遇</p> -->
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore23.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="浅夜动漫">浅夜动漫</a>
+              </h3>
+              <!-- <p>带你探秘电影丛林，体验不一样的迷影文化！</p> -->
+            </div>
+          </li>
+
+          <li class="fl">
+            <a href="javascript:;" class="fl">
+              <img src="../images/d_radmore24.jpg" alt="" />
+            </a>
+            <div class="radmore_cnt fl">
+              <h3>
+                <a href="javascript:;" title="郭德纲柳活儿">郭德纲柳活儿</a>
+              </h3>
+              <p>郭德纲先生经典学唱曲目欢迎入坑</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 电台主体部分 结束 -->
+
+    <!-- 固定电梯导航 -->
+    <div class="fixedtool">
+      <ul>
+        <li class="fixed_current">推荐节目</li>
+        <li>音乐故事</li>
+        <li>助眠故事</li>
+        <li>侃侃而谈</li>
+        <li>情感调频</li>
+        <li>创作翻唱</li>
+        <li>其他电台</li>
+      </ul>
+    </div>
+
+    <!-- 回到顶部 -->
+    <a title="回到顶部" class="c-back" href="#" id="g_backtop" hidefocus="true">回到顶部</a>
+
+    <!-- 尾部版权信息模块开始 -->
+    <div class="ft_bottom">
+      <div class="w">
+        <!-- 左侧版权信息 -->
+        <div class="copyright">
+          <ul>
+            <li><a href="javascript:;">服务条款</a><span>|</span></li>
+            <li><a href="javascript:;">隐私政策</a><span>|</span></li>
+            <li><a href="javascript:;">儿童隐私政策</a><span>|</span></li>
+            <li><a href="javascript:;">版权投诉指引</a><span>|</span></li>
+            <li><a href="javascript:;">意见反馈</a><span>|</span></li>
+          </ul>
+
+          <p>
+            <span>网易公司版权所有©1997-2020</span>
+            <span>杭州乐读科技有限公司运营：</span>
+            <a href="javascript:;">浙网文[2018]3506-263号</a>
+          </p>
+
+          <p>
+            <span>违法和不良信息举报电话：0571-89853516</span>
+            <span>举报邮箱：</span>
+            <a href="javascript:;">ncm5990@163.com</a>
+          </p>
+
+          <p>
+            <span>粤B2-20090191-18</span>
+            <a href="javascript:;">工业和信息化部备案管理系统网站</a>
+            <a href="javascript:;">
+              <span class="police-logo"></span>
+              <span>浙公网安备 33010902002564号</span>
+            </a>
+          </p>
+        </div>
+        <!-- 右侧 认证 -->
+        <ul class="enterFr">
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 尾部版权信息模块结束 -->
+
+    <script>
+      var userBox = document.querySelector('header .userBox')
+      userBox.onmouseover = function () {
+        this.children[1].style.display = 'block'
+      }
+      userBox.onmouseout = function () {
+        this.children[1].style.display = 'none'
+      }
+      var searchInput = document.querySelector('header .search input')
+      searchInput.onfocus = function () {
+        if (this.placeholder === '音乐/视频/电台/用户') {
+          this.placeholder = ''
+        }
+      }
+      searchInput.onblur = function () {
+        if (this.placeholder.trim().length === 0) {
+          this.placeholder = '音乐/视频/电台/用户'
+        }
+      }
+    </script>
+
+    <!-- 引入当前js样式 -->
+    <script src="../js/djradio.js"></script>
+  </body>
+</html>

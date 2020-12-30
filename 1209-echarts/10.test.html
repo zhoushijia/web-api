@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="background-color: #f00; width: 200px" id="200">
+      <a href="">1</a>
+      <p>2</p>
+    </div>
+
+    <script type="text/javascript">
+      var d = document.querySelector('div')
+      console.log(d.style.width)
+      d.setAttribute('id', '400')
+      d.removeAttribute('id')
+      console.log(d.id)
+    </script>
+  </body>
+</html>

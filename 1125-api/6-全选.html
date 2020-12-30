@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="checkbox" name="" id="all" />
+    <hr />
+    <input type="checkbox" name="" id="" class="check" /><br />
+    <input type="checkbox" name="" id="" class="check" /><br />
+    <input type="checkbox" name="" id="" class="check" /><br />
+    <input type="checkbox" name="" id="" class="check" />
+    <hr />
+    <input type="checkbox" name="" id="" class="relative" /><br />
+
+    <script>
+      var all = document.querySelector('#all')
+      var checks = document.querySelectorAll('.check')
+      var rel = document.querySelector('.relative')
+      all.onclick = function () {
+        rel.checked = false
+        for (var i = 0; i < checks.length; i++) {
+          checks[i].checked = all.checked
+        }
+      }
+      rel.onclick = function () {
+        all.checked = false
+        for (var i = 0; i < checks.length; i++) {
+          checks[i].checked = !checks[i].checked
+        }
+      }
+      // var flag = false
+      var checkedLength = checks.length
+      for (var i = 0; i < checks.length; i++) {
+        checks[i].onclick = function () {
+          //    c3的:checked选择器  选择checked的标签
+          var checkLength = document.querySelectorAll('.check:checked').length
+          all.checked = checkLength === checkedLength
+        }
+        // 错误示例：不能再onclick事件外面设置all.checked这样不能做到all随着其他元素变化而变化
+        // checks[i].onclick = function () {
+        //   if (!this.checked) flag = true
+        // }
+        // if (flag) break
+      }
+      // all.checked = flag
+    </script>
+  </body>
+</html>

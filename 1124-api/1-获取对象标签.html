@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div1">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <ol>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+    </ol>
+    <script src="js/util.js"></script>
+    <script>
+      // 通过id获得标签
+      var div = document.getElementById('div1')
+      //   获得的是对象
+      console.dir(div)
+      console.log(div)
+      console.log(div.innerHTML)
+
+      // 通过标签名获得标签
+      var divs = document.getElementsByTagName('div')
+      //   获得的是集合
+      console.log(divs)
+      console.log(divs[1])
+      console.log(divs[1].innerHTML)
+
+      // 获取ul中的li  对比后代选择器
+      var ul = document.getElementsByTagName('ul')
+      var lis = ul[0].getElementsByTagName('li')
+      console.log(lis)
+
+      //   新增方法
+      var div11 = document.querySelector('div')
+      console.log(div11)
+
+      var divss = document.querySelectorAll('div')
+      console.log(divss)
+
+      var div111 = $('#div1')
+      var lis111 = $$('ol li')
+      console.log(div111)
+      console.log(lis111)
+    </script>
+  </body>
+</html>

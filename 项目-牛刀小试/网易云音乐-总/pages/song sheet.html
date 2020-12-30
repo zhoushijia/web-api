@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="网易云音乐，音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单，识别音乐，收藏，分享音乐，音乐互动，高音质，320K，音乐社交，官网，music.163.com" />
+    <meta name="description" content="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/song sheet.css" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/song sheet.js"></script>
+</head>
+
+<body class="tou">
+    <!-- 头部制作开始 -->
+    <header>
+        <div class="wrap">
+            <h1 class="logo">
+                <a href="index.html">网易云音乐</a>
+            </h1>
+            <ul class="m-nav">
+                <li>
+                    <a href="../index.html" class="z-slt"><em>发现音乐</em><sub class="cor"></sub></a>
+                </li>
+                <li>
+                    <a href="myMusic.html"><em>我的音乐</em><sub class="cor" style="display: none"></sub></a>
+                </li>
+                <li>
+                    <a href="friends.html"><em>朋友</em><sub class="cor" style="display: none"></sub></a>
+                </li>
+                <li>
+                    <a href="#"><em>商城</em><sub class="cor" style="display: none"></sub></a>
+                </li>
+                <li>
+                    <a href="musician.html"><em>音乐人</em><sub class="cor" style="display: none"></sub></a>
+                </li>
+                <li class="last">
+                    <a href="app.html"><em>下载客户端</em><sub class="cor" style="display: none"></sub></a>
+                    <sup class="hot"></sup>
+                </li>
+            </ul>
+            <div class="userBox">
+                <div class="user">
+                    <img src="../images/user.jpg" alt="" />
+                    <i>4</i>
+                </div>
+                <div class="userinfo">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="icn icn-hm"></i> <em>我的主页</em></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icn icn-msg"></i>
+                                <em>我的消息</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icn icn-lv"></i>
+                                <em>我的等级</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icn icn-mbr"></i>
+                                <em>VIP会员</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icn icn-st"></i>
+                                <em>个人设置</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icn icn-verify"></i>
+                                <em>实名认证</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icn icn-ex"></i>
+                                <em>退出</em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="creator">创作者中心</a>
+            <div class="search">
+                <div class="searchInfo">
+                    <span class="parent">
+              <input type="text" class="txt" placeholder="音乐/视频/电台/用户" />
+            </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部制作结束 -->
+    <!-- 导航模块开始 -->
+    <nav>
+        <div class="wrap">
+            <ul class="nav">
+                <li>
+                    <a href="../index.html"><em>推荐</em></a>
+                </li>
+                <li>
+                    <a href="ranklist.html"><em>排行榜</em></a>
+                </li>
+                <li>
+                    <a href="song sheet.html" class="z-slt"><em class="list">歌单 <span class="icon"></span> </em
+            ></a>
+                </li>
+                <li>
+                    <a href="djradio.html"><em>主播电台</em></a>
+                </li>
+                <li>
+                    <a href="singer.html"><em>歌手</em></a>
+                </li>
+                <li>
+                    <a href="album.html"><em>新碟上架</em></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 导航模块结束 -->
+    <!-- 中心 -->
+    <div class="g-bd" id="m-disc-pl-c">
+        <div class="g-wrap p-pl f-pr w">
+            <div class="u-title f-cb">
+                <h3>
+                    <span class="f-ff2 d-fla">全部</span>
+                    <a href="javascript:;" class="u-btn2 u-btn2-1 menu d-fla drop" id="cateToggleLink"><i class="u-btn2">选择分类<em class="u-icn u-icn-38"></em></i
+            ></a>
+                </h3>
+                <div class="u-btn f-fr u-btn-hot d-fla">
+                    <a href="javascript:;" class="a1" data-order="hot">热门</a>
+                </div>
+            </div>
+
+            <div class="d-flag" style="display: none">
+                <div class="hd">
+                    <i class="icn"></i>
+                </div>
+                <div class="bd">
+                    <h3>
+                        <a href="javascript:;" class="u-btn-g">
+                            <em>全部风格</em>
+                        </a>
+                    </h3>
+                    <dl>
+                        <dt><i class="u-icn u-icn-71"> </i>语种</dt>
+                    </dl>
+                </div>
+                <div class="ft"></div>
+            </div>
+            <ul class="m-cvrlst f-cb" id="m-pl-container" style="display: none">
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-001.jpg" />
+                        <a title="12月好事正酿，大家都要如愿以偿" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="nb">49万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="12月好事正酿，大家都要如愿以偿" href="#" class="tit f-thide s-fc0">12月好事正酿，大家都要如愿以偿</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="念念念安娜" href="#" class="nm nm-icn f-thide s-fc3">念念念安娜</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="../images/g-000.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-002.jpg" />
+                        <a title="韩语【R&amp;B】∥陷入蓝色的布鲁森林" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="nb">53040万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="韩语【R&amp;B】∥陷入蓝色的布鲁森林" href="#" class="tit f-thide s-fc0">韩语【R&amp;B】∥陷入蓝色的布鲁森林</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="窝瓜930309" href="#" class="nm nm-icn f-thide s-fc3">窝瓜930309</a>
+
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="../images/g-000.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-003.jpg" />
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">41192万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="影视原声｜间谍&amp;特工出场的BGM" href="#" class="tit f-thide s-fc0">影视原声｜间谍&amp;特工出场的BGM</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="失乐园的龙" href="#" class="nm nm-icn f-thide s-fc3">失乐园的龙</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="../images/g-003.jpg" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-004.jpg" />
+                        <a title="路遥马急的世间，你又会记得我几年" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">29万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="路遥马急的世间，你又会记得我几年" href="#" class="tit f-thide s-fc0">路遥马急的世间，你又会记得我几年</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="别情先生" href="#" class="nm nm-icn f-thide s-fc3">别情先生</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="../images/g-004.jpg" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-005.jpg" />
+                        <a title="『2020』Billboard ‖ 最佳MV Top 25" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">22万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="『2020』Billboard ‖ 最佳MV Top 25" href="/playlist?id=5373783198" class="tit f-thide s-fc0">『2020』Billboard ‖ 最佳MV Top 25</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="西特亚小盆友" href="/#" class="nm nm-icn f-thide s-fc3">西特亚小盆友</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4761340149/f4bf/64a1/1ea2/31a08617d7dfddb21fffdb92390ce268.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-006.jpg" />
+                        <a title="后翼弃兵/女王的棋局 | 电视原声音乐OST" href="/#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">31万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="后翼弃兵/女王的棋局 | 电视原声音乐OST" href="/playlist?id=5307927527" class="tit f-thide s-fc0">后翼弃兵/女王的棋局 | 电视原声音乐OST</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="五月未了" href="/user/home?id=20434114" class="nm nm-icn f-thide s-fc3">五月未了</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4761340194/0903/b735/7c7a/0dddcdf78047d397d24125840e54ab5b.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-007.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-008.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-009.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-010.jpg" />
+                        <a title="和喜欢的人一起带上耳机开启心动模式啊" href="/playlist?id=5161100899" class="msk"></a>
+                        <div class="bottom">
+                            <a class="icon-play f-fr" title="播放" href="javascript:;" data-res-type="13" data-res-id="5161100899" data-res-action="play"></a>
+                            <span class="icon-headset"></span>
+                            <span class="nb">363万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="和喜欢的人一起带上耳机开启心动模式啊" href="/playlist?id=5161100899" class="tit f-thide s-fc0">和喜欢的人一起带上耳机开启心动模式啊</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="是小旭啊y" href="/user/home?id=1549311144" class="nm nm-icn f-thide s-fc3">是小旭啊y</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4874132307/4499/f228/d867/da64b9725e125943ad4e14e4c72d0884.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-011.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-012.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-013.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-014.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-015.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-016.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-017.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-018.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-019.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-020.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+            </ul>
+            <ul class="m-cvrlst f-cb" id="m-pl-container">
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="http://p3.music.126.net/anOO1-Ae0oubkEc7_3VbAA==/109951165523982246.jpg?param=140y140" />
+                        <a title="每天都在崩溃与自愈中期待变得更好啊" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="nb">49万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="每天都在崩溃与自愈中期待变得更好啊" href="#" class="tit f-thide s-fc0">每天都在崩溃与自愈中期待变得更好啊</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="念念念安娜" href="#" class="nm nm-icn f-thide s-fc3">念念念安娜</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="../images/g-000.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="http://p3.music.126.net/7GofaNshbJAVbRsy1D_DYQ==/109951165452977096.jpg?param=140y140" />
+                        <a title="『偏愛亦是救赎』" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="nb">53040万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="『偏愛亦是救赎』" href="#" class="tit f-thide s-fc0">『偏愛亦是救赎』</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="窝瓜930309" href="#" class="nm nm-icn f-thide s-fc3">窝瓜930309</a>
+
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="../images/g-000.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="http://p4.music.126.net/7s6kJ4hxVTekm0j3yCYk4Q==/109951165197248593.jpg?param=140y140" />
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">41192万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="影视原声｜间谍&amp;特工出场的BGM" href="#" class="tit f-thide s-fc0">影视原声｜间谍&amp;特工出场的BGM</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="失乐园的龙" href="#" class="nm nm-icn f-thide s-fc3">失乐园的龙</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="http://p4.music.126.net/7s6kJ4hxVTekm0j3yCYk4Q==/109951165197248593.jpg?param=140y140" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="http://p3.music.126.net/86l7fw-dRIHRTRTLxpMujA==/109951165159574448.jpg?param=140y140" />
+                        <a title="路遥马急的世间，你又会记得我几年" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">29万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="路遥马急的世间，你又会记得我几年" href="#" class="tit f-thide s-fc0">路遥马急的世间，你又会记得我几年</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="别情先生" href="#" class="nm nm-icn f-thide s-fc3">别情先生</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="http://p3.music.126.net/86l7fw-dRIHRTRTLxpMujA==/109951165159574448.jpg?param=140y140" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="http://p4.music.126.net/Z56vP_3ILs4giKOWiApXOA==/109951165189939211.jpg?param=140y140" />
+                        <a title="『2020』Billboard ‖ 最佳MV Top 25" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">22万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="『2020』Billboard ‖ 最佳MV Top 25" href="/playlist?id=5373783198" class="tit f-thide s-fc0">『2020』Billboard ‖ 最佳MV Top 25</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="西特亚小盆友" href="/#" class="nm nm-icn f-thide s-fc3">西特亚小盆友</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4761340149/f4bf/64a1/1ea2/31a08617d7dfddb21fffdb92390ce268.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="http://p4.music.126.net/mmXG3zxDtOgjQNU4p8IFWA==/109951165497118103.jpg?param=140y140" />
+                        <a title="后翼弃兵/女王的棋局 | 电视原声音乐OST" href="/#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">31万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="后翼弃兵/女王的棋局 | 电视原声音乐OST" href="/playlist?id=5307927527" class="tit f-thide s-fc0">后翼弃兵/女王的棋局 | 电视原声音乐OST</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="五月未了" href="/user/home?id=20434114" class="nm nm-icn f-thide s-fc3">五月未了</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4761340194/0903/b735/7c7a/0dddcdf78047d397d24125840e54ab5b.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="http://p4.music.126.net/5TBHY7_5DkVPEPWUNt-_vA==/109951165394670895.jpg?param=140y140" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="http://p3.music.126.net/KJQXjlsvxbxHMUmFYgmMyg==/109951165441140287.jpg?param=140y140" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="http://p4.music.126.net/ZHsmjis3YaNtGxKYXwzXxg==/109951165149969549.jpg?param=140y140" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-010.jpg" />
+                        <a title="和喜欢的人一起带上耳机开启心动模式啊" href="/playlist?id=5161100899" class="msk"></a>
+                        <div class="bottom">
+                            <a class="icon-play f-fr" title="播放" href="javascript:;" data-res-type="13" data-res-id="5161100899" data-res-action="play"></a>
+                            <span class="icon-headset"></span>
+                            <span class="nb">363万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="和喜欢的人一起带上耳机开启心动模式啊" href="/playlist?id=5161100899" class="tit f-thide s-fc0">和喜欢的人一起带上耳机开启心动模式啊</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="是小旭啊y" href="/user/home?id=1549311144" class="nm nm-icn f-thide s-fc3">是小旭啊y</a>
+                        <img style="height: 13px; width: 13px; display: inline-block; vertical-align: middle" src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4874132307/4499/f228/d867/da64b9725e125943ad4e14e4c72d0884.png" />
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-011.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-012.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-013.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-014.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-015.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-016.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-017.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-018.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-019.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="u-cover u-cover-1">
+                        <img class="j-flag" src="../images/g-020.jpg" />
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="msk"></a>
+                        <div class="bottom">
+                            <span class="icon-headset"></span>
+                            <span class="nb">137万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a title="苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．" href="#" class="tit f-thide s-fc0">苏6 哪吒 小条 防 扎 尧 英雄会 抖腿．</a>
+                    </p>
+                    <p>
+                        <span class="s-fc4">by</span>
+                        <a title="女人跟着哥" href="/user/home?id=1691671431" class="nm nm-icn f-thide s-fc3">女人跟着哥</a>
+                    </p>
+                </li>
+            </ul>
+            <div id="m-pl-pager">
+                <div class="u-page">
+                    <a href="" class="zbtn zprv js-disabled">
+                        <上一页</a>
+                            <a href="" class="zpgi js-selected">1</a>
+                            <a href="#" class="zpgi">2</a>
+                            <a href="#" class="zpgi">3</a>
+                            <a href="#" class="zpgi">4</a>
+                            <a href="#" class="zpgi">5</a>
+                            <a href="#" class="zpgi">6</a>
+                            <a href="#" class="zpgi">7</a>
+                            <a href="#" class="zpgi">8</a>
+                            <span class="zdot">...</span>
+                            <a href="#" class="zpgi">9</a>
+                            <a href="#" class="zbtn znxt">下一页></a>
+                </div>
+            </div>
+        </div>
+        <!-- 中心结束 -->
+        <!-- 尾部版权信息模块开始 -->
+        <div class="ft_bottom">
+            <div class="w">
+                <!--左侧版权信息 -->
+                <div class="copyright">
+                    <ul>
+                        <li><a href="javascript:;">服务条款</a><span>|</span></li>
+                        <li><a href="javascript:;">隐私政策</a><span>|</span></li>
+                        <li><a href="javascript:;">儿童隐私政策</a><span>|</span></li>
+                        <li><a href="javascript:;">版权投诉指引</a><span>|</span></li>
+                        <li><a href="javascript:;">意见反馈</a><span>|</span></li>
+                    </ul>
+
+                    <p>
+                        <span>网易公司版权所有©1997-2020</span>
+                        <span>杭州乐读科技有限公司运营：</span>
+                        <a href="javascript:;">浙网文[2018]3506-263号</a>
+                    </p>
+
+                    <p>
+                        <span>违法和不良信息举报电话：0571-89853516</span>
+                        <span>举报邮箱：</span>
+                        <a href="javascript:;">ncm5990@163.com</a>
+                    </p>
+
+                    <p>
+                        <span>粤B2-20090191-18</span>
+                        <a href="javascript:;">工业和信息化部备案管理系统网站</a>
+                        <a href="javascript:;">
+                            <span class="police-logo"></span>
+                            <span>浙公网安备 33010902002564号</span>
+                        </a>
+                    </p>
+                </div>
+                <!-- 右侧 认证 -->
+                <ul class="enterFr">
+                    <li>
+                        <a href="javascript:;" class="logo_auth"></a>
+                        <span class="tt"></span>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;" class="logo_auth"></a>
+                        <span class="tt"></span>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;" class="logo_auth"></a>
+                        <span class="tt"></span>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;" class="logo_auth"></a>
+                        <span class="tt"></span>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;" class="logo_auth"></a>
+                        <span class="tt"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部版权信息模块结束 -->
+</body>
+
+</html>

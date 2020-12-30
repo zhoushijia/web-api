@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      我是老爹
+      <span>儿子在这里</span>
+      <ul>
+        <li>都是儿子1</li>
+        <li>都是儿子2</li>
+        <li>都是儿子3</li>
+      </ul>
+    </div>
+    <script>
+      // 获取节点
+      var span = document.querySelector('span')
+      console.log(span)
+      //   父元素节点
+      var father = span.parentNode
+      console.log(father)
+      //  子节点
+      var sons = father.childNodes
+      console.log(sons)
+      //   子元素节点
+      var elementSons = father.children
+      console.log(elementSons)
+      //   下一个兄弟元素节点           有兼容性问题
+      var brother = span.nextElementSibling
+      console.log(brother)
+      //   下一个兄弟节点   无兼容性问题
+      var brother1 = span.nextSibling
+      console.log(brother1)
+
+      //  获取下一个兄弟元素节点    无兼容性问题
+      function getNextElementSibling(e) {
+        var el = e
+        while ((el = el.nextSibling)) {
+          if (el.nodeType === 1) return el
+        }
+        return null
+      }
+      var brother2 = getNextElementSibling(span)
+      console.log(brother2)
+
+      // 增加节点
+      // 创造元素 创造的元素只能使用一次
+      var p = document.createElement('p')
+      p.innerHTML = '你好'
+      var i = document.createElement('i')
+      i.innerHTML = '我是插入的'
+      //   末尾添加
+      father.appendChild(p)
+      //   子元素中间插入
+      father.insertBefore(i, father.children[1])
+
+      //   删除节点
+      console.log(elementSons[2])
+      elementSons[2].removeChild(elementSons[2].children[1])
+
+      // 克隆节点
+      elementSons[2].insertBefore(elementSons[2].children[1].cloneNode(true), elementSons[2].children[1])
+    </script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+/* 导航模块开始 */
+
+header {
+  height: 71px;
+  background-color: #242424;
+  border-bottom: 1px solid #000;
+}
+
+nav {
+  z-index: 90;
+  margin-top: -1px;
+  height: 35px;
+  box-sizing: border-box;
+  background-color: #c20c0c;
+  border-bottom: 1px solid #a40011;
+}
+
+nav .wrap {
+  width: 1100px;
+  height: 34px;
+  margin: 0 auto;
+}
+
+nav .wrap .nav {
+  float: left;
+  padding-left: 180px;
+}
+
+nav .nav li,
+nav .nav a {
+  float: left;
+  height: 34px;
+  text-align: center;
+  color: #fff;
+}
+
+nav .nav .z-slt {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .nav .list {
+  position: relative;
+  padding: 0 15px 0 11px;
+}
+
+nav .nav li a .icon {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 2px;
+  background: url(../images/f-white-r-icon@3x.png);
+  background-size: cover;
+}
+
+nav .nav .z-slt em {
+  background: #9b0909;
+}
+
+nav .nav em:hover {
+  background: #9b0909;
+}
+
+nav .nav a em {
+  display: inline-block;
+  height: 20px;
+  padding: 0 13px;
+  margin: 7px 17px 0;
+  border-radius: 20px;
+  line-height: 21px;
+}
+
+/* 导航模块结束 */
+
+/* 左侧歌手导航栏 */
+.bd_left {
+  float: left;
+  width: 180px;
+  height: 100%;
+  background-color: #f9f9f9;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  padding: 0 10px 40px;
+}
+
+.singer_sidebar {
+  margin-top: 51px;
+}
+
+.blk h2 {
+  font-size: 16px;
+  padding-left: 14px;
+  height: 25px;
+}
+
+.blk .singer_nav {
+  margin-top: 2px;
+}
+
+.blk .singer_nav li a {
+  display: inline-block;
+  width: 160px;
+  padding-left: 24px;
+  height: 30px;
+  line-height: 30px;
+  background: url(../images/d-singer.png) no-repeat 0 -30px;
+}
+
+.blk .singer_nav li a.current {
+  color: #c20c0c;
+  text-decoration: none;
+  background: url(../images/d-singer.png) no-repeat 0 0;
+}
+
+.blk .singer_nav li:last-child::after {
+  display: block;
+  content: '';
+  width: 160px;
+  height: 1px;
+  background-color: #d3d3d3;
+  margin: 10px 0;
+}
+
+.blk:last-child .singer_nav li:last-child::after {
+  display: none;
+}
+
+.bd_right {
+  float: left;
+  width: 800px;
+  /* height: 100%; */
+  background-color: #fff;
+  border-right: 1px solid #d3d3d3;
+  padding: 40px;
+}
+
+.bd_right .title {
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+}
+
+.bd_right .title h1 {
+  font-size: 24px;
+  font-weight: normal;
+  float: left;
+  color: #333;
+}
+
+.bd_right .title span {
+  float: right;
+  margin-top: 14px;
+}
+
+.bd_right .title::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  margin-top: 40px;
+  background-color: #c20c0c;
+}
+
+.bd_right .singerlist ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bd_right .singerlist ul li {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.bd_right .singerlist ul li p span {
+  float: right;
+  width: 18px;
+  height: 18px;
+  background: url(../images/d_icon.png) no-repeat 0 -740px;
+}
+
+.bd_right .singerlist ul li .msk {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  background: url(../images/d_coverall.png) no-repeat 0 -680px;
+}
+
+.partition {
+  width: 736px;
+  margin-left: -16px;
+  border-bottom: 1px dotted #cccccc;
+  margin-bottom: 15px;
+}
+
+.singer_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.singer_menu li {
+  width: 130px;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+.singer_menu li a {
+  color: #000;
+}
+
+.singer_menu li span {
+  position: relative;
+  top: 6px;
+  left: 2px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../images/d_icon.png) no-repeat 0 -740px;
+}
+
+/* 返回顶部 */
+.c-back {
+  display: none;
+  position: fixed;
+  text-indent: -9999px;
+  left: 50%;
+  margin-left: 500px;
+  bottom: 160px;
+  width: 49px;
+  height: 44px;
+  background: url(../images/c-sprite.png) no-repeat -265px -47px;
+}

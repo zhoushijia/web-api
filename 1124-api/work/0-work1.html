@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      input,
+      button {
+        outline: none;
+        border: none;
+      }
+      .login {
+        text-align: center;
+        line-height: 30px;
+      }
+      input {
+        width: 200px;
+        height: 30px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+      }
+      button {
+        width: 60px;
+        height: 30px;
+        color: #fff;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <input type="text" placeholder="邮箱/ID/手机号" id="username" />
+      <input type="password" placeholder="密码" id="psd" />
+      <button>登录</button>
+    </div>
+    <script>
+      var username = document.querySelector('#username')
+      var psd = document.querySelector('#psd')
+      username.onfocus = function () {
+        username.placeholder = ''
+        username.style.border = '1px solid red'
+      }
+      psd.onfocus = function () {
+        psd.placeholder = ''
+        psd.style.border = '1px solid red'
+      }
+      username.onblur = function () {
+        if (username.value === '') {
+          username.placeholder = '邮箱/ID/手机号'
+        }
+        username.style.border = '1px solid #ccc'
+      }
+      psd.onblur = function () {
+        if (psd.value === '') {
+          psd.placeholder = '密码'
+        }
+        psd.style.border = '1px solid #ccc'
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <script>
+      function getMyTime() {
+        var time = new Date()
+        var y = time.getFullYear()
+        var m = (time.getMonth() + 1).toString().padStart(2, 0)
+        var d = time.getDate().toString().padStart(2, 0)
+        var hh = time.getHours().toString().padStart(2, 0)
+        var mm = time.getMinutes().toString().padStart(2, 0)
+        var ss = time.getSeconds().toString().padStart(2, 0)
+        var div = document.querySelector('div')
+        div.innerHTML = y + '-' + m + '-' + d + ' ' + hh + ':' + mm + ':' + ss
+      }
+      //   先执行一次, 去除页面刷新时的1s空白
+      getMyTime()
+      setInterval('getMyTime()', 1000)
+
+      //   var div = document.querySelector('div')
+      //   //   不能这样写  里面是无返回值函数
+      //   //   div.innerHTML = setInterval('getMyDate()', 1000)
+      //   function getMyDate() {
+      //     var myDate = new Date()
+      //     var year = myDate.getFullYear()
+      //     var month = zeroFill(myDate.getMonth() + 1)
+      //     var d = zeroFill(myDate.getDate())
+      //     var hours = zeroFill(myDate.getHours())
+      //     var minutes = zeroFill(myDate.getMinutes())
+      //     var seconds = zeroFill(myDate.getSeconds())
+      //     div.innerHTML = year + '-' + month + '-' + d + ' ' + hours + ':' + minutes + ':' + seconds
+      //   }
+
+      //   function zeroFill(m) {
+      //     return m < 10 ? '0' + m : m
+      //   }
+    </script>
+  </body>
+</html>

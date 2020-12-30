@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: 0;
+      }
+
+      .all {
+        width: 500px;
+        height: 200px;
+        padding: 7px;
+        border: 1px solid #ccc;
+        margin: 100px auto;
+        position: relative;
+      }
+
+      .screen {
+        width: 500px;
+        height: 200px;
+        /* overflow: hidden; */
+        position: relative;
+      }
+
+      .screen li {
+        width: 500px;
+        height: 200px;
+        overflow: hidden;
+        float: left;
+      }
+
+      .screen ul {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 3000px;
+      }
+
+      .all ol {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        line-height: 20px;
+        text-align: center;
+      }
+
+      .all ol li {
+        float: left;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      .all ol li.current {
+        background: yellow;
+      }
+
+      #arr {
+        display: none;
+        z-index: 1000;
+      }
+
+      #arr span {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        margin-top: -20px;
+        background: #000;
+        cursor: pointer;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        font-family: '黑体';
+        font-size: 30px;
+        color: #fff;
+        opacity: 0.3;
+        border: 1px solid #fff;
+      }
+
+      #arr #right {
+        right: 5px;
+        left: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="all" id="box">
+      <div class="screen" id="screen">
+        <ul id="ul">
+          <li><img src="images/wf1.jpg" width="500" height="200" /></li>
+          <li><img src="images/wf2.jpg" width="500" height="200" /></li>
+          <li><img src="images/wf3.jpg" width="500" height="200" /></li>
+          <li><img src="images/wf4.jpg" width="500" height="200" /></li>
+          <li><img src="images/wf5.jpg" width="500" height="200" /></li>
+        </ul>
+        <ol id="ol"></ol>
+      </div>
+      <div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
+    </div>
+    <script>
+      function animate(obj, target, callback) {
+        //   保证点击后只有一个定时器在运行，防止多次点击，浪费内存资源
+        clearInterval(obj.timer)
+        // 以obj.timer来存储,保证定时器的唯一性
+        obj.timer = setInterval(function () {
+          var step = (target - obj.offsetLeft) / 10
+
+          //   if (step > 0) {
+          //     step = Math.ceil(step)
+          //   } else {
+          //     step = Math.floor(step)
+          //   }
+          step = step > 0 ? Math.ceil(step) : Math.floor(step)
+          if (obj.offsetLeft === target) {
+            // console.log('清除了定时器')
+            callback && callback()
+            return clearInterval(obj.timer)
+          }
+          obj.style.left = obj.offsetLeft + step + 'px'
+          //   if (box.offsetLeft < target) {
+          //     box.style.left = box.offsetLeft + step + 'px'
+          //   } else {
+          //     return clearInterval(timer)
+          //   }
+        }, 15)
+      }
+    </script>
+
+    <script>
+      var ul = document.querySelector('ul')
+      var ulLis = ul.children
+      var ol = document.querySelector('ol')
+      var screenWidth = document.querySelector('#screen').offsetWidth
+      for (var i = 0; i < ulLis.length; i++) {
+        var liNode = document.createElement('li')
+        liNode.innerHTML = i + 1
+        ol.appendChild(liNode)
+        if (i === 0) liNode.className = 'current'
+      }
+      var olLis = ol.children
+      for (var i = 0; i < olLis.length; i++) {
+        olLis[i].setAttribute('data-index', i)
+        olLis[i].addEventListener('click', function () {
+          for (var j = 0; j < olLis.length; j++) {
+            olLis[j].className = ''
+          }
+          this.className = 'current'
+          var index = this.getAttribute('data-index')
+          console.log(index)
+          animate(ul, -index * screenWidth)
+        })
+      }
+    </script>
+  </body>
+</html>

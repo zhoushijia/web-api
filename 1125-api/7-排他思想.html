@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+
+    <script>
+      var lis = document.querySelectorAll('ul li')
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].onclick = function () {
+          for (var j = 0; j < lis.length; j++) {
+            lis[j].style.color = ''
+          }
+          //    这种写法是不对的，此时i已经等于5函数在没有调用之前是不会执行的（即onclick之前是不会执行的），在onclick之前for循环已经完成，因此i的数值为5
+          // lis[i].style.color = 'red'
+          this.style.color = 'red'
+        }
+      }
+    </script>
+  </body>
+</html>

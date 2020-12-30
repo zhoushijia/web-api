@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: none;
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <button>显示与隐藏</button>
+    <hr />
+    <div></div>
+    <button>显示与隐藏2</button>
+    <hr />
+    <div></div>
+    <script>
+      var btn = document.querySelector('button')
+      var div = document.querySelector('div')
+      var flag = true
+      btn.onclick = function () {
+        if (flag) {
+          div.style.display = 'none'
+          flag = false
+        } else {
+          div.style.display = 'block'
+          flag = true
+        }
+      }
+    </script>
+  </body>
+</html>

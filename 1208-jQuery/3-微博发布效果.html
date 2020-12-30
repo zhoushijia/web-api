@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .box {
+        width: 600px;
+        margin: 100px auto;
+        border: 1px solid #000;
+        padding: 20px;
+      }
+
+      textarea {
+        width: 450px;
+        height: 160px;
+        outline: none;
+        resize: none;
+      }
+
+      ul {
+        width: 450px;
+        padding-left: 80px;
+      }
+
+      ul li {
+        line-height: 25px;
+        border-bottom: 1px dashed #cccccc;
+        display: none;
+      }
+
+      input {
+        float: right;
+      }
+
+      ul li a {
+        float: right;
+      }
+    </style>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+      $(function () {
+        //   评论添加到ul中
+        $('.box .btn').on('click', function () {
+          if ($('.txt').val().trim().length <= 0) return
+          var li = $('<li></li>')
+          li.html($('.txt').val() + '<a href="javascript:;">删除</a>')
+          $('.box ul').prepend(li)
+          $('.txt').val('')
+          //   盒子被隐藏了，再慢慢滑出来
+          li.slideDown()
+        })
+        // 删除评论需要事件委托
+        $('.box ul').on('click', 'a', function () {
+          $(this)
+            .parent()
+            .slideUp(function () {
+              // 这里的this指的是前面的 $(this).parent()
+              $(this).remove()
+            })
+        })
+      })
+    </script>
+  </head>
+
+  <body>
+    <div class="box" id="weibo">
+      <span>微博发布</span>
+      <textarea name="" class="txt" cols="30" rows="10"></textarea>
+      <button class="btn">发布</button>
+      <ul></ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: 0;
+      }
+
+      .all {
+        width: 500px;
+        height: 200px;
+        padding: 7px;
+        border: 1px solid #ccc;
+        margin: 100px auto;
+        position: relative;
+      }
+
+      .screen {
+        overflow: hidden;
+        width: 500px;
+        height: 200px;
+        position: relative;
+      }
+
+      .screen li {
+        width: 500px;
+        height: 200px;
+        overflow: hidden;
+        float: left;
+      }
+
+      .screen ul {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 3000px;
+      }
+
+      .all ol {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        line-height: 20px;
+        text-align: center;
+      }
+
+      .all ol li {
+        float: left;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      .all ol li.current {
+        background: yellow;
+      }
+
+      #arr {
+        display: none;
+        z-index: 1000;
+      }
+
+      #arr span {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        margin-top: -20px;
+        background: #000;
+        cursor: pointer;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        font-family: '黑体';
+        font-size: 30px;
+        color: #fff;
+        opacity: 0.3;
+        border: 1px solid #fff;
+      }
+
+      #arr #right {
+        right: 5px;
+        left: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="all" id="box">
+      <div class="screen" id="screen">
+        <ul id="ul">
+          <li><img src="images/wf1.jpg" width="500" height="200" /></li>
+          <li><img src="images/wf2.jpg" width="500" height="200" /></li>
+          <li><img src="images/wf3.jpg" width="500" height="200" /></li>
+          <li><img src="images/wf4.jpg" width="500" height="200" /></li>
+          <li><img src="images/wf5.jpg" width="500" height="200" /></li>
+        </ul>
+        <ol id="ol"></ol>
+      </div>
+      <div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
+    </div>
+    <script>
+      function animate(obj, target, callback) {
+        //   保证点击后只有一个定时器在运行，防止多次点击，浪费内存资源
+        clearInterval(obj.timer)
+        // 以obj.timer来存储,保证定时器的唯一性
+        obj.timer = setInterval(function () {
+          var step = (target - obj.offsetLeft) / 10
+          step = step > 0 ? Math.ceil(step) : Math.floor(step)
+          if (obj.offsetLeft === target) {
+            // console.log('清除了定时器')
+            callback && callback()
+            return clearInterval(obj.timer)
+          }
+          obj.style.left = obj.offsetLeft + step + 'px'
+        }, 15)
+      }
+    </script>
+    <script>
+      var box = document.querySelector('#box')
+      var screen = document.querySelector('#screen')
+      var ul = document.querySelector('#ul')
+      var ulLis = document.querySelectorAll('#ul li')
+      var ol = document.querySelector('ol')
+      var arr = document.querySelector('#arr')
+      var left = document.querySelector('#left')
+      var right = document.querySelector('#right')
+      var screenWidth = screen.offsetWidth
+      var timer
+
+      //   ol获取ul中
+      for (var i = 0; i < ulLis.length; i++) {
+        var liNode = document.createElement('li')
+        liNode.innerHTML = i + 1
+        ol.appendChild(liNode)
+        if (i == 0) liNode.className = 'current'
+      }
+      //   给ol注册点击事件
+      var olLis = ol.children
+      for (var i = 0; i < olLis.length; i++) {
+        olLis[i].setAttribute('data-index', i)
+        olLis[i].addEventListener('click', function () {
+          for (var j = 0; j < olLis.length; j++) {
+            olLis[j].className = ''
+          }
+          var index = this.getAttribute('data-index')
+          num = index
+          count = index
+          olLis[index].className = 'current'
+          animate(ul, -index * screenWidth)
+        })
+      }
+      // 鼠标移动到盒子上，箭头显示出来
+      box.addEventListener('mouseenter', function () {
+        arr.style.display = 'block'
+        // 鼠标移动到盒子上，停止播放
+        clearInterval(timer)
+      })
+      // 鼠标移出盒子外，箭头隐藏
+      box.addEventListener('mouseleave', function () {
+        arr.style.display = 'none'
+        // 鼠标移出盒子外，继续播放
+        timer = setInterval(function () {
+          right.click()
+        }, 2000)
+      })
+      // num用来记录ul中图片且换
+      var num = 0
+      var count = 0
+      //   节流阀标记
+      var flag = true
+      ul.appendChild(ulLis[0].cloneNode(true))
+      right.addEventListener('click', function () {
+        //   节流
+        if (flag) {
+          flag = false
+          //   当切换到第一张时，回到头部
+          if (num >= ul.children.length - 1) {
+            num = 0
+            ul.style.left = 0
+          }
+          num++
+          // 每次点击图片移动距离
+          animate(ul, -num * screenWidth, function () {
+            //   回调函数节流
+            flag = true
+          })
+          // 当count为3的时候会进else循环count++变4
+          if (count >= olLis.length - 1) {
+            count = 0
+          } else {
+            count++
+          }
+          // console.log(count)
+          for (var i = 0; i < olLis.length; i++) {
+            olLis[i].className = ''
+          }
+          olLis[count].className = 'current'
+        }
+      })
+
+      left.addEventListener('click', function () {
+        if (flag) {
+          flag = false
+          //   当左切时，回到尾部
+          if (num <= 0) {
+            num = ul.children.length - 1
+            ul.style.left = -num * screenWidth + 'px'
+          }
+          num--
+          // 每次点击图片移动距离
+          animate(ul, -num * screenWidth, function () {
+            flag = true
+          })
+          // 当count为3的时候会进else循环count++变4
+          if (count <= 0) {
+            count = olLis.length - 1
+          } else {
+            count--
+          }
+          for (var i = 0; i < olLis.length; i++) {
+            olLis[i].className = ''
+          }
+          olLis[count].className = 'current'
+        }
+      })
+
+      //   自动播放功能
+      timer = setInterval(function () {
+        //   新增方法
+        right.click()
+      }, 2000)
+    </script>
+  </body>
+</html>

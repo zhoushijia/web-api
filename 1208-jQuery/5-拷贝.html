@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+      var obj = {
+        id: 1,
+        age: 18,
+        msg: {
+          sex: true
+        }
+      }
+      var target1 = {}
+      var target2 = {}
+      //   简单数据类型会复制数值，复杂数据类型复制地址
+      $.extend(target1, obj)
+      target1.age = 20
+      target1.msg.sex = false
+      console.log(target1, obj)
+      //   简单数据类型会复制数值，复杂数据类型复制数值内容（重新开辟地址）
+      $.extend(true, target2, obj)
+      target2.age = 30
+      target2.msg.sex = true
+      console.log(target2, obj)
+    </script>
+  </body>
+</html>

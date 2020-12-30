@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: orange;
+      }
+      .box {
+        margin: 100px auto;
+        width: 80px;
+        text-align: center;
+        line-height: 40px;
+      }
+      .weibo {
+        width: 80px;
+        height: 40px;
+        color: orange;
+        background-color: #ccc;
+        font-style: italic;
+      }
+      .drop {
+        display: none;
+      }
+      .drop li {
+        width: 80px;
+        height: 40px;
+        border: 1px solid yellow;
+        background-color: #f2f2f2;
+      }
+      /* .drop li:hover {
+        background-color: orange;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="weibo">
+        <a href="javascript:;">微博 <span class="iconfont icon-xiajiantou"></span></a>
+      </div>
+      <ul class="drop">
+        <li>私信</li>
+        <li>评论</li>
+        <li>@我</li>
+      </ul>
+    </div>
+    <script>
+      var blog = document.querySelector('.weibo')
+      // console.log(blog)
+      var drop = document.querySelector('.drop')
+      var lis = document.querySelectorAll('.drop li')
+      blog.onmouseover = function () {
+        drop.style.display = 'block'
+      }
+      drop.onmouseover = function () {
+        this.style.display = 'block'
+      }
+      blog.onmouseout = function () {
+        drop.style.display = 'none'
+      }
+      drop.onmouseout = function () {
+        this.style.display = 'none'
+      }
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].onmouseover = function () {
+          this.style.backgroundColor = 'orange'
+          this.style.color = 'red'
+        }
+        lis[i].onmouseout = function () {
+          this.style.backgroundColor = '#f2f2f2'
+          this.style.color = '#333'
+        }
+      }
+    </script>
+  </body>
+</html>

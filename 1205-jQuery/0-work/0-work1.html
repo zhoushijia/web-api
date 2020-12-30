@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+        <li>以色待人，色衰而爱驰也；以才待人，才进得久</li>
+      </ul>
+    </div>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+      $(function () {
+        fn()
+        $('.box li').hover(
+          function () {
+            $(this).css('backgroundColor', '#f00')
+          },
+          function () {
+            fn()
+          }
+        )
+        function fn() {
+          $('.box li:even').css('backgroundColor', '#0f0')
+          $('.box li:odd').css('backgroundColor', '#00f')
+        }
+        // $('.box li:odd').hover(
+        //   function () {
+        //     $(this).css('backgroundColor', '#f00')
+        //   },
+        //   function () {
+        //     $(this).css('backgroundColor', '#00f')
+        //   }
+        // )
+      })
+    </script>
+  </body>
+</html>

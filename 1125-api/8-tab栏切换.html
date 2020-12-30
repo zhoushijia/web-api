@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+      }
+      .nav {
+        width: 1000px;
+        margin: 100px auto;
+      }
+      .nav .nav-list {
+        height: 30px;
+        background-color: pink;
+      }
+      .nav .nav-list ul li {
+        float: left;
+        width: 100px;
+        height: 30px;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 30px;
+      }
+      .nav .nav-list ul li:nth-child(n + 2) {
+        border-left: none;
+      }
+      .nav .nav-list ul .current {
+        background-color: #f00;
+        color: #fff;
+      }
+      .nav-bd {
+        width: 1000px;
+        background-color: yellow;
+      }
+      .nav-bd div {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-list">
+        <ul>
+          <li class="current">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+      </div>
+      <div class="nav-bd">
+        <div style="display: block">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+    </div>
+    <script>
+      var lis = document.querySelectorAll('.nav-list ul li')
+      var divs = document.querySelectorAll('.nav-bd div')
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].setAttribute('index', i)
+        lis[i].onclick = function () {
+          for (var j = 0; j < lis.length; j++) {
+            lis[j].className = ''
+            divs[j].style.display = 'none'
+          }
+          this.className = 'current'
+          divs[this.getAttribute('index')].style.display = 'block'
+        }
+      }
+    </script>
+  </body>
+</html>

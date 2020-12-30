@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      textarea {
+        resize: none;
+      }
+      ul {
+        width: 400px;
+      }
+      ul li {
+        background-color: skyblue;
+        margin-bottom: 10px;
+      }
+      ul li a {
+        float: right;
+        text-decoration: none;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>发布</button>
+    <ul></ul>
+
+    <script>
+      var ta = document.querySelector('textarea')
+      var btn = document.querySelector('button')
+      var ul = document.querySelector('ul')
+      ul.pa
+      btn.onclick = function () {
+        if (ta.value.trim().length === 0) {
+          ta.value = ''
+          return alert('内容为空')
+        }
+        var li = document.createElement('li')
+        li.innerHTML = `${ta.value}<a href='javascript:;'>删除</a>`
+        ul.insertBefore(li, ul.children[0])
+        ta.value = ''
+        //     获取a标签元素对象  放在点击事件的里面  因为在点击后才产生的a标签  写在外面会获取不到
+        var as = document.querySelectorAll('ul li a')
+        for (var i = 0; i < as.length; i++) {
+          as[i].onclick = function () {
+            if (confirm('确定是否删除')) ul.removeChild(this.parentNode) //   this.parentNode.remove()
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

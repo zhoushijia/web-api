@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="网易云音乐，音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单，识别音乐，收藏，分享音乐，音乐互动，高音质，320K，音乐社交，官网，music.163.com" />
+    <meta name="description" content="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+
+    <title>网易音乐人 - 欢迎所有音乐“妄想”</title>
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="../css/base.css" />
+    <!-- css样式 -->
+    <link rel="stylesheet" href="../css/musician.css" />
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <!-- jQuery 文件 -->
+    <script src="../js/jquery.js"></script>
+    <!-- js文件 -->
+    <script src="../js/musician.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="content">
+            <div class="logo">
+                <a href="javascript:;" title="网易音乐人"><img src="../images/e-logo.jpg" alt="" /></a>
+            </div>
+            <div class="nav">
+                <div class="left">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="javascript:;">常见问题</a></li>
+                        <li class="itm-selected"><a href="javascript:;">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <a href="javascript:;" id="user_avatar"> </a>
+                    <span id="user_name">乐乐的小team</span>
+                    <span class="iconfont icon35_xiangxiajiantou"></span>
+                    <div class="mail">
+                        <a href="javascript:;" id="mail"><span class="iconfont iconyouxiang"></span></a>
+                    </div>
+                </div>
+                <div class="log_out">
+                    <a href="javascript:;">退出登录</a>
+                    <div class="log_top"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- banner区域 -->
+    <div class="banner">
+        <video type="video/mp4" autoplay="autoplay" loop="loop" muted="muted">
+        <!-- <source src="../images/e-video.mp4" type="video/mp4" /> -->
+        <source src="../images/e-video.mp4" type="video/ogg" />
+      </video>
+        <div class="banner_text">
+            <div class="music_text"></div>
+            <div class="music_texe_tow">
+                <p>20w+音乐人的选择&nbsp;&nbsp;中国领先的原创音乐人平台</p>
+            </div>
+            <div class="musician_author">
+                <a href="javascript:;">音乐人</a>
+                <a href="javascript:;">词曲作者</a>
+            </div>
+            <div class="musician_manual">
+                <a href="javascript:;">Apply For Netease Artists</a>
+                <span><i class="iconfont iconai-arrow-down"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- 音乐人区域 -->
+    <div class="musician_content">
+        <div class="musician_content_bgc">
+            <p>20W Artists &nbsp; NetEase</p>
+            <p>20W Artists &nbsp; NetEase</p>
+        </div>
+
+        <div class="musician_content_text">
+            <h1>20W+音乐人已加入</h1>
+        </div>
+        <div class="musician_content_character">
+            <div class="shadow-left"></div>
+            <div class="shadow-right"></div>
+            <ul class="ul_top">
+                <li>
+                    <img src="../images/e-yyr-top-1.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：14首</p>
+                    </div>
+                    <div class="name"><span>接个吻,开一枪</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-2.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：64首</p>
+                    </div>
+                    <div class="name"><span>CMJ</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-3.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：83首</p>
+                    </div>
+                    <div class="name"><span>徐秉龙</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-4.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：44首</p>
+                    </div>
+                    <div class="name"><span>落日飞车</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-5.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：223首</p>
+                    </div>
+                    <div class="name"><span>花粥</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-6.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：54首</p>
+                    </div>
+                    <div class="name"><span>刘思鉴</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-7.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：48首</p>
+                    </div>
+                    <div class="name"><span>Jony J</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-8.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：45首</p>
+                    </div>
+                    <div class="name"><span>福克斯（胡天渝）</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-9.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：59.4万</p>
+                        <p>作品：46首</p>
+                    </div>
+                    <div class="name"><span>陈壹千</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-1.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：14首</p>
+                    </div>
+                    <div class="name"><span>接个吻,开一枪</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-2.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：64首</p>
+                    </div>
+                    <div class="name"><span>CMJ</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-3.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：83首</p>
+                    </div>
+                    <div class="name"><span>徐秉龙</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-4.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：44首</p>
+                    </div>
+                    <div class="name"><span>落日飞车</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-5.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：223首</p>
+                    </div>
+                    <div class="name"><span>花粥</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-6.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：54首</p>
+                    </div>
+                    <div class="name"><span>刘思鉴</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-7.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：48首</p>
+                    </div>
+                    <div class="name"><span>Jony J</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-8.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：219.6万</p>
+                        <p>作品：45首</p>
+                    </div>
+                    <div class="name"><span>福克斯（胡天渝）</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-top-9.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：59.4万</p>
+                        <p>作品：46首</p>
+                    </div>
+                    <div class="name"><span>陈壹千</span></div>
+                </li>
+            </ul>
+            <!-- 下面的ul -->
+            <ul class="ul_bottom">
+                <li>
+                    <img src="../images/e-yyr-1.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：56.4万</p>
+                        <p>作品：29首</p>
+                    </div>
+                    <div class="name"><span>啊冗</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-2.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：139.5万</p>
+                        <p>作品：50首</p>
+                    </div>
+                    <div class="name"><span>要不要买菜</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-3.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：14.7万</p>
+                        <p>作品：66首</p>
+                    </div>
+                    <div class="name"><span>张叶蕾</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-4.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：108.4万</p>
+                        <p>作品：77首</p>
+                    </div>
+                    <div class="name"><span>邵帅</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-5.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：60.3万</p>
+                        <p>作品：91首</p>
+                    </div>
+                    <div class="name"><span>葛东棋</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-6.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：293.7万</p>
+                        <p>作品：66首</p>
+                    </div>
+                    <div class="name"><span>房东的猫</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-7.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：34.7万</p>
+                        <p>作品：39首</p>
+                    </div>
+                    <div class="name"><span>木小雅</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-8.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：18.7万</p>
+                        <p>作品：23首</p>
+                    </div>
+                    <div class="name"><span>松柏</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-9.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：231.5万</p>
+                        <p>作品：57首</p>
+                    </div>
+                    <div class="name">
+                        <span>颜人中</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-1.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：56.4万</p>
+                        <p>作品：29首</p>
+                    </div>
+                    <div class="name"><span>啊冗</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-2.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：139.5万</p>
+                        <p>作品：50首</p>
+                    </div>
+                    <div class="name"><span>要不要买菜</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-3.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：14.7万</p>
+                        <p>作品：66首</p>
+                    </div>
+                    <div class="name"><span>张叶蕾</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-4.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：108.4万</p>
+                        <p>作品：77首</p>
+                    </div>
+                    <div class="name"><span>邵帅</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-5.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：60.3万</p>
+                        <p>作品：91首</p>
+                    </div>
+                    <div class="name"><span>葛东棋</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-6.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：239.7万</p>
+                        <p>作品：66首</p>
+                    </div>
+                    <div class="name"><span>房东的猫</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-7.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：34.7万</p>
+                        <p>作品：39首</p>
+                    </div>
+                    <div class="name"><span>木小雅</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-8.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：18.7万</p>
+                        <p>作品：23首</p>
+                    </div>
+                    <div class="name"><span>松柏</span></div>
+                </li>
+                <li>
+                    <img src="../images/e-yyr-9.webp" alt="" class="img_seover" />
+                    <div class="img_details">
+                        <p>粉丝：231.5万</p>
+                        <p>作品：57首</p>
+                    </div>
+                    <div class="name"><span>颜人中</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 音乐事业,发行区域 -->
+    <div class="music_distribution_cause">
+        <div class="music_cause">
+            <h1>
+                这里为起点 <br /> 开启你的音乐事业
+            </h1>
+        </div>
+        <div class="music_distribution">
+            <h1>音乐发行</h1>
+            <p>全网领先的一站式发行服务，护航你的音乐之路</p>
+        </div>
+        <div class="music_details">
+            <ul>
+                <li>
+                    <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627445572/7c24/7ebb/c2ac/491ebb6c758e71cf1c799f94fbb22cc2.png?imageView&thumbnail=86x86&type=webp" alt="" />
+                    <h3>自主发行</h3>
+                    <p>作品发布简单快捷</p>
+                    <p>第一时间跟粉丝分享你的音乐</p>
+                </li>
+                <li>
+                    <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627445464/227f/c7ce/df8c/be04c6bc030ad5eb5986fc2bb1f4b59b.png?imageView&thumbnail=86x86&type=webp" alt="" />
+                    <h3>数据管理</h3>
+                    <p>丰富全面的数据分析</p>
+                    <p>每一步成长尽在掌握</p>
+                </li>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627445394/dabc/7168/4331/8904840d49c7c61d6651e8d293e8390e.png?imageView&thumbnail=86x86&type=webp" alt="" />
+                    <h3>宣发推广</h3>
+                    <p>独创自主推广体系</p>
+                    <p>平台流量加持助力推广</p>
+                </li>
+                <li>
+                    <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627445353/4ab6/7071/16fc/811a2b5e0a8b3178381ed6901a645fe6.png?imageView&thumbnail=86x86&type=webp" alt="" />
+                    <h3>便捷结算</h3>
+                    <p>收益稳定入账</p>
+                    <p>每月自动提现无需费心</p>
+                </li>
+                <li>
+                    <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627445535/96f2/a1bf/d85f/e3f354aa745f1ba57f08da14b56ac9e5.png?imageView&thumbnail=86x86&type=webp" alt="" />
+                    <h3>签约合作</h3>
+                    <p>专业版权合作</p>
+                    <p>享受专属特权层层加码</p>
+                </li>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627445501/b5fb/7550/ba0b/4106c45831e80aa39fcc600fcf81b4ac.png?imageView&thumbnail=86x86&type=webp" alt="" />
+                    <h3>版权保护</h3>
+                    <p>一站式原创保护</p>
+                    <p>做你原创力的捍卫者</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 粉丝积累 区域-->
+    <div class="fans_accumulation">
+        <div class="bgc1">
+            <div class="fans_accumulation_title">
+                <h1>粉丝累计</h1>
+                <p>强大的智能推广机制,让你的每一首作品都又回音</p>
+            </div>
+            <div class="bgc2">
+                <div class="bgc3">
+                    <img src="../images/e-fs01.png" alt="" class="img" />
+                    <div class="img1"><img src="../images/e-fspos01.png" alt="" /></div>
+                    <div class="img2"><img src="../images/e-fspos02.png" alt="" /></div>
+                    <div class="img3"><img src="../images/e-fspos03.png" alt="" /></div>
+                    <div class="img4"><img src="../images/e-fspos04.png" alt="" /></div>
+                    <div class="img5"><img src="../images/e-fspos05.png" alt="" /></div>
+                    <div class="img6"><img src="../images/e-fspos06.png" alt="" /></div>
+                    <div class="img7"><img src="../images/e-fspos07.png" alt="" /></div>
+                    <div class="img8"><img src="../images/e-fspos08.png" alt="" /></div>
+                    <div class="bgc4">
+                        <div class="bgc5">
+                            <div class="bgc6">
+                                <div class="bgc7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 获得收益 区域-->
+    <div class="gain_revenue">
+        <div class="gain_revenue_title">
+            <h1>获得收益</h1>
+            <p>云梯计划助推多渠道变现，全面兑现你的作品价值</p>
+        </div>
+        <div class="gain_revenue_content">
+            <ul>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627447163/c7f7/4cac/f8d4/6513a96bc797d6bc75157d0227892a6f.png?imageView&thumbnail=40x40&type=webp" alt="" />
+                    <div>
+                        <h4>点播分成</h4>
+                        <p>作品根据播放情况获得分成</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627446984/c4df/d297/2905/16a8768f4cefe029af3449e2ea97824d.png?imageView&thumbnail=40x40&type=webp" alt="" />
+                    <div>
+                        <h4>会员包收益</h4>
+                        <p>作品加入会员付费包获得分成</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627447318/e87e/fbed/d9c9/abf3fa834e48f33f8a7fd1131225b1e7.png?imageView&thumbnail=40x40&type=webp" alt="" />
+                    <div>
+                        <h4>赞赏收入</h4>
+                        <p>作品加入赞赏计划，获得用户打赏</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627447122/21cd/9d3d/69ce/d9476191f99c157a6e4a80eed0793fd8.png?imageView&thumbnail=40x40&type=webp" alt="" />
+                    <div>
+                        <h4>数字专辑</h4>
+                        <p>专辑以数字内容形式售卖获得收入</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627447280/c246/1eb7/fa61/ba68eafeccba5deb139e442f2418e761.png?imageView&thumbnail=40x40&type=webp" alt="" />
+                    <div>
+                        <h4>词曲交易</h4>
+                        <p>经平台达成词曲版权交易获得收益</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627447076/3334/06ca/6b53/225819459164ae4de7c3c2d724128f61.png?imageView&thumbnail=40x40&type=webp" alt="" />
+                    <div>
+                        <h4>广告分成</h4>
+                        <p>通过评论区广告获得分成收益</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627447219/bcf2/4b33/bdd1/691836a7986c068e60800a036afe45eb.png?imageView&thumbnail=40x40&type=webp" alt="" />
+                    <div>
+                        <h4>直播打赏</h4>
+                        <p>通过直播，获取礼物分成</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627447029/718b/e138/46d9/900df34e6feea18784408aebff45368e.png?imageView&thumbnail=40x40&type=webp" alt="" />
+                    <div>
+                        <h4>商业化合作</h4>
+                        <p>通过平台进行商业化合作获得收益</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="gain_revenue_img">
+            <img src="../images/e-mobile_phone-1.webp" alt="" />
+            <img src="../images/e-mobile_phone-2.webp" alt="" />
+            <img src="../images/e-mobile_phone-3.webp" alt="" />
+        </div>
+    </div>
+    <!-- 创新功能 区域-->
+    <div class="innovative_function">
+        <div class="innovative_function_title">
+            <h1>
+                独家创新功能<br /> 扩宽你的音乐“赛道”
+            </h1>
+        </div>
+        <div class="innovative_function_content">
+            <ul>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4525275198/ec73/f78b/24e9/62605e1d1d6502912d0e970acceb1574.png" alt="" />
+                    <div class="innovative_function_content1">
+                        <h3>智能创作</h3>
+                        <h4>全天候音乐参谋，为你的创作助力</h4>
+                        <span></span>
+                        <p>AI 智能作曲</p>
+                        <p>Amped 在线制作</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4522652027/a9c7/bc9b/150a/bff34fd39fe99280571edae46400bbd8.png" alt="" />
+                    <div class="innovative_function_content2">
+                        <h3>音乐人课程</h3>
+                        <h4>业界名师坐镇，专业课程人人可享</h4>
+                        <span></span>
+                        <p>《音乐人进阶指南》</p>
+                        <p>《音乐大师课》</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4525275030/2b81/2a9c/533c/cdd9d7820fcfa0d30ef10a6a6d248b02.png" alt="" />
+                    <div class="innovative_function_content3">
+                        <h3>全球发行</h3>
+                        <h4>专业服务支持，将你的音乐传播世界</h4>
+                        <span></span>
+                        <p>AppleMusic、YouTube、KKBOX</p>
+                        <p>MyMusic、friDay + More</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4525275055/e647/a47a/4833/038f8dc9b9fc7d3a809d1ec42533b41f.png" alt="" />
+                    <div class="innovative_function_content4">
+                        <h3>词曲服务</h3>
+                        <h4>打破壁垒，全面赋能你的原创事业</h4>
+                        <span></span>
+                        <p>作品认领、词曲收益、词曲交易</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 扶持计划 区域 -->
+    <div class="support_plan">
+        <div class="support_plan_title">
+            <h1>
+                多元扶持计划 <br /> 实现你的音乐“妄想”
+            </h1>
+        </div>
+        <div class="support_plan_content">
+            <ul class="tab">
+                <li>
+                    <div class="tab_title1 qh" style="background-position: left center; color: red"></div>
+                    <img src="../images/e-support.png" alt="" class="subscript" style="display: block" />
+                </li>
+                <li>
+                    <div class="tab_title2 qh"></div>
+                    <img src="../images/e-support.png" alt="" class="subscript" />
+                </li>
+                <li>
+                    <div class="tab_title3 qh"></div>
+                    <img src="../images/e-support.png" alt="" class="subscript" />
+                </li>
+                <li>
+                    <div class="tab_title4 qh"></div>
+                    <img src="../images/e-support.png" alt="" class="subscript" />
+                </li>
+                <li>
+                    <div class="tab_title5 qh">更多企业</div>
+                    <img src="../images/e-support.png" alt="" class="subscript" />
+                </li>
+            </ul>
+            <div class="tab_content">
+                <div class="tab_content1 nr">
+                    <div class="tab_content_tltle">
+                        <h2>石头计划</h2>
+                        <p>国内极具影响力的音乐人扶持计划，为你提供全方位、创新性和系统性的扶持</p>
+                    </div>
+                    <div class="tab_content_ctt">
+                        <ul>
+                            <li>
+                                <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524843118/dc91/5d85/8b3c/3e34b0bcfafb56e81d8c22fa7203e919.jpg?imageView&thumbnail=230x230&type=webp" alt="" />
+                                <div class="img_describe">
+                                    <p>木小雅</p>
+                                    <p>《可能否》</p>
+                                    <p>火爆全网</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524843082/46f8/1c47/b574/4081f75b819d4c3d7b278fd34f9e9453.jpg?imageView&thumbnail=230x230&type=webp" alt="" />
+                                <div class="img_describe">
+                                    <p>裘德</p>
+                                    <p>《颁奖的时候我要缺席》</p>
+                                    <p>入围金曲奖</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524843033/60cc/e5d0/9eb6/c6579bb299d5eb94bec5d89d4da45356.jpg?imageView&thumbnail=230x230&type=webp" alt="" />
+                                <div class="img_describe">
+                                    <p>夏日入侵企画</p>
+                                    <p>《人生浪费指南》</p>
+                                    <p>解锁9999+</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524842992/afc4/d0a9/43bf/b25c41c7a45b658f3304acf1aa818943.jpg?imageView&thumbnail=230x230&type=webp" alt="" />
+                                <div class="img_describe">
+                                    <p>文兆杰</p>
+                                    <p>《呼吸》</p>
+                                    <p>人生首支录音室作品</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab_content2 nr">
+                    <div class="tab_content2_title">
+                        <h1>星辰集·词曲创作大赛</h1>
+                        <p>大型词曲创作评选活动，赋予词曲创作以生命，点亮音乐宇宙</p>
+                    </div>
+                    <div class="tab_content2_starj">
+                        <ul>
+                            <li>
+                                <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524842535/2ccd/d47b/ac6c/601aa7e0c999909a6b215a8486e97d63.jpg?imageView&thumbnail=230x230&type=webp" alt="" />
+                                <p>词曲素人实现为偶像写歌的梦想</p>
+                                <p>金玟岐《憾》</p>
+                            </li>
+                            <li>
+                                <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524842482/b150/6d9d/02ba/30f83ddc5500f9d80a56b1a8daa16295.jpg?imageView&thumbnail=230x230&type=webp" alt="" />
+                                <p>现象级人气单曲 双赢的爆款制造</p>
+                                <p>颜人中《晚安》</p>
+                            </li>
+                            <li>
+                                <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524842427/d35d/235b/776a/a17871483bec76c2ecff237ed7e01f55.jpg?imageView&thumbnail=230x230&type=webp" alt="" />
+                                <p>珠联璧合 献唱来不及的告别</p>
+                                <p>房东的猫《今夜的江滩公园没有烟花跨年》</p>
+                            </li>
+                            <li>
+                                <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524842388/75ff/e3a4/eb49/0738061ab6167b570c63d7e26685c8ae.jpg?imageView&thumbnail=230x230&type=webp" alt="" />
+                                <p>偶像歌手携手独立音乐人的完美合作</p>
+                                <p>朱星杰《感冒万岁》</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab_content3 nr">
+                    <div class="tab_content3_title">
+                        <h1>硬地围炉夜</h1>
+                        <p>国内首个大型原创音乐人年度盛典，向原创致敬</p>
+                    </div>
+                    <div class="tab_content3_img">
+                        <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627468376/8202/6190/eb38/4486eb15e0261cd27376ec3b4cb61895.png?imageView&thumbnail=507x316&type=webp" alt="" />
+                        <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627468289/9212/e27c/67a1/6498f3c81171c3b80199eb9a0c519a75.png?imageView&thumbnail=507x316&type=webp" alt="" />
+                    </div>
+                </div>
+                <div class="tab_content4 nr">
+                    <div class="tab_content4_title">
+                        <h1>硬地原创音乐榜</h1>
+                        <p>国内首个非数据导向原创音乐榜，发掘华语原创音乐更多可能</p>
+                    </div>
+                    <div class="tab_content4_img">
+                        <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524842141/1034/4743/00e3/a57bffce1af8cb847aa421ca74da3131.jpg?imageView&thumbnail=322x322&type=webp" alt="" />
+                        <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4627468341/efec/5e7b/fdd8/8eb3b0e9e7a2cec08c26cbab3dfad89d.png?imageView&thumbnail=322x322&type=webp" alt="" />
+                        <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524842029/fe91/d369/c3c5/af8682d506480e46ca828b0a923988a6.jpg?imageView&thumbnail=322x322&type=webp" alt="" />
+                    </div>
+                </div>
+                <div class="tab_content5 nr">
+                    <ul>
+                        <li>
+                            <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524841977/bd93/b91d/4297/1038ae4bf30e79c556fe21009eaa6fd2.jpg?imageView&thumbnail=322x189&type=webp" alt="" />
+                            <p>聚焦国风</p>
+                        </li>
+                        <li>
+                            <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524841937/40be/5d6a/6dfe/e7cd4c14a56c247c3a53d08acdd90e22.jpg?imageView&thumbnail=322x189&type=webp" alt="" />
+                            <p>经典复刻</p>
+                        </li>
+                        <li>
+                            <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524841833/c77e/6f34/3c3c/e6956c6cc15f958f250681cb6b8c2a82.jpg?imageView&thumbnail=322x189&type=webp" alt="" />
+                            <p>泛二次元</p>
+                        </li>
+                        <li>
+                            <img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524841769/03e6/379c/d64b/9fe1025611446d07dbf7558654d0485a.jpg?imageView&thumbnail=322x189&type=webp" alt="" />
+                            <p>复古电子</p>
+                        </li>
+                        <li>
+                            <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4524841719/24c0/afa8/036a/dd5c7381a93280148512dba425b167c2.jpg?imageView&thumbnail=322x189&type=webp" alt="" />
+                            <p>LIVE直播</p>
+                        </li>
+                        <li>
+                            <p>敬请期待</p>
+                            <p>......</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main区域 -->
+    <div class="musician_main">
+        <div class="musician_main_title">
+            <h1>
+                开启你的音乐事业<br /> 实现所有音乐"妄想"
+            </h1>
+        </div>
+        <div class="musician_main_left">
+            <a href="javascript:;">音乐人</a>
+        </div>
+        <div class="musician_main_right">
+            <a href="javascript:;"> 词曲作者 </a>
+        </div>
+    </div>
+    <!-- 页脚区域 -->
+    <div class="floor">
+        <div class="floor_content">
+            <div class="floor_content_logo">
+                <a href="javascript:;"></a>
+            </div>
+            <div class="floor_content_copyright">
+                <div class="copyright_left">
+                    <p>网易公司版权所有©1997-2020杭州乐读科技有限公司运营</p>
+                    <p>浙网文[2018]3506-263号 &nbsp;粤B2-20090191-18&nbsp; 工业和信息化部备案管理系统网站</p>
+                </div>
+                <ul class="copyright_right">
+                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">隐私政策</a></li>
+                    <li><a href="javascript:;">服务条款</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

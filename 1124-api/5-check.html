@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- type、value、checked、selected、disabled -->
+    <button>按钮</button>
+    <hr />
+    <input type="checkbox" name="" id="" />
+    <!-- <select name="" id="" selected></select> -->
+    <script>
+      var btn = document.querySelector('button')
+      var input = document.querySelector('input')
+
+      btn.onclick = function () {
+        btn.disabled = true //  按钮在点击一次之后就会瘫痪，不能再使用
+        input.checked = input.checked ? false : true
+      }
+    </script>
+  </body>
+</html>

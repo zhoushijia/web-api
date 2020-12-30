@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+      $(function () {
+        var divs = $('div')
+        // jQuery对象转换成DOM对象
+        divs[0].innerHTML = '我是jQuery对象通过数组下标获得的'
+        divs.click(function () {
+          // 这里的this是DOM对象
+          this.style.backgroundColor = '#00f'
+          //   通过$(DOM对象名)将DOM对象转换成jQuery对象
+          $(this).css('color', '#fff')
+        })
+      })
+    </script>
+  </body>
+</html>

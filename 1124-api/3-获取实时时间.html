@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .time {
+        display: inline-block;
+        width: 300px;
+        height: 30px;
+        border: 1px solid #000;
+        line-height: 30px;
+        background-color: skyblue;
+        color: red;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button>点击改变时间</button>
+    <div class="time"></div>
+    <script>
+      var time = document.querySelector('.time')
+      time.innerHTML = getMyDate()
+      var btn = document.querySelector('button')
+      btn.onclick = function () {
+        time.innerHTML = getMyDate()
+      }
+
+      function getMyDate() {
+        var myDate = new Date()
+        var year = myDate.getFullYear()
+        var month = zeroFill(myDate.getMonth() + 1)
+        var d = zeroFill(myDate.getDate())
+        var hours = zeroFill(myDate.getHours())
+        var minutes = zeroFill(myDate.getMinutes())
+        var seconds = zeroFill(myDate.getSeconds())
+        return year + '-' + month + '-' + d + ' ' + hours + ':' + minutes + ':' + seconds
+      }
+
+      function zeroFill(m) {
+        return m < 10 ? '0' + m : m
+      }
+    </script>
+  </body>
+</html>

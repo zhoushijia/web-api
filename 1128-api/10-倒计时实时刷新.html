@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      div {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hours">1</div>
+    <div class="minutes">2</div>
+    <div class="seconds">3</div>
+    <script>
+      var hours = document.querySelector('.hours')
+      var minutes = document.querySelector('.minutes')
+      var seconds = document.querySelector('.seconds')
+      function deltaTime(time) {
+        var myDate = new Date()
+        var now = myDate.getTime()
+        var futureDate = new Date(time)
+        var futureTime = futureDate.getTime()
+        var deltaSeconds = (futureTime - now) / 1000
+        var h = parseInt((deltaSeconds / 60 / 60) % 24)
+          .toString()
+          .padStart(2, 0)
+        var m = parseInt((deltaSeconds / 60) % 60)
+          .toString()
+          .padStart(2, 0)
+        var s = parseInt(deltaSeconds % 60)
+          .toString()
+          .padStart(2, 0)
+        hours.innerHTML = h
+        minutes.innerHTML = m
+        seconds.innerHTML = s
+      }
+      deltaTime('2020-11-29 12:00:00')
+      setInterval("deltaTime('2020-11-29 12:00:00')", 1000)
+    </script>
+  </body>
+</html>

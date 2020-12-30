@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        color: blue;
+        border: 1px solid orange;
+        background-color: #ccc;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <!-- 1是全选 -->
+        <!-- 红色表示选中  蓝色表示未选中 -->
+        <li>1是全选</li>
+        <!-- 2345是子选项 -->
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <script>
+      // 模仿input中checked的功能
+
+      var all = document.querySelector('.box ul li:nth-child(1)')
+      // console.log(all) //测试用
+      var lis = document.querySelectorAll('.box ul li:nth-child(n+2)')
+      //  自定义类似checked的标签属性  这里使用flag
+      all.setAttribute('flag', 0)
+      // 统计子项中选中次数
+      var count = 0
+
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].setAttribute('flag', 0)
+      }
+
+      all.onclick = function () {
+        // 模拟点击时checked属性的变换  Number 强转数字  不然是字符串,并且flag属性值会一直是字符串'0'
+        // 1表示选中   0 表示未选中   红色表示选中  蓝色表示未选中
+        all.setAttribute('flag', Number(all.getAttribute('flag')) ? 0 : 1)
+        // var f = all.getAttribute('flag')   //测试用
+        // console.log(f) //测试用
+        for (var i = 0; i < lis.length; i++) {
+          lis[i].setAttribute('flag', all.getAttribute('flag'))
+          // 以下: 以标签内颜色变化来代替checked选择切换的效果
+          if (lis[i].getAttribute('flag') == 1) {
+            lis[i].style.color = 'red'
+          } else {
+            lis[i].style.color = 'blue'
+          }
+        }
+        if (all.getAttribute('flag') == 1) {
+          this.style.color = 'red'
+          // 全选时, 四个子项都应该被选中, 则count赋值为4
+          count = 4
+        } else {
+          this.style.color = 'blue'
+          // 全选时, 四个子项都应该被选中, 则count赋值为0
+          count = 0
+        }
+      }
+
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].onclick = function () {
+          // 模拟点击时checked属性的变换  Number 强转数字  不然是字符串,并且flag属性值会一直是字符串'0'
+          this.setAttribute('flag', Number(this.getAttribute('flag')) ? 0 : 1)
+
+          if (this.getAttribute('flag') == 1) {
+            this.style.color = 'red'
+            count++
+          } else {
+            //这里的else不能省略 否则count只增不减
+            this.style.color = 'blue'
+            count--
+          }
+
+          // console.log('子项选中次数' + count)
+          if (count === 4) all.style.color = 'red'
+          else all.style.color = 'blue'
+        }
+      }
+    </script>
+  </body>
+</html>

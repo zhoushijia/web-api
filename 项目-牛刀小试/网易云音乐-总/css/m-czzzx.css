@@ -1,0 +1,157 @@
+.bd-full {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+    margin-top: 60px;
+}
+
+.bd-full .creator-title {
+    color: #000;
+    font-size: 60px;
+    /* 设置 div 元素的不透明级别 */
+    opacity: 0.8;
+    margin-bottom: 12px;
+    font-weight: 300;
+}
+
+.bd-full .creator-subtitle {
+    font-size: 14px;
+    color: #000000;
+    opacity: 0.4;
+    /* letter-spacing 属性增加或减少字符间的空白（字符间距）。 */
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.creator-box {
+    width: 100%;
+    margin-top: 50px;
+    /* margin-left: 130px; */
+}
+
+.creator-box-wrap {
+    float: left;
+    width: 300px;
+    height: 223px;
+    margin-bottom: 24px;
+    font-size: 0;
+}
+
+.creator-box-wrap .creator-box-a {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 223px;
+    border-radius: 8px;
+    transition: box-shadow 500ms;
+}
+
+.creator-box-wrap .creator-box-a {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 223px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 500ms;
+}
+
+.creator-box-wrap .creator-typename {
+    position: absolute;
+    opacity: 0.8;
+    font-size: 26px;
+    color: #000000;
+    top: 123px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.creator-box-wrap .creator-intro {
+    position: absolute;
+    opacity: 0.6;
+    font-size: 16px;
+    color: #000000;
+    top: 166px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 200;
+}
+
+.creator-box-wrap .creator-box-bg1 {
+    background-image: url(../images/a-4.svg);
+    position: absolute;
+    width: 100%;
+    top: 22px;
+    height: 95px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.creator-box-wrap .creator-box-bg2 {
+    background-image: url(../images/a-2.svg);
+    position: absolute;
+    width: 100%;
+    top: 22px;
+    height: 95px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.creator-box-wrap .creator-box-bg3 {
+    background-image: url(../images/a-3.svg);
+    position: absolute;
+    width: 100%;
+    top: 22px;
+    height: 95px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.creator-company {
+    position: relative;
+    width: 950px;
+    height: 106px;
+    margin: 0 auto;
+    background: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    clear: both;
+}
+
+.creator-company a {
+    text-decoration: none;
+}
+
+.creator-company .creator-company-desc {
+    float: left;
+    width: 700px;
+    font-size: 27px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.creator-company .creator-company-title {
+    float: left;
+    width: 700px;
+    font-size: 15px;
+    word-wrap: 400;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.creator-company .creator-company-enter {
+    position: absolute;
+    float: right;
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    border-radius: 30px;
+    width: 88px;
+    height: 30px;
+    background: #fff;
+    line-height: 30px;
+    font-size: 12px;
+    color: #000000;
+    transition: all 500ms;
+    margin: -15px 109px -9px 51px;
+}

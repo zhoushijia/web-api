@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <input type="checkbox" name="" id="checkall" />全选 <button>反选</button>
+      <br />
+      <ul>
+        <li><input type="checkbox" name="" class="check" />张三</li>
+        <li><input type="checkbox" name="" class="check" />李四</li>
+        <li><input type="checkbox" name="" class="check" />麻子</li>
+      </ul>
+    </div>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+      // 要求1：点击全选的checkbox，让下面所有人名前的checkbox的选中状态和全选的一致
+      $('#checkall').on('click', function () {
+        $('.check').prop('checked', $(this).prop('checked'))
+      })
+      // 要求2：点击反选按钮，所有人名前的checkbox的选中状态取反
+      $('button').on('click', function () {
+        $('.check').each(function (index, dom) {
+          $(this).prop('checked', !$(this).prop('checked'))
+        })
+        all()
+      })
+      // 要求3：点击所有人名前的checkbox，判断全选的选中状态
+      $('.check').on('click', function () {
+        all()
+      })
+
+      //   判断子项是否全部被选中
+      function all() {
+        var checkedLength = $('.check:checked').length
+        $('#checkall').prop('checked', checkedLength === $('.check').length)
+      }
+    </script>
+  </body>
+</html>

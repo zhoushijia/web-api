@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="网易云音乐，音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单，识别音乐，收藏，分享音乐，音乐互动，高音质，320K，音乐社交，官网，music.163.com" />
+    <meta name="description" content="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../iconfont/iconfont.css" />
+    <link rel="stylesheet" href="../css/friends.css" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/friends.js"></script>
+</head>
+
+<body>
+    <!-- 头部制作开始 -->
+    <header>
+        <div class="wrap">
+            <h1 class="logo">
+                <a href="../index.html">网易云音乐</a>
+            </h1>
+            <ul class="m-nav">
+                <li>
+                    <a href="../index.html"><em>发现音乐</em><sub class="cor" style="display: none"></sub></a>
+                </li>
+                <li>
+                    <a href="myMusic.html"><em>我的音乐</em><sub class="cor" style="display: none"></sub></a>
+                </li>
+                <li>
+                    <a href="friends.html" class="z-slt"><em>朋友</em><sub class="cor"></sub></a>
+                </li>
+                <li>
+                    <a href="shopping.html" target="_blank"><em>商城</em><sub class="cor" style="display: none"></sub></a>
+                </li>
+                <li>
+                    <a href="musician.html" target="_blank"><em>音乐人</em><sub class="cor" style="display: none"></sub></a>
+                </li>
+                <li class="last">
+                    <a href="app.html"><em>下载客户端</em><sub class="cor" style="display: none"></sub></a>
+                    <sup class="hot"></sup>
+                </li>
+            </ul>
+            <div class="userBox">
+                <div class="user">
+                    <img src="../images/user.jpg" alt="" />
+                    <i>4</i>
+                </div>
+                <div class="userinfo">
+                    <ul>
+                        <li>
+                            <a href="javascript:;"><i class="icn icn-hm"></i> <em>我的主页</em></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icn icn-msg"></i>
+                                <em>我的消息</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icn icn-lv"></i>
+                                <em>我的等级</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icn icn-mbr"></i>
+                                <em>VIP会员</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icn icn-st"></i>
+                                <em>个人设置</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icn icn-verify"></i>
+                                <em>实名认证</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icn icn-ex"></i>
+                                <em>退出</em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="javascript:;" class="creator">创作者中心</a>
+            <div class="search">
+                <div class="searchInfo">
+                    <span class="parent">
+              <input type="text" class="txt" placeholder="音乐/视频/电台/用户" />
+            </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 下部分主体 -->
+    <div class="bd">
+        <!-- 左边评论区 -->
+        <div class="trends">
+            <!-- 评论区头部 -->
+            <div class="trends-hd">
+                <h3>动态</h3>
+                <span class="s-video"><a href="javascript:;"></a></span>
+                <span class="d-trends"><a href="javascript:;"></a></span>
+            </div>
+            <!-- 动态评论框 -->
+            <div class="s-video1">
+                <div class="s-video1-hd">
+                    <h4>分享</h4>
+                    <i></i>
+                </div>
+                <div class="s-video1-bd">
+                    <div class="tex">
+                        <textarea name="" id="" cols="30" rows="10">一起聊聊吧~</textarea>
+                        <div class="music">
+                            <i><img src="../images/g-music.png" alt="" /></i>
+                            <span>给动态配上音乐</span>
+                            <i class="add"></i>
+                        </div>
+                    </div>
+                    <div class="emojy">
+                        <i class="smile"></i>
+                        <i class="aite"></i>
+                        <span>140</span>
+                    </div>
+                    <div class="share">
+                        <a href="javascript:;">分享</a>
+                        <a href="javascript:;">取消</a>
+                        <span>同时分享到: <i class="iconfont icon-weibo"></i><i class="douban"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 评论区头部结束 -->
+            <!-- 评论区楼部 -->
+            <div class="trend-bd">
+                <ul>
+                    <!-- 一楼 -->
+                    <li class="content-01">
+                        <div class="faces-01">
+                            <a href="javascript:;"><img src="../images/g-m.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-01">
+                            <div class="id-01">
+                                <a href="javascript:;">网易云音乐</a>
+                            </div>
+                            <div class="time-01">
+                                <a href="javascript:;">38分钟前</a>
+                            </div>
+                            <div class="text-01">最近爆火了<a href="javascript:;" class="key">#凡尔赛文学#</a> ，即一些精神贵族人士致力于发表低调和不经意间炫耀的言论。这几天空虚小编不眠不休编篡出了一册华语金曲凡学教材。大家来试试能答对几道题呢？<img src="../images/g-smile.png" alt="" /> 欢迎点进来云村本期<a href="javascript:;" class="key">#探索贫道#</a> 策划<img
+                                    src="../images/g-gui.png" alt="" /> >><a href="javascript:;" class="key">网页链接</a></div>
+                            <div class="picture-01">
+                                <img src="../images/g-f.jpg" alt="" />
+                            </div>
+                            <div class="doper-01">
+                                <a href="javascript:;"><i></i>(282)</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发(7)</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论(18)</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 二楼 -->
+                    <li class="content-02">
+                        <div class="faces-02">
+                            <a href="javascript:;"><img src="../images/g-1.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-02">
+                            <div class="id-02">
+                                <a href="javascript:;">今天吃奶油了吗_</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-02">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-02">不怎么样的爱情,我舍不去</div>
+                            <div class="audio-02">
+                                <div class="translate-02">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-02">
+                                    <a href="javascript:;" class="song">什么样的爱情 (翻自 张阳阳)</a><br />
+                                    <a href="javascript:;" class="singer">爱与六便士</a>
+                                </div>
+                            </div>
+                            <div class="doper-02">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;" class="comment">评论</a>
+                            </div>
+                        </div>
+                        <!-- 二楼评论展开部分 -->
+                        <div class="show">
+                            <textarea name="" class="txt" cols="30" rows="10" placeholder="评论" id="txt"></textarea>
+                            <div class="btn">
+                                <i class="iconfont icon-xiaolian"></i>
+                                <i class="iconfont icon-aite"></i>
+
+                                <a class="sub">评论</a>
+                                <span>140</span>
+                            </div>
+                            <h3>精彩评论</h3>
+                            <div class="show-01">
+                                <img src="../images/g-pr1.jpg" alt="" />
+                                <div class="show-01-right"><a href="javascript:;">小香橙呐 :</a>这首歌也太好听了吧!!强推!</div>
+                            </div>
+                            <div class="rp-01">
+                                <span>11月27日 22:28</span>
+                                <a href="javascript:;"><i></i>(26)</a>
+                                <span>|</span>
+                                <a href="javascript:;">回复</a>
+                            </div>
+                            <div class="show-01">
+                                <img src="../images/g-pr2.jpg" alt="" />
+                                <div class="show-01-right"><a href="javascript:;">浮世- :</a>我明明很善良，会给乞丐钱，坐车会给老人孕妇让座，对爱自己的人也很好，总是知道滴水之恩当涌泉相报，无论做什么我都会说谢谢，考虑他人，可为什么世间万般苦，没有一件事放过我。</div>
+                            </div>
+                            <div class="rp-02 rp-01">
+                                <span>11月27日 22:28</span>
+                                <a href="javascript:;"><i></i>(26)</a>
+                                <span>|</span>
+                                <a href="javascript:;">回复</a>
+                            </div>
+                            <div class="show-01">
+                                <img src="../images/g-pr3.jpg" alt="" />
+                                <div class="show-01-right"><a href="javascript:;">我不是静静 :</a>如果来日不可期 那就让它日日都可期 只看今天 不望明日 希望看到这个评论的人天天开心喔</div>
+                            </div>
+                            <div class="rp-03 rp-01">
+                                <span>11月27日 22:28</span>
+                                <a href="javascript:;"><i></i>(26)</a>
+                                <span>|</span>
+                                <a href="javascript:;">回复</a>
+                            </div>
+                            <div class="show-01">
+                                <img src="../images/g-pr4.jpg" alt="" />
+                                <div class="show-01-right"><a href="javascript:;">花悸 :</a>如果最后是你我愿意等</div>
+                            </div>
+                            <div class="rp-01 lst">
+                                <span>11月27日 22:28</span>
+                                <a href="javascript:;"><i></i>(26)</a>
+                                <span>|</span>
+                                <a href="javascript:;">回复</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 三楼 -->
+                    <li class="content-03">
+                        <div class="faces-03">
+                            <a href="javascript:;"><img src="../images/g-2.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-03">
+                            <div class="id-03">
+                                <a href="javascript:;">Bydo-</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-03">
+                                <a href="javascript:;">11月21日 16:06</a>
+                            </div>
+                            <div class="audio-03">
+                                <div class="translate-03">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-03">
+                                    <a href="javascript:;" class="song">我的街道 (prod.Pablo)</a><br />
+                                    <a href="javascript:;" class="singer">kenRobb</a>
+                                </div>
+                            </div>
+                            <div class="doper-03">
+                                <a href="javascript:;"><i></i>(3)</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 四楼 -->
+                    <li class="content-04">
+                        <div class="faces-04">
+                            <a href="javascript:;"><img src="../images/g-3.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-04">
+                            <div class="id-04">
+                                <a href="javascript:;">_Gungnir</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-04">
+                                <a href="javascript:;">10月29日 00:23</a>
+                            </div>
+                            <div class="text-04">天空下着雨,我们喝着威士忌.</div>
+                            <div class="audio-04">
+                                <div class="translate-04">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-04">
+                                    <a href="javascript:;" class="song">无题</a><br />
+                                    <a href="javascript:;" class="singer">寸铁</a>
+                                </div>
+                            </div>
+                            <div class="doper-04">
+                                <a href="javascript:;"><i></i>(3)</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 五楼 -->
+                    <li class="content-05">
+                        <div class="faces-05">
+                            <a href="javascript:;"><img src="../images/g-3.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-05">
+                            <div class="id-05">
+                                <a href="javascript:;">_Gungnir</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-05">
+                                <a href="javascript:;">10月29日 00:23</a>
+                            </div>
+                            <div class="text-05">百看不腻</div>
+                            <div class="audio-05">
+                                <div class="mv-05">
+                                    <img src="../images/g-v.jpg" alt="" />
+                                    <div class="audiotext">
+                                        <span></span>
+                                        <h3>Hopscotch-</h3>
+                                        <a href="javascript:;" class="">88rising</a>&nbsp;/&nbsp; <a href="javascript:;" class="">AUGUST&nbsp;08</a>&nbsp;/&nbsp; <a href="javascript:;" class="">Joji</a>&nbsp;/&nbsp; <a href="javascript:;" class="">Barney&nbsp;Bones</a>&nbsp;/&nbsp;
+                                        <a href="/artist?id=12024301" class="">Rich&nbsp;Brian</a>
+                                    </div>
+                                    <div class="audio-logo-05"></div>
+                                    <div class="audio-play-05">
+                                        <span>
+                        <i></i>
+                        16.8万
+                      </span>
+                                        <span>
+                        <i></i>
+                        03:32
+                      </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doper-05">
+                                <a href="javascript:;"><i></i>(3)</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 六楼 -->
+                    <li class="content-06">
+                        <div class="faces-06">
+                            <a href="javascript:;"><img src="../images/g-5.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-06">
+                            <div class="id-06">
+                                <a href="javascript:;">沈以诚i</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-06">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+
+                            <div class="audio-06">
+                                <div class="translate-06">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-06">
+                                    <a href="javascript:;" class="song">载我回家</a><br />
+                                    <a href="javascript:;" class="singer">汪川</a>
+                                </div>
+                            </div>
+                            <div class="doper-06">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 七楼 -->
+                    <li class="content-07">
+                        <div class="faces-07">
+                            <a href="javascript:;"><img src="../images/g-2.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-07">
+                            <div class="id-07">
+                                <a href="javascript:;">Bydo-</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-07">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-07">屌的</div>
+                            <div class="audio-07">
+                                <div class="translate-07">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-07">
+                                    <a href="javascript:;" class="song">盆满钵满 (Prod.Dmac)</a><br />
+                                    <a href="javascript:;" class="singer">Rich Nomadic</a>
+                                </div>
+                            </div>
+                            <div class="doper-07">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 八楼 -->
+                    <li class="content-08">
+                        <div class="faces-08">
+                            <a href="javascript:;"><img src="../images/g-t1.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-08">
+                            <div class="id-08">
+                                <a href="javascript:;">绝地_</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-08">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-08">离开我谁还把你当小孩</div>
+                            <div class="audio-08">
+                                <div class="translate-08">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-08">
+                                    <a href="javascript:;" class="song">永不失联的爱</a><br />
+                                    <a href="javascript:;" class="singer">周兴哲</a>
+                                </div>
+                            </div>
+                            <div class="doper-08">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 九楼 -->
+                    <li class="content-09">
+                        <div class="faces-09">
+                            <a href="javascript:;"><img src="../images/g-t2.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-09">
+                            <div class="id-09">
+                                <a href="javascript:;">zzzz桌边废纸_</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-09">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-09">原来一切只是个玩笑</div>
+                            <div class="audio-09">
+                                <div class="translate-09">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-09">
+                                    <a href="javascript:;" class="song">玩笑 (live)</a><br />
+                                    <a href="javascript:;" class="singer">刘瑞琪</a>
+                                </div>
+                            </div>
+                            <div class="doper-09">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 十楼 -->
+                    <li class="content-10">
+                        <div class="faces-10">
+                            <a href="javascript:;"><img src="../images/g-t3.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-10">
+                            <div class="id-10">
+                                <a href="javascript:;">A</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-10">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-10">今日分享</div>
+                            <div class="audio-10">
+                                <div class="translate-10">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-10">
+                                    <a href="javascript:;" class="song">太阳</a><br />
+                                    <a href="javascript:;" class="singer">程佳佳</a>
+                                </div>
+                            </div>
+                            <div class="doper-10">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 十一楼 -->
+                    <li class="content-11">
+                        <div class="faces-11">
+                            <a href="javascript:;"><img src="../images/g-t4.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-11">
+                            <div class="id-11">
+                                <a href="javascript:;">赎</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-11">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-11">.</div>
+                            <div class="audio-11">
+                                <div class="translate-11">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-11">
+                                    <a href="javascript:;" class="song">2 Soon</a><br />
+                                    <a href="javascript:;" class="singer">keshi</a>
+                                </div>
+                            </div>
+                            <div class="doper-11">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 十二楼 -->
+                    <li class="content-12">
+                        <div class="faces-12">
+                            <a href="javascript:;"><img src="../images/g-t5.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-12">
+                            <div class="id-12">
+                                <a href="javascript:;">莹莹不睡觉</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-12">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-12">甜</div>
+                            <div class="audio-12">
+                                <div class="translate-12">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-12">
+                                    <a href="javascript:;" class="song">说爱你(钢琴版)</a><br />
+                                    <a href="javascript:;" class="singer">周安</a>
+                                </div>
+                            </div>
+                            <div class="doper-12">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 十三楼 -->
+                    <li class="content-13">
+                        <div class="faces-13">
+                            <a href="javascript:;"><img src="../images/g-t6.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-13">
+                            <div class="id-13">
+                                <a href="javascript:;">斯建</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-13">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-13">你永远不知道我有多爱你</div>
+                            <div class="audio-13">
+                                <div class="translate-13">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-13">
+                                    <a href="javascript:;" class="song">不说</a><br />
+                                    <a href="javascript:;" class="singer">周公</a>
+                                </div>
+                            </div>
+                            <div class="doper-13">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 十四楼 -->
+                    <li class="content-14">
+                        <div class="faces-14">
+                            <a href="javascript:;"><img src="../images/g-t7.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-14">
+                            <div class="id-14">
+                                <a href="javascript:;">無</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-14">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-14">雨天</div>
+                            <div class="audio-14">
+                                <div class="translate-14">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-14">
+                                    <a href="javascript:;" class="song">不喜欢下雨天</a><br />
+                                    <a href="javascript:;" class="singer">Plggy</a>
+                                </div>
+                            </div>
+                            <div class="doper-14">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 十五楼 -->
+                    <li class="content-15">
+                        <div class="faces-15">
+                            <a href="javascript:;"><img src="../images/g-t8.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-15">
+                            <div class="id-15">
+                                <a href="javascript:;">离我远1点</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-15">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-15">窝在家里看电视pick赵晓棠</div>
+                            <div class="audio-15">
+                                <div class="translate-15">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-15">
+                                    <a href="javascript:;" class="song">无人区玫瑰</a><br />
+                                    <a href="javascript:;" class="singer">Capper</a>
+                                </div>
+                            </div>
+                            <div class="doper-15">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 十六楼 -->
+                    <li class="content-16">
+                        <div class="faces-16">
+                            <a href="javascript:;"><img src="../images/g-t9.jpg" alt="" /></a>
+                        </div>
+                        <div class="floor-16">
+                            <div class="id-16">
+                                <a href="javascript:;">圈住我o</a>
+                                <span>_分享单曲</span>
+                            </div>
+                            <div class="time-16">
+                                <a href="javascript:;">11月21日 8:59</a>
+                            </div>
+                            <div class="text-16"></div>
+                            <div class="audio-16">
+                                <div class="translate-16">
+                                    <a href="javascript:;"></a>
+                                </div>
+                                <div class="audiotext-16">
+                                    <a href="javascript:;" class="song">手心的蔷薇</a><br />
+                                    <a href="javascript:;" class="singer">林俊杰</a>
+                                </div>
+                            </div>
+                            <div class="doper-16">
+                                <a href="javascript:;"><i></i>点赞</a>
+                                <span>|</span>
+                                <a href="javascript:;">转发</a>
+                                <span>|</span>
+                                <a href="javascript:;">评论</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 右边关于我的个人 -->
+        <div class="me">
+            <!-- 我的资料 -->
+            <div class="me-hd">
+                <a href="javascript:;"><img src="../images/user.jpg" alt="" /></a>
+                <h4><a href="javascript:;">乐乐的小team</a></h4>
+                <div class="fans">
+                    <a href="javascript:;">
+                        <span>0</span><br />
+                        <i>动态</i>
+                    </a>
+                    <a href="javascript:;">
+                        <span>17</span><br />
+                        <i>关注</i>
+                    </a>
+                    <a href="javascript:;">
+                        <span>8</span><br />
+                        <i>粉丝</i>
+                    </a>
+                </div>
+            </div>
+            <div class="me-bd">
+                <!-- 明星用户 -->
+                <div class="star-hd">
+                    <h5>明星用户</h5>
+                    <a href="javascript:;">换一批</a>
+                </div>
+                <div class="star-bd">
+                    <ul>
+                        <li>
+                            <a href="javascript:;"><img src="../images/g-r1.jpg" alt="" /></a>
+                            <h5><a href="javascript:;">摇滚师</a><i class="one"></i></h5>
+                            <p>摇滚师,艺术家</p>
+                            <a href="javascript:;" class="attention"><span></span>关注</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="../images/g-r2.jpg" alt="" /></a>
+                            <h5><a href="javascript:;">麦田老狼</a><i class="two"></i></h5>
+                            <p>歌手,音乐人</p>
+                            <a href="javascript:;" class="attention"><span></span>关注</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"> <img src="../images/g-r3.jpg" alt="" /></a>
+                            <h5><a href="javascript:;">王东</a><i class="three"></i></h5>
+                            <p>著名主持人,电台主播</p>
+                            <a href="javascript:;" class="attention"><span></span>关注</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 可能认识的人 -->
+                <div class="possible">
+                    <div class="possible-hd">
+                        <h5>可能认识的人</h5>
+                        <a href="javascript:;">换一批</a>
+                    </div>
+                    <div class="possible-bd">
+                        <ul>
+                            <li>
+                                <a href="javascript:;"><img src="../images/g-r4.jpg" alt="" /></a>
+                                <h5><a href="javascript:;">汪小吃</a></h5>
+                                <p>手机联系人: 萌狗</p>
+                                <a href="javascript:;" class="attention"><i></i> 关注</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><img src="../images/g-r5.jpg" alt="" /></a>
+                                <h5><a href="javascript:;">爱你总不相信</a></h5>
+                                <p>可能认识的人: 张添</p>
+                                <a href="javascript:;" class="attention"><i></i>关注</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"> <img src="../images/g-r6.jpg" alt="" /></a>
+                                <h5><a href="javascript:;">无-马-为-安</a></h5>
+                                <p>可能认识的人: 汪渊</p>
+                                <a href="javascript:;" class="attention"><i></i>关注</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"> <img src="../images/g-r7.jpg" alt="" /></a>
+                                <h5><a href="javascript:;">|2009|</a></h5>
+                                <p>手机联系人: 狗胖</p>
+                                <a href="javascript:;" class="attention"><i></i>关注</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"> <img src="../images/g-r8.jpg" alt="" /></a>
+                                <h5><a href="javascript:;">丑啊_</a></h5>
+                                <p>手机联系人 : 王晋鹏</p>
+                                <a href="javascript:;" class="attention"><i></i>关注</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 微博 -->
+                <div class="microblog">
+                    <p>添加微博好友,和他们分享音乐</p>
+                    <a href="javascript:;"><i class="iconfont icon-weibo"></i> 绑定新浪微博</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部版权信息模块开始 -->
+    <div class="ft_bottom">
+        <div class="w">
+            <!-- 左侧版权信息 -->
+            <div class="copyright">
+                <ul>
+                    <li><a href="javascript:;">服务条款</a><span>|</span></li>
+                    <li><a href="javascript:;">隐私政策</a><span>|</span></li>
+                    <li><a href="javascript:;">儿童隐私政策</a><span>|</span></li>
+                    <li><a href="javascript:;">版权投诉指引</a><span>|</span></li>
+                    <li><a href="javascript:;">意见反馈</a><span>|</span></li>
+                </ul>
+
+                <p>
+                    <span>网易公司版权所有©1997-2020</span>
+                    <span>杭州乐读科技有限公司运营：</span>
+                    <a href="javascript:;">浙网文[2018]3506-263号</a>
+                </p>
+
+                <p>
+                    <span>违法和不良信息举报电话：0571-89853516</span>
+                    <span>举报邮箱：</span>
+                    <a href="javascript:;">ncm5990@163.com</a>
+                </p>
+
+                <p>
+                    <span>粤B2-20090191-18</span>
+                    <a href="javascript:;">工业和信息化部备案管理系统网站</a>
+                    <a href="javascript:;">
+                        <span class="police-logo"></span>
+                        <span>浙公网安备 33010902002564号</span>
+                    </a>
+                </p>
+            </div>
+            <!-- 右侧 认证 -->
+            <ul class="enterFr">
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 尾部版权信息模块结束 -->
+</body>
+
+</html>

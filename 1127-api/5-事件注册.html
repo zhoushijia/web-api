@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>传统注册</button>
+    <button class="btnRe">移除传统注册</button>
+
+    <button>注册监听事件</button>
+    <button class="btnReL">移除监听注册</button>
+
+    <script>
+      var btns = document.querySelectorAll('button')
+      btns[0].onclick = function () {
+        console.log('a')
+      }
+      btns[0].onclick = function () {
+        console.log('b')
+      }
+      btns[1].onclick = function () {
+        btns[0].onclick = null
+      }
+
+      btns[2].addEventListener('click', fn22)
+      function fn22() {
+        console.log(22)
+      }
+      btns[2].addEventListener('click', fn33)
+      function fn33() {
+        console.log(33)
+      }
+      btns[3].addEventListener('click', function () {
+        btns[2].removeEventListener('click', fn22)
+        btns[2].removeEventListener('click', fn33)
+      })
+    </script>
+  </body>
+</html>

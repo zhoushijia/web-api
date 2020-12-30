@@ -1,0 +1,250 @@
+/* 导航模块开始 */
+
+header {
+  height: 71px;
+  background-color: #242424;
+  border-bottom: 1px solid #000;
+}
+
+nav {
+  z-index: 90;
+  margin-top: -1px;
+  height: 35px;
+  box-sizing: border-box;
+  background-color: #c20c0c;
+  border-bottom: 1px solid #a40011;
+}
+
+nav .wrap {
+  width: 1100px;
+  height: 34px;
+  margin: 0 auto;
+}
+
+nav .wrap .nav {
+  float: left;
+  padding-left: 180px;
+}
+
+nav .nav li,
+nav .nav a {
+  float: left;
+  height: 34px;
+  text-align: center;
+  color: #fff;
+}
+
+nav .nav .z-slt {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .nav .list {
+  position: relative;
+  padding: 0 15px 0 11px;
+}
+
+nav .nav li a .icon {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 2px;
+  background: url(../images/f-white-r-icon@3x.png);
+  background-size: cover;
+}
+
+nav .nav .z-slt em {
+  background: #9b0909;
+}
+
+nav .nav em:hover {
+  background: #9b0909;
+}
+
+nav .nav a em {
+  display: inline-block;
+  height: 20px;
+  padding: 0 13px;
+  margin: 7px 17px 0;
+  border-radius: 20px;
+  line-height: 21px;
+}
+
+/* 导航模块结束 */
+
+.album_content {
+  /* height: 1000px; */
+  background-color: #fff;
+  padding: 40px;
+}
+
+/* 热门新碟部分 */
+.hot_td {
+  overflow: hidden;
+  height: 44px;
+}
+
+.hot_td::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #c20c0c;
+  margin-top: 42px;
+}
+
+.hot_td h3 {
+  float: left;
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: normal;
+}
+
+.hot_bd {
+  margin-top: 20px;
+}
+
+.hot_bd li {
+  width: 153px;
+  height: 178px;
+  /* background-color: pink; */
+  margin-right: 33px;
+  margin-bottom: 30px;
+  /* line-height: 1.4; */
+}
+
+.hot_bd li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.hot_bd li .hot_cover {
+  position: relative;
+}
+
+.hot_bd li .hot_cover .msk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 130px;
+  background: url(../images/d_coverall.png) no-repeat 0 -845px;
+}
+
+.hot_bd li .hot_cover .icon_play {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  width: 28px;
+  height: 28px;
+  background: url(../images/d_iconall.png) no-repeat 0 -140px;
+}
+
+.hot_bd li .hot_cover .icon_play:hover {
+  background: url(../images/d_iconall.png) no-repeat 0 -170px;
+}
+
+.hot_bd li .hot_singname,
+.hot_bd li .hot_singer {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hot_bd li .hot_singname {
+  margin: 8px 0 3px;
+  font-size: 14px;
+}
+
+.hot_bd li .hot_singer a {
+  color: #666;
+}
+
+/* 全部新碟部分 */
+
+.all .all_list {
+  float: left;
+  /* overflow: hidden; */
+  margin: 16px 0 0 10px;
+}
+
+.all_active {
+  display: none;
+}
+
+.all .all_list li a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* 分页栏模块 */
+.hot_page {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.left,
+.right {
+  text-decoration: none;
+  display: inline-block;
+  /* padding: 0 8px; */
+  width: 60px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.page a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 8px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.page a:hover {
+  border: 1px solid #666;
+}
+
+.hot_page a {
+  text-decoration: none;
+}
+
+.hot_page a.current {
+  color: #fff;
+  cursor: default;
+  border-color: #a2161b;
+  background: url(../images/d_button.png) no-repeat 0 -650px;
+}
+
+.active {
+  background-color: #efefef;
+  color: #cacaca;
+  cursor: default;
+}
+
+.active:hover {
+  color: #cacaca;
+}
+
+.hot_page div {
+  display: inline-block;
+}
+
+/* 返回顶部 */
+.c-back {
+  display: none;
+  position: fixed;
+  text-indent: -9999px;
+  left: 50%;
+  margin-left: 500px;
+  bottom: 160px;
+  width: 49px;
+  height: 44px;
+  background: url(../images/c-sprite.png) no-repeat -265px -47px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        border: 1px solid #00f;
+      }
+    </style>
+  </head>
+  <body>
+    <button>添加</button>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+    <script>
+      var btn = document.querySelector('button')
+      var ul = document.querySelector('ul')
+      btn.addEventListener('click', function () {
+        var liNode = document.createElement('li')
+        liNode.innerHTML = '新添加的'
+        ul.appendChild(liNode)
+      })
+      ul.addEventListener('click', function (e) {
+        // 判断触发事件的对象是否为li
+        // console.log(e.target.nodeName)
+        if (e.target.nodeName === 'LI') {
+          e.target.style.color = '#f00'
+        }
+      })
+      //   for (var i = 0; i < ul.children.length; i++) {
+      //     ul.children[i].addEventListener('click', function () {
+      //       this.style.color = 'red'
+      //     })
+      //   }
+    </script>
+  </body>
+</html>

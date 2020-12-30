@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+    <ol>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ol>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+      $(function () {
+        $('ul li:eq(2)').css('color', 'red')
+        $('ul li:gt(2)').css('color', '#00f')
+        $('ul li:lt(1)').css('color', '#0f0')
+        $('ol li:even').css('color', '#00f')
+        $('ol li:odd').css('color', '#f00')
+        $('ol li:first').css('color', '#0f0')
+      })
+    </script>
+  </body>
+</html>

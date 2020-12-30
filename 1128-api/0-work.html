@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="prettyGirls"></ul>
+    <button>添加美女</button>
+    <script>
+      var ul = document.querySelector('.prettyGirls')
+      var btn = document.querySelector('button')
+      btn.addEventListener('click', function () {
+        var temp = prompt('请输入你想添加的美女:')
+        if (temp.trim().length !== 0) {
+          var liNode = document.createElement('li')
+          ul.insertBefore(liNode, ul.children[0])
+          liNode.innerHTML = temp
+        } else {
+          alert('输入为空')
+        }
+      })
+      ul.addEventListener('click', function (e) {
+        if (e.target.nodeName === 'LI') {
+          for (var i = 0; i < ul.children.length; i++) {
+            ul.children[i].style.backgroundColor = ''
+          }
+          e.target.style.backgroundColor = '#f00'
+        }
+      })
+    </script>
+  </body>
+</html>

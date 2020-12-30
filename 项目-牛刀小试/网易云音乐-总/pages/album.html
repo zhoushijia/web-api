@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="网易云音乐，音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单，识别音乐，收藏，分享音乐，音乐互动，高音质，320K，音乐社交，官网，music.163.com" />
+    <meta name="description" content="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>新碟上架 - 网易云音乐</title>
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="../css/base.css" />
+    <!-- 引入部分公共样式 -->
+    <link rel="stylesheet" href="../css/common.css" />
+    <!-- 引入部分公共样式 -->
+    <link rel="stylesheet" href="../css/common2.css" />
+    <!-- 引入当前页面的样式 -->
+    <link rel="stylesheet" href="../css/album.css" />
+    <!-- 引入jquery库 -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- 引入当前js样式 -->
+    <script src="../js/album.js"></script>
+  </head>
+  <body>
+    <!-- 头部制作开始 -->
+    <header>
+      <div class="wrap">
+        <h1 class="logo">
+          <a href="index.html">网易云音乐</a>
+        </h1>
+        <ul class="m-nav">
+          <li>
+            <a href="#" class="z-slt"><em>发现音乐</em><sub class="cor"></sub></a>
+          </li>
+          <li>
+            <a href="myMusic.html"><em>我的音乐</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li>
+            <a href="friends.html"><em>朋友</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li>
+            <a href="#"><em>商城</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li>
+            <a href="./musician.html"><em>音乐人</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li class="last">
+            <a href="./app.html"><em>下载客户端</em><sub class="cor" style="display: none"></sub></a>
+            <sup class="hot"></sup>
+          </li>
+        </ul>
+        <div class="userBox">
+          <div class="user">
+            <img src="../images/user.jpg" alt="" />
+            <i>4</i>
+          </div>
+          <div class="userinfo">
+            <ul>
+              <li>
+                <a href="#"><i class="icn icn-hm"></i> <em>我的主页</em></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-msg"></i>
+                  <em>我的消息</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-lv"></i>
+                  <em>我的等级</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-mbr"></i>
+                  <em>VIP会员</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-st"></i>
+                  <em>个人设置</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-verify"></i>
+                  <em>实名认证</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-ex"></i>
+                  <em>退出</em>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="creator">创作者中心</a>
+        <div class="search">
+          <div class="searchInfo">
+            <span class="parent">
+              <input type="text" class="txt" placeholder="音乐/视频/电台/用户" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 头部制作结束 -->
+
+    <!-- 导航模块开始 -->
+    <nav>
+      <div class="wrap">
+        <ul class="nav">
+          <li>
+            <a href="../index.html"><em>推荐</em></a>
+          </li>
+          <li>
+            <a href="./ranklist.html"><em>排行榜</em></a>
+          </li>
+          <li>
+            <a href="./song sheet.html"
+              ><em class="list">歌单 <span class="icon"></span> </em
+            ></a>
+          </li>
+          <li>
+            <a href="./djradio.html"><em>主播电台</em></a>
+          </li>
+          <li>
+            <a href="./singer.html"><em>歌手</em></a>
+          </li>
+          <li>
+            <a href="./album.html" class="z-slt"><em>新碟上架</em></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 导航模块结束 -->
+
+    <!-- 新碟上架 部分 -->
+    <div class="w album_content">
+      <!-- 热门新碟 部分 -->
+      <div class="hot_album">
+        <div class="hot_td">
+          <h3>
+            <a href="javascript:;">热门新碟</a>
+          </h3>
+        </div>
+
+        <ul class="hot_bd clearfix">
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc1.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="耗尽"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="耗尽">耗尽</a>
+            </p>
+            <p class="hot_singer">
+              <span title="薛之谦 / 郭聪明"> <a href="javascript:;">薛之谦</a> / <a href="javascript:;">郭聪明</a> </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc2.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="folklore: the long pond studio sessions (from the Disney+ special) (deluxe edition)"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="folklore: the long pond studio sessions (from the Disney+ special) (deluxe edition)">folklore: the long pond studio sessions (from the Disney+ special) (deluxe edition)</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Taylor Swift"><a href="javascript:;">Taylor Swift</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc3.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="狼殿下 影视原声碟PART.1"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="狼殿下 影视原声碟PART.1">狼殿下 影视原声碟PART.1</a>
+            </p>
+            <p class="hot_singer">
+              <span title="群星"><a href="javascript:;">群星</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc4.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="是但求其爱"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="是但求其爱">是但求其爱</a>
+            </p>
+            <p class="hot_singer">
+              <span title="陈奕迅"><a href="javascript:;">陈奕迅</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc5.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Monster"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Monster">Monster</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Shawn Mendes / Justin Bieber"><a href="javascript:;">Shawn Mendes</a> / <a href="javascript:;">Justin Bieber</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc6.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="未·LIVE"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="未·LIVE">未·LIVE</a>
+            </p>
+            <p class="hot_singer">
+              <span title="张杰"><a href="javascript:;">张杰</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc7.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="RE-CODE"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="RE-CODE">RE-CODE</a>
+            </p>
+            <p class="hot_singer">
+              <span title="CNBLUE"><a href="javascript:;">CNBLUE</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc8.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="不完美人生指南"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="不完美人生指南">不完美人生指南</a>
+            </p>
+            <p class="hot_singer">
+              <span title="陈绮贞 / 鬼卞 / 周深 / 王子 / A-Lin / 倪子冈 / 刘若英 / 柯智棠 / 毛不易 / 祁紫檀 / 徐佳莹 / HUSH / 蔡健雅 / 王源 / 莫文蔚 / 郭一凡 / 魏如萱 / 许光汉 / 苏运莹 / 岑宁儿 / 艾怡良 / Matzka玛斯卡 / 马思唯 / NINEONE#">
+                <a href="javascript:;">陈绮贞</a> / <a href="javascript:;">鬼卞</a> / <a href="javascript:;">周深</a> / <a href="javascript:;">王子</a> / <a href="javascript:;">A-Lin</a> / <a href="javascript:;">倪子冈</a> / <a href="javascript:;">刘若英</a> / <a href="javascript:;">柯智棠</a> / <a href="javascript:;">毛不易</a> / <a href="javascript:;">祁紫檀</a> / <a href="javascript:;">徐佳莹</a> / <a href="javascript:;">HUSH</a> / <a href="javascript:;">蔡健雅</a> / <a href="javascript:;">王源</a> / <a href="javascript:;">莫文蔚</a> / <a href="javascript:;">郭一凡</a> / <a href="javascript:;">魏如萱</a> / <a href="javascript:;">许光汉</a> / <a href="javascript:;">苏运莹</a> / <a href="javascript:;">岑宁儿</a> / <a href="javascript:;">艾怡良</a> /
+                <a href="javascript:;">Matzka玛斯卡</a> / <a href="javascript:;">马思唯</a> /
+                <a href="javascript:;">NINEONE</a>
+              </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc9.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="如果当时2020"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="如果当时2020">如果当时2020</a>
+            </p>
+            <p class="hot_singer">
+              <span title="许嵩 / 朱婷婷"><a href="javascript:;">许嵩</a> / <a href="javascript:;">朱婷婷</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc10.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="幸存者 Drifter"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="幸存者 Drifter">幸存者 Drifter</a>
+            </p>
+            <p class="hot_singer">
+              <span title="林俊杰"><a href="javascript:;">林俊杰</a></span>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 全部新碟 部分 -->
+      <div class="all hot_album pageOne clearfix">
+        <div class="hot_td">
+          <h3>
+            <a href="javascript:;">全部新碟</a>
+          </h3>
+
+          <ul class="all_list clearfix">
+            <li class="fl"><a href="javascript:;">全部</a>|</li>
+            <li class="fl"><a href="javascript:;">华语</a>|</li>
+            <li class="fl"><a href="javascript:;">欧美</a>|</li>
+            <li class="fl"><a href="javascript:;">韩国</a>|</li>
+            <li class="fl"><a href="javascript:;">日本</a></li>
+          </ul>
+        </div>
+
+        <ul class="hot_bd clearfix">
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc11.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="SWAG OST"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="SWAG OST">SWAG OST</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Kassy"><a href="javascript:;">Kassy</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc12.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="THE BOYZ Special Single 'Christmassy!'"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="THE BOYZ Special Single 'Christmassy!'">THE BOYZ Special Single 'Christmassy!'</a>
+            </p>
+            <p class="hot_singer">
+              <span title="THE BOYZ"><a href="javascript:;">THE BOYZ</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc13.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="If you…"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="If you…">If you…</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Jhnovr"><a href="javascript:;">Jhnovr</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc14.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="无人问津"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="无人问津">无人问津</a>
+            </p>
+            <p class="hot_singer">
+              <span title="陶峻汐"><a href="javascript:;">陶峻汐</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc15.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="众生奇缘"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="众生奇缘">众生奇缘</a>
+            </p>
+            <p class="hot_singer">
+              <span title="小曲儿"><a href="javascript:;">小曲儿</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc16.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Wonder (Deluxe)"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Wonder (Deluxe)">Wonder (Deluxe)</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Shawn Mendes"><a href="javascript:;">Shawn Mendes</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc17.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="假面电王"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="假面电王">假面电王</a>
+            </p>
+            <p class="hot_singer">
+              <span title="贾廷一 (BB-Eight)"><a href="javascript:;">贾廷一 (BB-Eight)</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc18.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="思念成疾"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="思念成疾">思念成疾</a>
+            </p>
+            <p class="hot_singer">
+              <span title="高福阳">
+                <a href="javascript:;">高福阳</a>
+              </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc19.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="뽀마이걸 반하나 for Christmas"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="뽀마이걸 반하나 for Christmas">뽀마이걸 반하나 for Christmas</a>
+            </p>
+            <p class="hot_singer">
+              <span title="OH MY GIRL BANHANA"><a href="javascript:;">OH MY GIRL BANHANA</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc20.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="가을밤"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="가을밤">가을밤</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Kquan"><a href="javascript:;">Kquan</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc21.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="喀秋莎 (摇滚版)"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="喀秋莎 (摇滚版)">喀秋莎 (摇滚版)</a>
+            </p>
+            <p class="hot_singer">
+              <span title="王太利 / 王婉辰"> <a href="javascript:;">王太利</a> / <a href="javascript:;">王婉辰</a> </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc22.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="执念"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="执念">执念</a>
+            </p>
+            <p class="hot_singer">
+              <span title="丝绒公路"><a href="javascript:;">丝绒公路</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc23.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="GOODBYE GOODLUCK (ft.Maria from Bleecker Chrome)"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="GOODBYE GOODLUCK (ft.Maria from Bleecker Chrome)">GOODBYE GOODLUCK (ft.Maria from Bleecker Chrome)</a>
+            </p>
+            <p class="hot_singer">
+              <span title="买辣椒也用券"><a href="javascript:;">买辣椒也用券</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc24.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="5 -Instrumentals-"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="5 -Instrumentals-">5 -Instrumentals-</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Mrs. GREEN APPLE"><a href="javascript:;">Mrs. GREEN APPLE</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc25.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="走在回家的路上"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="走在回家的路上">走在回家的路上</a>
+            </p>
+            <p class="hot_singer">
+              <span title="旅行团"><a href="javascript:;">旅行团</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc26.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="七个冬天"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="七个冬天">七个冬天</a>
+            </p>
+            <p class="hot_singer">
+              <span title="孤独的利里（Lonely Leary）"><a href="javascript:;">孤独的利里（Lonely Leary）</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc27.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="海上蝶"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="海上蝶">海上蝶</a>
+            </p>
+            <p class="hot_singer">
+              <span title="周深"><a href="javascript:;">周深</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc28.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="得寸进尺"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="得寸进尺">得寸进尺</a>
+            </p>
+            <p class="hot_singer">
+              <span title="聂采臣">
+                <a href="javascript:;">聂采臣</a>
+              </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc29.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="没有雨声的日子"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="没有雨声的日子">没有雨声的日子</a>
+            </p>
+            <p class="hot_singer">
+              <span title="四分卫"><a href="javascript:;">四分卫</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc30.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="시적화자 정규 앨범 1집 "></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="시적화자 정규 앨범 1집 ">시적화자 정규 앨범 1집 </a>
+            </p>
+            <p class="hot_singer">
+              <span title="시적화자"><a href="javascript:;">시적화자</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc31.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="축_가"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="축_가">축_가</a>
+            </p>
+            <p class="hot_singer">
+              <span title="J_ust"> <a href="javascript:;">J_ust</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc32.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="好一番思量"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="好一番思量">好一番思量</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Winky诗 / 银晨 / 国风音乐联盟"><a href="javascript:;">Winky诗</a> / <a href="javascript:;">银晨</a> / <a href="javascript:;">国风音乐联盟</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc33.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="秋的信 (dear myself)"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="秋的信 (dear myself)">秋的信 (dear myself)</a>
+            </p>
+            <p class="hot_singer">
+              <span title="伏仪"><a href="javascript:;">伏仪</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc34.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="복수해라 OST Part.4"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="복수해라 OST Part.4">복수해라 OST Part.4</a>
+            </p>
+            <p class="hot_singer">
+              <span title="VINCIT"><a href="javascript:;">VINCIT</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc35.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="YOU SHOULD KNOW"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="YOU SHOULD KNOW">YOU SHOULD KNOW</a>
+            </p>
+            <p class="hot_singer">
+              <span title="G.G(张思源)"><a href="javascript:;">G.G(张思源)</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc36.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="霜降"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="霜降">霜降</a>
+            </p>
+            <p class="hot_singer">
+              <span title="_阿雾_"><a href="javascript:;">_阿雾_</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc37.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="桃花源记"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="桃花源记">桃花源记</a>
+            </p>
+            <p class="hot_singer">
+              <span title="墨怀枫"><a href="javascript:;">墨怀枫</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc38.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Believe In A Piece Of Love"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Believe In A Piece Of Love">Believe In A Piece Of Love</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Aosaki">
+                <a href="javascript:;">Aosaki</a>
+              </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc39.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="必需品"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="必需品">必需品</a>
+            </p>
+            <p class="hot_singer">
+              <span title="张紫宁"><a href="javascript:;">张紫宁</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc40.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="罗盘"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="罗盘">罗盘</a>
+            </p>
+            <p class="hot_singer">
+              <span title="嘉羿"><a href="javascript:;">嘉羿</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc41.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="过期回忆"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="过期回忆">过期回忆</a>
+            </p>
+            <p class="hot_singer">
+              <span title="戾格 / 小田音乐社"> <a href="javascript:;">戾格</a> / <a href="javascript:;">小田音乐社</a> </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc42.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="不合群"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="不合群">不合群</a>
+            </p>
+            <p class="hot_singer">
+              <span title="枯木逢春"><a href="javascript:;">枯木逢春</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc43.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="姜维·不归"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="姜维·不归">姜维·不归</a>
+            </p>
+            <p class="hot_singer">
+              <span title="李常超 (Lao乾妈) / 三国X注"><a href="javascript:;">李常超 (Lao乾妈)</a> / <a href="javascript:;">三国X注</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc44.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="青灯晚"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="青灯晚">青灯晚</a>
+            </p>
+            <p class="hot_singer">
+              <span title="泽典"><a href="javascript:;">泽典</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc45.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="争吵过后"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="争吵过后">争吵过后</a>
+            </p>
+            <p class="hot_singer">
+              <span title="楊老x"><a href="javascript:;">楊老x</a></span>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 全部新碟页面2 部分 tab切换-->
+      <div class="all hot_album clearfix pageTwo all_active">
+        <div class="hot_td">
+          <h3>
+            <a href="javascript:;">全部新碟</a>
+          </h3>
+
+          <ul class="all_list clearfix">
+            <li class="fl"><a href="javascript:;">全部</a>|</li>
+            <li class="fl"><a href="javascript:;">华语</a>|</li>
+            <li class="fl"><a href="javascript:;">欧美</a>|</li>
+            <li class="fl"><a href="javascript:;">韩国</a>|</li>
+            <li class="fl"><a href="javascript:;">日本</a></li>
+          </ul>
+        </div>
+
+        <ul class="hot_bd clearfix">
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc46.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="半生迟"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="半生迟">半生迟</a>
+            </p>
+            <p class="hot_singer">
+              <span title="方然"><a href="javascript:;">方然</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc47.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="骷髅幻戏图"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="骷髅幻戏图">骷髅幻戏图</a>
+            </p>
+            <p class="hot_singer">
+              <span title="陈壹千"><a href="javascript:;">陈壹千</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc48.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="天晓得"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="天晓得">天晓得</a>
+            </p>
+            <p class="hot_singer">
+              <span title="海城"><a href="javascript:;">海城</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc49.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="evermore"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="evermore">evermore</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Taylor Swift"><a href="javascript:;">Taylor Swift</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc50.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="迷雾"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="迷雾">迷雾</a>
+            </p>
+            <p class="hot_singer">
+              <span title="王晰"><a href="javascript:;">王晰</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc51.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Love You Now"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Love You Now">Love You Now</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Cha Cha Malone / Chase Henny"><a href="javascript:;">Cha Cha Malone</a> / <a href="javascript:;">Chase Henny</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc52.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="耶路撒冷先生 (Mr. Jerusalem)"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="耶路撒冷先生 (Mr. Jerusalem)">耶路撒冷先生 (Mr. Jerusalem)</a>
+            </p>
+            <p class="hot_singer">
+              <span title="曲泉丞"><a href="javascript:;">曲泉丞</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc53.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="把你藏进心里"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="把你藏进心里">把你藏进心里</a>
+            </p>
+            <p class="hot_singer">
+              <span title="于潼">
+                <a href="javascript:;">于潼</a>
+              </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc54.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="鹿鸣呦呦"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="鹿鸣呦呦">鹿鸣呦呦</a>
+            </p>
+            <p class="hot_singer">
+              <span title="锦零"><a href="javascript:;">锦零</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc55.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="我的不惑青春 电视原声带"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="我的不惑青春 电视原声带">我的不惑青春 电视原声带</a>
+            </p>
+            <p class="hot_singer">
+              <span title="大壮 / 赵天宇"><a href="javascript:;">大壮</a> / <a href="javascript:;">赵天宇</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc56.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="DOCTORS"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="DOCTORS">DOCTORS</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Shordie Shordie / Murda Beatz"> <a href="javascript:;">Shordie Shordie</a> / <a href="javascript:;">Murda Beatz</a> </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc57.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="小酒一壶"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="小酒一壶">小酒一壶</a>
+            </p>
+            <p class="hot_singer">
+              <span title="灼夭 / 小田音乐社"><a href="javascript:;">灼夭</a> / <a href="javascript:;">小田音乐社</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc58.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="첫눈이 와"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="첫눈이 와">첫눈이 와</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Xydo / Bumkey"><a href="javascript:;">Xydo</a> / <a href="javascript:;">Bumkey</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc59.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="이번 생도 잘 부탁해 OST"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="이번 생도 잘 부탁해 OST">이번 생도 잘 부탁해 OST</a>
+            </p>
+            <p class="hot_singer">
+              <span title="余恩"><a href="javascript:;">余恩</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc60.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="3811"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="3811">3811</a>
+            </p>
+            <p class="hot_singer">
+              <span title="谭维维"><a href="javascript:;">谭维维</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc61.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="世界是个转瞬即逝的念头"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="世界是个转瞬即逝的念头">世界是个转瞬即逝的念头</a>
+            </p>
+            <p class="hot_singer">
+              <span title="刘逸晨"><a href="javascript:;">刘逸晨</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc62.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="The Classic Album"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="The Classic Album">The Classic Album</a>
+            </p>
+            <p class="hot_singer">
+              <span title="김호중"><a href="javascript:;">김호중</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc63.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="幻影"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="幻影">幻影</a>
+            </p>
+            <p class="hot_singer">
+              <span title="O.WEN / GLOCK幺七"> <a href="javascript:;">O.WEN</a> / <a href="javascript:;">GLOCK幺七</a> </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc64.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Dynamite (Holiday Remix)"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Dynamite (Holiday Remix)">Dynamite (Holiday Remix)</a>
+            </p>
+            <p class="hot_singer">
+              <span title="BTS (防弹少年团)"><a href="javascript:;">BTS (防弹少年团)</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc65.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Sleep-Walking"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Sleep-Walking">Sleep-Walking</a>
+            </p>
+            <p class="hot_singer">
+              <span title="PolterGeisy / pikajuny"><a href="javascript:;">PolterGeisy</a> / <a href="javascript:;">pikajuny</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc66.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="花样年华"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="花样年华">花样年华</a>
+            </p>
+            <p class="hot_singer">
+              <span title="670"> <a href="javascript:;">670</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc67.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Cabin"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Cabin">Cabin</a>
+            </p>
+            <p class="hot_singer">
+              <span title="ONiLL"><a href="javascript:;">ONiLL</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc68.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="哭笑不得"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="哭笑不得">哭笑不得</a>
+            </p>
+            <p class="hot_singer">
+              <span title="未必 / 平纱落雁音乐团队"><a href="javascript:;">未必</a> / <a href="javascript:;">平纱落雁音乐团队</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc69.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="谁怜众生"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="谁怜众生">谁怜众生</a>
+            </p>
+            <p class="hot_singer">
+              <span title="卡修Rui / 大乐不良署"><a href="javascript:;">卡修Rui</a> / <a href="javascript:;">大乐不良署</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc70.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="When It's Dark Out (Deluxe Edition)"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="When It's Dark Out (Deluxe Edition)">When It's Dark Out (Deluxe Edition)</a>
+            </p>
+            <p class="hot_singer">
+              <span title="G-Eazy"><a href="javascript:;">G-Eazy</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc71.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="青春病 EP"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="青春病 EP">青春病 EP</a>
+            </p>
+            <p class="hot_singer">
+              <span title="藤井風"><a href="javascript:;">藤井風</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc72.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="おまじない"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="おまじない">おまじない</a>
+            </p>
+            <p class="hot_singer">
+              <span title="GReeeeN"><a href="javascript:;">GReeeeN</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc73.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="사랑의 콜센타 PART34"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="사랑의 콜센타 PART34">사랑의 콜센타 PART34</a>
+            </p>
+            <p class="hot_singer">
+              <span title="爱的呼叫中心">
+                <a href="javascript:;">爱的呼叫中心</a>
+              </span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc74.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Nothing's the Same"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Nothing's the Same">Nothing's the Same</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Alexander 23 / Jeremy Zucker"><a href="javascript:;">Alexander 23</a> / <a href="javascript:;">Jeremy Zucker</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc75.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Thats What They All Say"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Thats What They All Say">Thats What They All Say</a>
+            </p>
+            <p class="hot_singer">
+              <span title="Jack Harlow"><a href="javascript:;">Jack Harlow</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc76.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="Living your art"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="Living your art">Living your art</a>
+            </p>
+            <p class="hot_singer">
+              <span title="阿兰"> <a href="javascript:;">阿兰</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc77.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="星星之眼"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="星星之眼">星星之眼</a>
+            </p>
+            <p class="hot_singer">
+              <span title="苏运莹"><a href="javascript:;">苏运莹</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc78.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="怀中狐"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="怀中狐">怀中狐</a>
+            </p>
+            <p class="hot_singer">
+              <span title="凌小七 / 平纱落雁音乐团队"><a href="javascript:;">凌小七</a> / <a href="javascript:;">平纱落雁音乐团队</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc79.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="너로 물든다 (바른연애 길잡이 X 신용재 (2F))"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="너로 물든다 (바른연애 길잡이 X 신용재 (2F))">너로 물든다 (바른연애 길잡이 X 신용재 (2F))</a>
+            </p>
+            <p class="hot_singer">
+              <span title="申容财"><a href="javascript:;">申容财</a></span>
+            </p>
+          </li>
+
+          <li class="fl">
+            <div class="hot_cover">
+              <img src="../images/d_disc80.jpg" alt="" />
+              <a class="msk" href="javascript:;" title="梦里花落"></a>
+              <a href="javascript:;" title="播放" class="icon_play"></a>
+            </div>
+            <p class="hot_singname">
+              <a href="javascript:;" title="梦里花落">梦里花落</a>
+            </p>
+            <p class="hot_singer">
+              <span title="池年 / 善乐府"><a href="javascript:;">池年</a> / <a href="javascript:;">善乐府</a></span>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 底部分页栏 -->
+      <div class="hot_page">
+        <button type="button" class="left">
+          <a href="javascript:;" class="last active">&lt;上一页</a>
+        </button>
+
+        <div class="page">
+          <a href="javascript:;" class="current">1</a>
+          <a href="javascript:;">2</a>
+          <a href="javascript:;">3</a>
+          <a href="javascript:;">4</a>
+          <a href="javascript:;">5</a>
+          <a href="javascript:;">6</a>
+          <a href="javascript:;">7</a>
+          <a href="javascript:;">8</a>
+          &nbsp;...&nbsp;
+          <a href="javascript:;">15</a>
+        </div>
+
+        <button type="button" class="right">
+          <a href="javascript:;" class="next">下一页&gt;</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- 回到顶部 -->
+    <a title="回到顶部" class="c-back" href="#" id="g_backtop" hidefocus="true">回到顶部</a>
+    <!-- 尾部版权信息模块开始 -->
+    <div class="ft_bottom">
+      <div class="w">
+        <!-- 左侧版权信息 -->
+        <div class="copyright">
+          <ul>
+            <li><a href="javascript:;">服务条款</a><span>|</span></li>
+            <li><a href="javascript:;">隐私政策</a><span>|</span></li>
+            <li><a href="javascript:;">儿童隐私政策</a><span>|</span></li>
+            <li><a href="javascript:;">版权投诉指引</a><span>|</span></li>
+            <li><a href="javascript:;">意见反馈</a><span>|</span></li>
+          </ul>
+
+          <p>
+            <span>网易公司版权所有©1997-2020</span>
+            <span>杭州乐读科技有限公司运营：</span>
+            <a href="javascript:;">浙网文[2018]3506-263号</a>
+          </p>
+
+          <p>
+            <span>违法和不良信息举报电话：0571-89853516</span>
+            <span>举报邮箱：</span>
+            <a href="javascript:;">ncm5990@163.com</a>
+          </p>
+
+          <p>
+            <span>粤B2-20090191-18</span>
+            <a href="javascript:;">工业和信息化部备案管理系统网站</a>
+            <a href="javascript:;">
+              <span class="police-logo"></span>
+              <span>浙公网安备 33010902002564号</span>
+            </a>
+          </p>
+        </div>
+        <!-- 右侧 认证 -->
+        <ul class="enterFr">
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 尾部版权信息模块结束 -->
+
+    <script>
+      var userBox = document.querySelector('header .userBox')
+      userBox.onmouseover = function () {
+        this.children[1].style.display = 'block'
+      }
+      userBox.onmouseout = function () {
+        this.children[1].style.display = 'none'
+      }
+      var searchInput = document.querySelector('header .search input')
+      searchInput.onfocus = function () {
+        if (this.placeholder === '音乐/视频/电台/用户') {
+          this.placeholder = ''
+        }
+      }
+      searchInput.onblur = function () {
+        if (this.placeholder.trim().length === 0) {
+          this.placeholder = '音乐/视频/电台/用户'
+        }
+      }
+    </script>
+  </body>
+</html>

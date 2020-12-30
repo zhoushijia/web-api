@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //     先找出字符串 '85872637471533203552943982' 中出现次数最多的数字及次数，然后去重后并排序（不准使用sort），使得到结果为 '0123456789'。
+      //   要求1：找到出现最多的数字和出现的次数
+      //   要求2：去除字符串中重复的数字
+      //   要求3：对去重后的字符串排序
+      //   要求4：代码规范
+      var str = '85872637471533203552943982'
+      //   要求1：找到出现最多的数字和出现的次数
+      var strObj = {}
+      for (var i = 0; i < str.length; i++) {
+        var ch = str[i]
+        if (strObj[ch]) {
+          strObj[ch]++
+        } else {
+          strObj[ch] = 1
+        }
+      }
+      console.log(strObj)
+      var num = 0 //用来保存出现最多次数的数字
+      var count = 0 //保存次数
+      for (var k in strObj) {
+        if (strObj[k] > count) {
+          num = k
+          count = strObj[k]
+        }
+      }
+      console.log(`出现最多次数的数字${num},次数是${count}`)
+
+      //   要求2：去除字符串中重复的数字
+      var newStr = ''
+      for (var i = 0; i < str.length; i++) {
+        if (newStr.indexOf(str[i]) === -1) newStr += str[i]
+      }
+      console.log(`去重后的字符串${newStr}`)
+
+      //   要求3：对去重后的字符串排序
+      //   冒泡排序
+      var arrStr = newStr.split('')
+      for (var i = 0; i < arrStr.length - 1; i++) {
+        for (var j = 0; j < arrStr.length - 1 - i; j++) {
+          if (arrStr[j] > arrStr[j + 1]) {
+            var temp = arrStr[j]
+            arrStr[j] = arrStr[j + 1]
+            arrStr[j + 1] = temp
+          }
+        }
+      }
+      var sortStr = arrStr.join('')
+      console.log(`排序后${sortStr}`)
+    </script>
+  </body>
+</html>

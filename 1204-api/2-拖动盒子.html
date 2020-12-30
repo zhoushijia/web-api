@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #00f;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <script>
+      var div = document.querySelector('div')
+      //   var tx = 0
+      //   var ty = 0
+      //   var x = 0
+      //   var y = 0
+      //   div.addEventListener('touchstart', function (e) {
+      //     x = this.offsetLeft
+      //     y = this.offsetTop
+      //     tx = e.targetTouches[0].pageX
+      //     ty = e.targetTouches[0].pageY
+      //   })
+      //   div.addEventListener('touchmove', function (e) {
+      //     var mx = e.targetTouches[0].pageX - tx
+      //     var my = e.targetTouches[0].pageY - ty
+      //     this.style.left = mx + x + 'px'
+      //     this.style.top = my + y + 'px'
+      //   })
+      div.addEventListener('touchstart', function (e) {
+        var x = this.offsetLeft
+        var y = this.offsetTop
+        var tx = e.targetTouches[0].pageX
+        var ty = e.targetTouches[0].pageY
+        div.addEventListener('touchmove', function (e) {
+          var mx = e.targetTouches[0].pageX - tx
+          var my = e.targetTouches[0].pageY - ty
+          this.style.left = mx + x + 'px'
+          this.style.top = my + y + 'px'
+          // 阻止屏幕拖动..滚动
+          e.preventDefault()
+        })
+      })
+    </script>
+  </body>
+</html>

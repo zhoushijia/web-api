@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div style="margin-bottom: 15px">
+      <input type="text" id="username" placeholder="请输入姓名" />
+      <input type="text" id="age" placeholder="请输入性别" />
+      <input type="text" id="sex" placeholder="请输入年龄" />
+      <input type="button" value="提交" id="btn" />
+    </div>
+    <table border="1" width="540">
+      <thead>
+        <tr>
+          <td>姓名</td>
+          <td>性别</td>
+          <td>年龄</td>
+          <td>操作</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+      // 要求1：点击提交按钮，让用户输入的内容分别加入到表格对应的列表中
+      // 要求2：点击每一行的删除按钮，能删除当前行
+      // 要求3：刷新页面时能保留当前的页面效果（数据状态不会消失）
+      $(function () {
+        // 要求3：刷新页面时能保留当前的页面效果（数据状态不会消失）
+        //   打开页面时访问本地存储
+        render()
+        //   获得本地存储中的user数据
+        function getUser() {
+          return JSON.parse(localStorage.getItem('user')) || []
+        }
+        // 将user数据存储到本地
+        function saveUser(data) {
+          localStorage.setItem('user', JSON.stringify(data))
+        }
+        //将本地数据渲染到页面
+        function render() {
+          var str = ''
+          var data = getUser()
+          $.each(data, function (index, item) {
+            str += `
+                <tr>
+                    <td>${item.username}</td>
+                    <td>${item.sex}</td>
+                    <td>${item.age}</td>
+                    <td><a href="javascript:;" data-index="${index}">删除</a></td>
+                </tr>    
+            `
+          })
+          $('tbody').html(str)
+        }
+
+        // 要求1：点击提交按钮，让用户输入的内容分别加入到表格对应的列表中
+        // 提交时存储数据到本地，并渲染在页面上
+        $('#btn').on('click', function () {
+          var uname = $('#username').val()
+          var uage = $('#age').val()
+          var usex = $('#sex').val()
+          if (uname.trim().length == 0 || uage.trim().length == 0 || usex.trim().length == 0) return alert('输入框信息不能为空')
+          var data = getUser()
+          var obj = {
+            username: uname,
+            sex: usex,
+            age: uage
+          }
+          data.push(obj)
+          saveUser(data)
+          render()
+          $('#username').val('')
+          $('#age').val('')
+          $('#sex').val('')
+        })
+
+        // 要求2：点击每一行的删除按钮，能删除当前行
+        // 事件委托给a标签注册点击事件  删除
+        $('tbody').on('click', 'a', function () {
+          var index = $(this).attr('data-index')
+          //   console.log(index)
+          var data = getUser()
+          data.splice(index, 1)
+          saveUser(data)
+          render()
+        })
+      })
+    </script>
+  </body>
+</html>

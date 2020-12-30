@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #00f;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn300">300</button>
+    <button class="btn600">600</button>
+    <button class="btn900">900</button>
+    <hr />
+    <div class="box"></div>
+    <script>
+      var btns = document.querySelectorAll('button')
+      var box = document.querySelector('.box')
+
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('click', function () {
+          animate(box, Number(this.innerHTML))
+        })
+      }
+      function animate(obj, target, callback) {
+        clearInterval(obj.timer)
+        obj.timer = setInterval(function () {
+          var step = (target - obj.offsetLeft) / 10
+          step = step > 0 ? Math.ceil(step) : Math.floor(step)
+          if (obj.offsetLeft === target) {
+            clearInterval(obj.timer)
+            callback && callback()
+          } else {
+            obj.style.left = obj.offsetLeft + step + 'px'
+          }
+        }, 15)
+      }
+    </script>
+  </body>
+</html>

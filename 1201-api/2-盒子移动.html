@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      var box = document.querySelector('.box')
+      var step = 5
+
+      var timer = setInterval(function () {
+        // if (box.offsetLeft >= 1000) {
+        //   return clearInterval(timer)
+        // }
+        // box.style.left = box.offsetLeft + step + 'px'
+        if (box.offsetLeft < 1000) {
+          box.style.left = box.offsetLeft + step + 'px'
+        } else {
+          return clearInterval(timer)
+        }
+      }, 30)
+    </script>
+  </body>
+</html>

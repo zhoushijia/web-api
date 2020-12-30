@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .slider-bar {
+        position: absolute;
+        left: 50%;
+        top: 300px;
+        margin-left: 600px;
+        width: 45px;
+        height: 130px;
+        background-color: pink;
+      }
+
+      .w {
+        width: 1200px;
+        margin: 10px auto;
+      }
+
+      .header {
+        height: 150px;
+        background-color: purple;
+      }
+
+      .banner {
+        height: 250px;
+        background-color: skyblue;
+      }
+
+      .main {
+        height: 1000px;
+        background-color: yellowgreen;
+      }
+
+      span {
+        display: none;
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="slider-bar">
+      <span class="goBack">返回顶部</span>
+    </div>
+    <div class="header w">头部区域</div>
+    <div class="banner w">banner区域</div>
+    <div class="main w">主体部分</div>
+    <script>
+      var banner = document.querySelector('.banner')
+      var sliderBar = document.querySelector('.slider-bar')
+      var main = document.querySelector('.main')
+      var goBack = document.querySelector('.goBack')
+
+      var mainTop = main.offsetTop
+      var deltaTop = banner.offsetTop
+      var sliderBarTop = sliderBar.offsetTop - deltaTop
+      var oldTop = sliderBar.offsetTop
+      document.addEventListener('scroll', function () {
+        // 滚动事件中window.pageYOffset获得窗口的向下滚动的像素
+        if (window.pageYOffset > deltaTop) {
+          sliderBar.style.position = 'fixed'
+          //   这里的sliderBar.style.top不是行内样式，得到的值是0，所以只能通过offsetTop来获得才行
+          //   sliderBar.style.top = sliderBar.style.top - deltaTop + 'px'
+          sliderBar.style.top = sliderBarTop + 'px'
+        } else {
+          sliderBar.style.position = 'absolute'
+          sliderBar.style.top = oldTop + 'px'
+        }
+        if (window.pageYOffset > mainTop) {
+          goBack.style.display = 'block'
+        } else {
+          goBack.style.display = 'none'
+        }
+      })
+    </script>
+  </body>
+</html>

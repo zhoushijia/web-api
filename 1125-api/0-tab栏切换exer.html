@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style: none;
+      }
+      .nav {
+        width: 800px;
+        margin: 100px auto;
+      }
+      .nav-hd ul li {
+        float: left;
+        margin-left: -1px;
+        width: 200px;
+        height: 30px;
+        border: 1px solid red;
+        text-align: center;
+      }
+      .current {
+        background-color: skyblue;
+        color: #fff;
+      }
+      .nav-bd div {
+        width: 100%;
+        display: none;
+        background-color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-hd">
+        <ul>
+          <li class="current">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+      <div class="nav-bd">
+        <div style="display: block">老大</div>
+        <div>老二</div>
+        <div>老三</div>
+        <div>小弟</div>
+      </div>
+    </div>
+    <script>
+      var lis = document.querySelectorAll('.nav-hd ul li')
+      var divs = document.querySelectorAll('.nav-bd div')
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].setAttribute('data-index', i)
+        lis[i].onclick = function () {
+          for (var j = 0; j < lis.length; j++) {
+            lis[j].className = ''
+            divs[j].style.display = 'none'
+          }
+          this.className = 'current'
+          divs[this.getAttribute('data-index')].style.display = 'block'
+        }
+      }
+    </script>
+  </body>
+</html>

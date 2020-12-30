@@ -1,0 +1,477 @@
+/* 导航模块开始 */
+
+header {
+  height: 71px;
+  background-color: #242424;
+  border-bottom: 1px solid #000;
+}
+
+nav {
+  z-index: 90;
+  margin-top: -1px;
+  height: 35px;
+  box-sizing: border-box;
+  background-color: #c20c0c;
+  border-bottom: 1px solid #a40011;
+}
+
+nav .wrap {
+  width: 1100px;
+  height: 34px;
+  margin: 0 auto;
+}
+
+nav .wrap .nav {
+  float: left;
+  padding-left: 180px;
+}
+
+nav .nav li,
+nav .nav a {
+  float: left;
+  height: 34px;
+  text-align: center;
+  color: #fff;
+}
+
+nav .nav .z-slt {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .nav .list {
+  position: relative;
+  padding: 0 15px 0 11px;
+}
+
+nav .nav li a .icon {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 2px;
+  background: url(../images/f-white-r-icon@3x.png);
+  background-size: cover;
+}
+
+nav .nav .z-slt em {
+  background: #9b0909;
+}
+
+nav .nav em:hover {
+  background: #9b0909;
+}
+
+nav .nav a em {
+  display: inline-block;
+  height: 20px;
+  padding: 0 13px;
+  margin: 7px 17px 0;
+  border-radius: 20px;
+  line-height: 21px;
+}
+
+/* 导航模块结束 */
+
+.radio_content {
+  /* height: 1000px; */
+  background-color: #fff;
+  padding: 40px;
+}
+
+.top_list {
+  overflow: hidden;
+  width: 933px;
+  margin-left: -33px;
+}
+
+.top_list li {
+  float: left;
+  margin: 0 0 25px 33px;
+}
+
+.top_list li a {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+  text-align: center;
+  background: url(../images/d_radio_bg.png) no-repeat 70px 0;
+}
+
+.top_list li a:hover {
+  background-position: 0 0;
+}
+
+.top_list li:nth-child(-n + 12) a.current {
+  background-position: -70px 0;
+}
+
+.top_list li a div {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.top_list li:nth-child(-n + 12) a div.content {
+  background-position: -48px 0;
+}
+
+.top_list li:nth-child(-n + 12) a em.check {
+  color: #d35757;
+}
+
+.top_list li:last-child a em {
+  color: #5ab5e7;
+}
+
+/* 推荐节目和节目排行榜 */
+.radtop_fl,
+.radtop_fr {
+  width: 426px;
+  /* height: 500px; */
+  /* background-color: pink; */
+}
+
+.radtop_fl {
+  float: left;
+}
+
+.rt_td {
+  overflow: hidden;
+  height: 44px;
+  line-height: 42px;
+}
+
+.rt_td::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #c20c0c;
+  margin-top: 42px;
+}
+
+.rt_td h3 {
+  float: left;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.rt_td a {
+  float: right;
+}
+
+.rt_bd ul {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.rt_bd ul .itm {
+  width: 100%;
+  height: 60px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+}
+
+.rt_bd ul .itm:nth-child(2n) {
+  background-color: #f7f7f7;
+}
+
+.rt_bd ul .itm:hover {
+  background-color: #eee;
+}
+
+.rt_bd ul .itm .cvr {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.rt_bd ul .itm .cvr i {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  background: url(../images/d_iconall.png) no-repeat 0 -85px;
+}
+
+.rt_bd ul .itm .cnt {
+  width: 254px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+.rt_bd ul .itm .cnt h3,
+.rt_bd ul .itm .cnt p {
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rt_bd ul .itm .cnt h3 {
+  font-weight: normal;
+}
+
+.rt_bd ul .itm .cnt h3 a {
+  color: #000;
+}
+
+.rt_bd ul .itm .cnt p a {
+  color: #999;
+}
+
+.rt_bd ul .itm .control {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 0 6px;
+  margin-top: 11px;
+  height: 18px;
+  line-height: 18px;
+  color: #999;
+  font-size: 12px;
+  border: 1px solid #999;
+  vertical-align: middle;
+}
+
+.rt_bd ul .itm .control:hover {
+  text-decoration: none;
+  color: #666;
+  border: 1px solid #666;
+}
+
+.radtop_fr {
+  float: right;
+}
+
+.radtop_fr .rt_bd ul .itm {
+  padding-left: 0;
+}
+
+.radtop_fr .rt_bd ul .itm .rank {
+  width: 46px;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 14px;
+}
+
+.radtop_fr .rt_bd ul .itm em {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.radtop_fr .rt_bd ul .itm .rank span {
+  display: inline-block;
+  width: 100%;
+  color: #999;
+  font-size: 10px;
+}
+
+.noChange {
+  display: inline-block;
+  width: 6px;
+  height: 5px;
+  background: url(../images/d_icon.png) no-repeat -76px -276px;
+}
+
+.new {
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background: url(../images/d_icon.png) no-repeat -65px -286px;
+}
+
+.up {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/d_icon.png) no-repeat -72px -302px;
+}
+
+.down {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/d_icon.png) no-repeat -72px -321px;
+}
+
+.radtop_fr .rt_bd ul .itm .cnt {
+  width: 208px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+.radtop_fr .rt_bd ul .itm > span {
+  position: relative;
+  top: 16px;
+  display: inline-block;
+  width: 100px;
+  height: 8px;
+  background: url(../images/d_table.png) no-repeat 0 -240px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.radtop_fr .rt_bd ul .itm > span > i {
+  display: inline-block;
+  height: 10px;
+  background-color: #c6c6c6;
+}
+
+.radtop_fr .rt_bd ul .itm:first-child > span > i {
+  width: 92%;
+}
+
+.radtop_fr .rt_bd ul .itm:nth-child(2) > span > i {
+  width: 37%;
+}
+
+.radtop_fr .rt_bd ul .itm:nth-child(3) > span > i {
+  width: 32%;
+}
+
+.radtop_fr .rt_bd ul .itm:nth-child(4) > span > i {
+  width: 29%;
+}
+
+.radtop_fr .rt_bd ul .itm:nth-child(5) > span > i {
+  width: 26%;
+}
+
+.radtop_fr .rt_bd ul .itm:nth-child(6) > span > i {
+  width: 18%;
+}
+
+.radtop_fr .rt_bd ul .itm:nth-child(7) > span > i {
+  width: 17%;
+}
+
+.radtop_fr .rt_bd ul .itm:nth-child(8) > span > i {
+  width: 16%;
+}
+
+.radtop_fr .rt_bd ul .itm:nth-child(9) > span > i {
+  width: 15%;
+}
+
+.radtop_fr .rt_bd ul .itm:last-child > span > i {
+  width: 14%;
+}
+
+/* 更多电台部分 */
+.radmore_td {
+  margin-top: 35px;
+  overflow: hidden;
+  height: 44px;
+  line-height: 42px;
+}
+
+.radmore_td::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #c20c0c;
+  margin-top: 42px;
+}
+
+.radmore_td h3 {
+  float: left;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.radmore_td > a {
+  float: right;
+}
+
+.radmore_bd li {
+  width: 435px;
+  height: 160px;
+  padding: 20px 0;
+}
+
+.radmore_bd li:nth-child(2n-1) {
+  margin-right: 30px;
+}
+
+.radmore_bd li:nth-child(-n + 2)::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #e7e7e7;
+  margin-top: 140px;
+}
+
+.radmore_bd li > a > img {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.radmore_bd li .radmore_cnt {
+  width: 295px;
+}
+
+.radmore_bd li .radmore_cnt h3 {
+  margin: 16px 0 20px;
+  font-size: 18px;
+}
+
+.radmore_bd li .radmore_cnt h3 a {
+  color: #000;
+}
+
+.radmore_bd li .radmore_cnt p {
+  font-size: 12px;
+  color: #999;
+  height: 20px;
+  line-height: 20px;
+}
+
+/*电梯导航*/
+
+.fixedtool {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -676px;
+  width: 76px;
+  background-color: #fff;
+  display: none;
+}
+
+.fixedtool li {
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.fixedtool .fixed_current {
+  background-color: #c81623;
+  color: #fff;
+}
+
+/* 返回顶部 */
+.c-back {
+  display: none;
+  position: fixed;
+  text-indent: -9999px;
+  left: 50%;
+  margin-left: 500px;
+  bottom: 160px;
+  width: 49px;
+  height: 44px;
+  background: url(../images/c-sprite.png) no-repeat -265px -47px;
+}

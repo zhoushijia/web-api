@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="网易云音乐，音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单，识别音乐，收藏，分享音乐，音乐互动，高音质，320K，音乐社交，官网，music.163.com" />
+    <meta name="description" content="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>推荐歌手 - 歌手 - 网易云音乐</title>
+
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="../css/base.css" />
+    <!-- 引入部分公共样式 -->
+    <link rel="stylesheet" href="../css/common.css" />
+
+    <!-- 引入当前页面的样式 -->
+    <link rel="stylesheet" href="../css/singer.css" />
+
+    <!-- 引入部分公共样式 -->
+    <link rel="stylesheet" href="../css/common2.css" />
+    <!-- 引入jquery库 -->
+    <script src="../js/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- 头部制作开始 -->
+    <header>
+      <div class="wrap">
+        <h1 class="logo">
+          <a href="index.html">网易云音乐</a>
+        </h1>
+        <ul class="m-nav">
+          <li>
+            <a href="#" class="z-slt"><em>发现音乐</em><sub class="cor"></sub></a>
+          </li>
+          <li>
+            <a href="myMusic.html"><em>我的音乐</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li>
+            <a href="friends.html"><em>朋友</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li>
+            <a href="#"><em>商城</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li>
+            <a href="./musician.html"><em>音乐人</em><sub class="cor" style="display: none"></sub></a>
+          </li>
+          <li class="last">
+            <a href="./app.html"><em>下载客户端</em><sub class="cor" style="display: none"></sub></a>
+            <sup class="hot"></sup>
+          </li>
+        </ul>
+        <div class="userBox">
+          <div class="user">
+            <img src="../images/user.jpg" alt="" />
+            <i>4</i>
+          </div>
+          <div class="userinfo">
+            <ul>
+              <li>
+                <a href="#"><i class="icn icn-hm"></i> <em>我的主页</em></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-msg"></i>
+                  <em>我的消息</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-lv"></i>
+                  <em>我的等级</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-mbr"></i>
+                  <em>VIP会员</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-st"></i>
+                  <em>个人设置</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-verify"></i>
+                  <em>实名认证</em>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icn icn-ex"></i>
+                  <em>退出</em>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="creator">创作者中心</a>
+        <div class="search">
+          <div class="searchInfo">
+            <span class="parent">
+              <input type="text" class="txt" placeholder="音乐/视频/电台/用户" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 头部制作结束 -->
+
+    <!-- 导航模块开始 -->
+    <nav>
+      <div class="wrap">
+        <ul class="nav">
+          <li>
+            <a href="../index.html"><em>推荐</em></a>
+          </li>
+          <li>
+            <a href="./ranklist.html"><em>排行榜</em></a>
+          </li>
+          <li>
+            <a href="./song sheet.html"
+              ><em class="list">歌单 <span class="icon"></span> </em
+            ></a>
+          </li>
+          <li>
+            <a href="./djradio.html"><em>主播电台</em></a>
+          </li>
+          <li>
+            <a href="./singer.html" class="z-slt"><em>歌手</em></a>
+          </li>
+          <li>
+            <a href="./album.html"><em>新碟上架</em></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 导航模块结束 -->
+
+    <!-- 主体部分开始 -->
+    <div class="w singer_bd clearfix">
+      <!-- 歌手 左侧侧边栏 -->
+      <div class="bd_left">
+        <div class="singer_sidebar">
+          <!-- 推荐歌手模块 开始 -->
+          <div class="blk">
+            <h2>推荐</h2>
+            <ul class="singer_nav">
+              <li><a href="javascript:;" class="current">推荐歌手</a></li>
+              <li><a href="singer2.html">入驻歌手</a></li>
+            </ul>
+          </div>
+          <!-- 推荐歌手模块 结束 -->
+
+          <!-- 华语歌手模块 开始 -->
+          <div class="blk">
+            <h2>华语</h2>
+            <ul class="singer_nav">
+              <li><a href="javascript:;">华语男歌手</a></li>
+              <li><a href="javascript:;">华语女歌手</a></li>
+              <li><a href="javascript:;">华语组合/乐队</a></li>
+            </ul>
+          </div>
+          <!-- 华语歌手模块 结束 -->
+
+          <!-- 欧美歌手模块 开始 -->
+          <div class="blk">
+            <h2>欧美</h2>
+            <ul class="singer_nav">
+              <li><a href="javascript:;">欧美男歌手</a></li>
+              <li><a href="javascript:;">欧美女歌手</a></li>
+              <li><a href="javascript:;">欧美组合/乐队</a></li>
+            </ul>
+          </div>
+          <!-- 欧美歌手模块 结束 -->
+
+          <!-- 日本歌手模块 开始 -->
+          <div class="blk">
+            <h2>日本</h2>
+            <ul class="singer_nav">
+              <li><a href="javascript:;">日本男歌手</a></li>
+              <li><a href="javascript:;">日本女歌手</a></li>
+              <li><a href="javascript:;">日本组合/乐队</a></li>
+            </ul>
+          </div>
+          <!-- 日本歌手模块 结束 -->
+
+          <!-- 韩国歌手模块 开始 -->
+          <div class="blk">
+            <h2>韩国</h2>
+            <ul class="singer_nav">
+              <li><a href="javascript:;">韩国男歌手</a></li>
+              <li><a href="javascript:;">韩国女歌手</a></li>
+              <li><a href="javascript:;">韩国组合/乐队</a></li>
+            </ul>
+          </div>
+          <!-- 韩国歌手模块 结束 -->
+
+          <!-- 其他歌手模块 开始 -->
+          <div class="blk">
+            <h2>其他</h2>
+            <ul class="singer_nav">
+              <li><a href="javascript:;">其他男歌手</a></li>
+              <li><a href="javascript:;">其他女歌手</a></li>
+              <li><a href="javascript:;">其他组合/乐队</a></li>
+            </ul>
+          </div>
+          <!-- 其他歌手模块 结束 -->
+        </div>
+      </div>
+      <div class="bd_right">
+        <!-- 入驻歌手 标题 -->
+        <div class="title">
+          <h1>入驻歌手</h1>
+          <span><a href="javascript:;" class="more">更多 &gt;</a></span>
+        </div>
+
+        <!-- 入驻歌手 主体 -->
+        <div class="singerlist">
+          <ul>
+            <li>
+              <img src="../images/d_singer1.jpg" alt="" />
+              <a href="javascript:;" title="张惠妹的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="张惠妹的音乐">张惠妹</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer2.jpg" alt="" />
+              <a href="javascript:;" title="Fine乐团的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="Fine乐团的音乐">Fine乐团</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer3.jpg" alt="" />
+              <a href="javascript:;" title="万晓利的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="万晓利的音乐">万晓利</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer4.jpg" alt="" />
+              <a href="javascript:;" title="赵雷的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="赵雷的音乐">赵雷</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer5.jpg" alt="" />
+              <a href="javascript:;" title="王三溥的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="王三溥的音乐">王三溥</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer6.jpg" alt="" />
+              <a href="javascript:;" title="吴莫愁的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="吴莫愁的音乐">吴莫愁</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer7.jpg" alt="" />
+              <a href="javascript:;" title="洪启的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="洪启的音乐">洪启</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer8.jpg" alt="" />
+              <a href="javascript:;" title="李霄云的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="李霄云的音乐">李霄云</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer9.jpg" alt="" />
+              <a href="javascript:;" title="孙楠的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="孙楠的音乐">孙楠</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer10.jpg" alt="" />
+              <a href="javascript:;" title="刘大壮的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="老狼的音乐">老狼</a><span></span></p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 热门歌手 标题 -->
+        <div class="title">
+          <h1>热门歌手</h1>
+        </div>
+
+        <!-- 热门歌手 主体 -->
+        <div class="singerlist">
+          <ul>
+            <li>
+              <img src="../images/d_singer11.jpg" alt="" />
+              <a href="javascript:;" title="刘大壮的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="刘大壮的音乐">刘大壮</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer12.jpg" alt="" />
+              <a href="javascript:;" title="薛之谦的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="薛之谦的音乐">薛之谦</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer13.jpg" alt="" />
+              <a href="javascript:;" title="陈奕迅的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="陈奕迅的音乐">陈奕迅</a></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer14.jpg" alt="" />
+              <a href="javascript:;" title="林俊杰的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="林俊杰的音乐">林俊杰</a></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer15.jpg" alt="" />
+              <a href="javascript:;" title="隔壁老樊的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="隔壁老樊的音乐">隔壁老樊</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer16.jpg" alt="" />
+              <a href="javascript:;" title="Kafe.Hu的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="Kafe.Hu的音乐">Kafe.Hu</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer17.jpg" alt="" />
+              <a href="javascript:;" title="毛不易的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="毛不易的音乐">毛不易</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer18.jpg" alt="" />
+              <a href="javascript:;" title="许嵩的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="许嵩的音乐">许嵩</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer19.jpg" alt="" />
+              <a href="javascript:;" title="李荣浩的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="李荣浩的音乐">李荣浩</a><span></span></p>
+            </li>
+
+            <li>
+              <img src="../images/d_singer20.jpg" alt="" />
+              <a href="javascript:;" title="鱿籽酱的音乐" class="msk"></a>
+              <p><a href="javascript:;" title="鱿籽酱的音乐">鱿籽酱</a></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="partition"></div>
+
+        <ul class="singer_menu">
+          <li>
+            <a href="javascript:;" title="王贰浪的音乐">王贰浪<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="华晨宇的音乐">华晨宇<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="G.E.M.邓紫棋的音乐">G.E.M.邓紫棋<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="傲七爷的音乐">傲七爷<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="任然的音乐">任然<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="颜人中的音乐">颜人中<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="沈以诚的音乐">沈以诚<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="一支榴莲的音乐">一支榴莲<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="汪苏泷的音乐">汪苏泷<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="要不要买菜的音乐">要不要买菜<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="h3R3的音乐">h3R3<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="张杰的音乐">张杰<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="是你的垚的音乐">是你的垚<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="Felix Bennett的音乐">Felix Bennett<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="邵帅的音乐">邵帅<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="马思唯的音乐">马思唯</a></li>
+          <li>
+            <a href="javascript:;" title="徐秉龙的音乐">徐秉龙<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="阿冗的音乐">阿冗<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="花粥的音乐">花粥<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="KEY.L刘聪的音乐">KEY.L刘聪<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="周深的音乐">周深<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="Higher Brothers的音乐">Higher Brothers<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="Justin Bieber的音乐">Justin Bieber<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="林宥嘉的音乐">林宥嘉<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="周兴哲的音乐">周兴哲<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="群星的音乐">群星</a></li>
+          <li>
+            <a href="javascript:;" title="王巨星的音乐">王巨星<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="Alan Walker的音乐">Alan Walker<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="葛东琪的音乐">葛东琪<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="NINEONE#的音乐">NINEONE#<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="Beyond的音乐">Beyond</a></li>
+          <li>
+            <a href="javascript:;" title="Lil Ghost小鬼的音乐">Lil Ghost小鬼<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="杨宗纬的音乐">杨宗纬<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="房东的猫的音乐">房东的猫<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="张学友的音乐">张学友</a></li>
+          <li><a href="javascript:;" title="莫文蔚的音乐">莫文蔚</a></li>
+          <li>
+            <a href="javascript:;" title="Taylor Swift的音乐">Taylor Swift<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="海伦的音乐">海伦</a></li>
+          <li>
+            <a href="javascript:;" title="音阙诗听的音乐">音阙诗听<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="吴炳文Cookie的音乐">吴炳文Cookie<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="司南的音乐">司南<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="等什么君的音乐">等什么君<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="杨胖雨的音乐">杨胖雨<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="Vicetone的音乐">Vicetone<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="Benom1927的音乐">Benom1927</a></li>
+          <li>
+            <a href="javascript:;" title="KnowKnow的音乐">KnowKnow<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="The Chainsmokers的音乐">The Chainsmokers<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="田馥甄的音乐">田馥甄<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="陈粒的音乐">陈粒<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="黄旭的音乐">黄旭<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="井胧的音乐">井胧<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="姚六一的音乐">姚六一<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="郭顶的音乐">郭顶<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="米津玄師的音乐">米津玄師</a></li>
+          <li>
+            <a href="javascript:;" title="蔡健雅的音乐">蔡健雅<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="双笙的音乐">双笙<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="千里狗的音乐">千里狗<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="抖音热歌DJ的音乐">抖音热歌DJ<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="张叶蕾的音乐">张叶蕾<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="杨千嬅的音乐">杨千嬅</a></li>
+          <li>
+            <a href="javascript:;" title="杨和苏KeyNG的音乐">杨和苏KeyNG<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="枯木逢春的音乐">枯木逢春<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="法老的音乐">法老<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="王菲的音乐">王菲</a></li>
+          <li>
+            <a href="javascript:;" title="火羊瞌睡了的音乐">火羊瞌睡了<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="Sia的音乐">Sia</a></li>
+          <li>
+            <a href="javascript:;" title="苏琛的音乐">苏琛<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="MADILYN的音乐">MADILYN<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="陈阳的音乐">陈阳<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="艾福杰尼的音乐">艾福杰尼<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="IU的音乐">IU</a></li>
+          <li>
+            <a href="javascript:;" title="宝宝巴士的音乐">宝宝巴士<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="尤长靖的音乐">尤长靖<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="卢卢快闭嘴的音乐">卢卢快闭嘴<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="Various Artists的音乐">Various Artists</a></li>
+          <li>
+            <a href="javascript:;" title="Jony J的音乐">Jony J<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="陈壹千的音乐">陈壹千<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="HARIKIRI的音乐">HARIKIRI<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="张国荣的音乐">张国荣</a></li>
+          <li>
+            <a href="javascript:;" title="如懿的音乐">如懿<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="孙燕姿的音乐">孙燕姿</a></li>
+          <li>
+            <a href="javascript:;" title="小咪的音乐">小咪<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="XXXTENTACION的音乐">XXXTENTACION<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="Lambert的音乐">Lambert<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="王泽科的音乐">王泽科<span></span></a>
+          </li>
+          <li>
+            <a href="javascript:;" title="尚士达的音乐">尚士达<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="田羽生的音乐">田羽生</a></li>
+          <li>
+            <a href="javascript:;" title="二胖u的音乐">二胖u<span></span></a>
+          </li>
+          <li><a href="javascript:;" title="周杰伦的音乐">周杰伦</a></li>
+          <li>
+            <a href="javascript:;" title="是二智呀的音乐">是二智呀<span></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 主体部分结束 -->
+
+    <!-- 回到顶部 -->
+    <a title="回到顶部" class="c-back" href="#" id="g_backtop" hidefocus="true">回到顶部</a>
+
+    <!-- 尾部版权信息模块开始 -->
+    <div class="ft_bottom">
+      <div class="w">
+        <!-- 左侧版权信息 -->
+        <div class="copyright">
+          <ul>
+            <li><a href="javascript:;">服务条款</a><span>|</span></li>
+            <li><a href="javascript:;">隐私政策</a><span>|</span></li>
+            <li><a href="javascript:;">儿童隐私政策</a><span>|</span></li>
+            <li><a href="javascript:;">版权投诉指引</a><span>|</span></li>
+            <li><a href="javascript:;">意见反馈</a><span>|</span></li>
+          </ul>
+
+          <p>
+            <span>网易公司版权所有©1997-2020</span>
+            <span>杭州乐读科技有限公司运营：</span>
+            <a href="javascript:;">浙网文[2018]3506-263号</a>
+          </p>
+
+          <p>
+            <span>违法和不良信息举报电话：0571-89853516</span>
+            <span>举报邮箱：</span>
+            <a href="javascript:;">ncm5990@163.com</a>
+          </p>
+
+          <p>
+            <span>粤B2-20090191-18</span>
+            <a href="javascript:;">工业和信息化部备案管理系统网站</a>
+            <a href="javascript:;">
+              <span class="police-logo"></span>
+              <span>浙公网安备 33010902002564号</span>
+            </a>
+          </p>
+        </div>
+        <!-- 右侧 认证 -->
+        <ul class="enterFr">
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+
+          <li>
+            <a href="javascript:;" class="logo_auth"></a>
+            <span class="tt"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 尾部版权信息模块结束 -->
+
+    <script>
+      var userBox = document.querySelector('header .userBox')
+      userBox.onmouseover = function () {
+        this.children[1].style.display = 'block'
+      }
+      userBox.onmouseout = function () {
+        this.children[1].style.display = 'none'
+      }
+      var searchInput = document.querySelector('header .search input')
+      searchInput.onfocus = function () {
+        if (this.placeholder === '音乐/视频/电台/用户') {
+          this.placeholder = ''
+        }
+      }
+      searchInput.onblur = function () {
+        if (this.placeholder.trim().length === 0) {
+          this.placeholder = '音乐/视频/电台/用户'
+        }
+      }
+    </script>
+
+    <!-- 引入当前js样式 -->
+    <script src="../js/singer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        float: left;
+        width: 300px;
+        height: 30px;
+      }
+      p {
+        float: left;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+        padding-left: 20px;
+        margin-top: 7px;
+        line-height: 15px;
+      }
+      .message {
+        background: url(./images/mess.png) no-repeat;
+        color: skyblue;
+      }
+      .wrong {
+        color: red;
+        background: url(./images/wrong.png) no-repeat;
+      }
+      .right {
+        color: green;
+        background: url(./images/right.png) no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" name="" id="" />
+      <p></p>
+    </div>
+    <script>
+      var input = document.querySelector('input')
+      var p = document.querySelector('p')
+      input.onfocus = function () {
+        p.className = 'message'
+        p.innerHTML = '请输入6~16位的数字'
+      }
+      input.onblur = function () {
+        if (this.value.trim().length < 6 || this.value.trim().length > 16) {
+          p.className = 'wrong'
+          p.innerHTML = '输入不合法'
+        } else {
+          p.className = 'right'
+          p.innerHTML = '输入合法'
+        }
+      }
+    </script>
+  </body>
+</html>

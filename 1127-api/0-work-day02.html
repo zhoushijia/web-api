@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 1000px;
+        border: 1px solid #333;
+        border-collapse: collapse;
+      }
+      thead {
+        background-color: purple;
+      }
+      tbody {
+        text-align: center;
+      }
+      tr,
+      td,
+      th {
+        border: 1px solid #333;
+        border-collapse: collapse;
+      }
+      th:first-child {
+        width: 200px;
+      }
+      td:first-child {
+        width: 200px;
+      }
+      td {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="uname">请输入姓名：<input type="text" name="" id="" /></div>
+      <div class="email">请输入邮箱：<input type="email" name="" id="" /></div>
+      <button>添加</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>邮箱</th>
+          <th>删除选项</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script>
+      var uname = document.querySelector('.uname').children[0]
+      var email = document.querySelector('.email').children[0]
+      var btn = document.querySelector('button')
+      var tbody = document.querySelector('tbody')
+      btn.addEventListener('click', function () {
+        if (uname.value.trim().length !== 0 && email.value.trim().length !== 0) {
+          var trNode = document.createElement('tr')
+          tbody.appendChild(trNode)
+
+          var nameTdNode = document.createElement('td')
+          trNode.appendChild(nameTdNode)
+          nameTdNode.innerHTML = uname.value
+          var emailTdNode = document.createElement('td')
+          trNode.appendChild(emailTdNode)
+          emailTdNode.innerHTML = email.value
+          var delTdNode = document.createElement('td')
+          trNode.appendChild(delTdNode)
+          delTdNode.innerHTML = '<a href="javascript:;">删除</a>'
+
+          uname.value = ''
+          email.value = ''
+
+          var as = document.querySelectorAll('tbody a')
+          for (var i = 0; i < as.length; i++) {
+            as[i].addEventListener('click', function () {
+              if (confirm('确定删除用户？')) this.parentNode.parentNode.remove()
+            })
+          }
+        } else {
+          uname.value = ''
+          email.value = ''
+          alert('姓名或邮箱不能为空！')
+        }
+      })
+    </script>
+  </body>
+</html>

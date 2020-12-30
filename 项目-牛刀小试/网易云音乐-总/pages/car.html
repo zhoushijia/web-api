@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/car.css" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="head">
+        <div class="w">
+            <div class="logo">
+                <h1>
+                    <a href="shopping.html" target="_blank"></a>
+                </h1>
+            </div>
+            <div class="search">
+                <form action=" "><input type="text " placeholder="i19真无线 " /></form>
+            </div>
+
+            <a href="car.html " class="shop" target="_blank">
+                <span>0</span>
+            </a>
+
+            <div class="user">
+                <a href="javascript:; ">
+                    <img src="../images/b-head portrait.jpg " alt=" " />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 购物车部分 -->
+    <div id="module-root" class="root">
+        <div class="g-bd g-bd-home">
+            <!-- 购物车头部 -->
+            <div class="m-bread">
+                <div class="block">
+                    <span>购物车</span>
+                </div>
+            </div>
+            <!-- 购物车内容区域 -->
+            <div id="g-main" class="ma">
+                <div class="n-cart">
+                    <!-- 空购物车 -->
+                    <div class="empty">
+                        <i class="icon"></i>
+                        <span class="f-fs3" style="margin-left: -10px">
+                <span class="s-fc3 f-tc">购物车还是空的 ,</span>
+                        <a href="./shopping.html" class="s-fcLink">去逛逛 &gt;</a>
+                        </span>
+                    </div>
+                    <!-- 有商品的 -->
+                    <div class="brands">
+                        <!-- 全选头部 -->
+                        <div class="clearfix s-fc4 header">
+                            <div class="check f-fl">
+                                <input type="checkbox" name="" id="" class="checkall checkbox" />
+                            </div>
+                            <div class="cnt f-fl">
+                                <div class="coverwrap f-fl s-fc333">全选</div>
+                                <div class="product f-fl">商品</div>
+                                <div class="pri1 f-fl f-tc">金额</div>
+                                <div class="num f-fl f-tc">数量</div>
+                                <div class="pri2 f-fl f-tc">小计</div>
+                                <div class="man f-fl">操作</div>
+                            </div>
+                        </div>
+                        <ul>
+                            <!-- 满减 -->
+                            <!-- <li class="clearfix s-fc4 first">
+                  <div class="f-fl product">全部商品&nbsp;(&nbsp;0&nbsp;)&nbsp;</div>
+                  <a href="./shopping.html">
+                    <div class="f-fr f-mgr20">
+                      <div class="f-fl icon"><i></i></div>
+                      <div class="f-fl txt s-fc333">全场满<em class="s-fcTheme">¥119</em>免运费(还差¥119)&nbsp;&nbsp; 去凑单&gt;</div>
+                    </div>
+                  </a>
+                </li> -->
+                            <!-- 商品详情 -->
+                            <!-- <li class="clearfix">
+                  <div class="check f-fl">
+                    <input type="checkbox" name="" id="" class="j-checkbox checkbox" />
+                  </div>
+                  <div class="cnt f-fl">
+                    <div class="coverwrap f-fl">
+                      <div class="cover f-bd2">
+                        <a target="_blank" href="javascript:;">
+                          <img src="../images/c-cartbrand1.jpg" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="msg f-fl">
+                      <a target="_blank" href="javascript:;">
+                        <p class="tit f-thide">网易云音乐记忆回音系列黑白江湖圆领卫衣</p>
+                      </a>
+                      <p class="sku s-fc4 f-thide">白色 L</p>
+                    </div>
+
+                    <div class="price f-fl f-tc">¥<em>109</em></div>
+
+                    <div class="ctrl f-fl f-pr f-tc">
+                      <div class="u-counter f-fl number">
+                        <a data-action="down" href="javascript:;" class="btn btn-dis j-x down">
+                          <i class="u-icn u-icn-27"></i>
+                        </a>
+                        <span class="tot"> <input type="text" class="c-num text f-fs1 j-x" value="1" /> </span>
+                        <a data-action="plus" href="javascript:;" class="btn j-x plus"><i class="u-icn u-icn-28"></i></a>
+                      </div>
+                    </div>
+                    <div class="price line f-fl f-tc c-price">¥109</div>
+                    <div class="delete f-fl"></div>
+                  </div>
+                </li> -->
+                            <!-- 结算栏 -->
+                            <!-- <li class="bottom" id="bottom">
+                  <div class="clearfix s-fc4">
+                    <div class="check f-fl">
+                      <input type="checkbox" name="" id="" class="checkall checkbox" />
+                    </div>
+                    <div class="f-fl">
+                      <div class="coverwrap f-fl s-fc333">全选</div>
+                      <div class="product f-fl">已选择 <em class="s-fcTheme amount-sum">0</em> 件商品</div>
+                    </div>
+                    <div class="z-dis f-fr jiesuan">结算</div>
+                    <div class="f-fr">
+                      <span class="s-fc4 yunfei"> 差119元免运费 &nbsp;|&nbsp; </span>
+                      <span class="s-fc1">合计&nbsp;:&nbsp;</span>
+                      <span class="f-fs20 s-fcTheme"> ¥<em class="price-sum">0.00</em> </span>
+                    </div>
+                  </div>
+                </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 热门推荐 -->
+                <div class="mid-border">
+                    <span class="mid-txt2">热门推荐</span>
+                </div>
+                <div class="m-product">
+                    <ul class="list clearfix">
+                        <li>
+                            <div class="lits">
+                                <div class="hd">
+                                    <a href="./shopping-brand1.html"> <img src="../images/b-1.jpg " alt=" " /></a>
+                                    <div class="redyuan">
+                                        <span>￥229</span>
+                                        <p>￥299</p>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <h3>
+                                        <span><em>用卷减150</em> </span>
+                                        <a href="shopping-brand1.html" class="linkk">H16 Pro&nbsp;入耳检测开盖弹窗无线充电&nbsp;蓝牙5.0真无线耳机&nbsp;苹果安卓通用 </a>
+                                    </h3>
+
+                                    <p class="dollor">
+                                        <em>￥229</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="lits">
+                                <div class="hd">
+                                    <a href="./shopping-brand2.html"> <img src="../images/b-2.jpg " alt=" " /></a>
+                                    <div class="redyuan">
+                                        <span>￥168</span>
+                                        <p>￥2900</p>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <h3>
+                                        <span><em>特价</em> </span>
+                                        <a href="shopping-brand2.html" class="linkk">【现货】网易云音乐 2021年音乐人年历日历礼盒装 </a>
+                                    </h3>
+
+                                    <p class="dollor">
+                                        <em>￥168</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="lits">
+                                <div class="hd">
+                                    <a href="./shopping-brand3.html"> <img src="../images/b-3.jpg " alt=" " /></a>
+                                    <div class="redyuan">
+                                        <span>￥109</span>
+                                        <p>￥299</p>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <h3>
+                                        <span><em>特价</em> </span>
+                                        <a href="shopping-brand3.html" class="linkk">网易云音乐记忆回音系列黑白江湖圆领卫衣 </a>
+                                    </h3>
+
+                                    <p class="dollor">
+                                        <em>￥109</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="lits">
+                                <div class="hd">
+                                    <a href="./shopping-brand4.html"> <img src="../images/b-4.jpg " alt=" " /></a>
+                                    <!-- <div class="redyuan ">
+                              <span>￥229</span>
+                              <p>￥299</p>
+                          </div> -->
+                                </div>
+                                <div class="bd">
+                                    <h3>
+                                        <span><em>用卷减200</em> </span>
+                                        <a href="shopping-brand4.html " class="linkk">i19蓝牙5.0真无线耳机 光感入耳 开盖弹窗 无线充电苹果安卓通用 </a>
+                                    </h3>
+
+                                    <p class="dollor">
+                                        <em>￥299</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- //第五个li -->
+                        <li>
+                            <div class="lits">
+                                <div class="hd">
+                                    <a href="./shopping-brand5.html"> <img src="../images/b-5.jpg " alt=" " /></a>
+                                    <div class="redyuan">
+                                        <span>￥99</span>
+                                        <p>￥299</p>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <h3>
+                                        <span><em>特价</em> </span>
+                                        <a href="shopping-brand5.html" class="linkk">纳百川颈椎按摩器肩颈部护颈仪按摩仪脖子送礼礼物颈椎仪 </a>
+                                    </h3>
+
+                                    <p class="dollor">
+                                        <em>￥99</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- //第六个li -->
+                        <li>
+                            <div class="lits">
+                                <div class="hd">
+                                    <a href="./shopping-brand6.html"> <img src="../images/b-6.jpg " alt=" " /></a>
+                                    <!-- <div class="redyuan ">
+                              <span>￥229</span>
+                              <p>￥299</p>
+                          </div> -->
+                                </div>
+                                <div class="bd">
+                                    <h3>
+                                        <span><em>用卷减45</em> </span>
+                                        <a href="shopping-brand6.html" class="linkk">漫步者EDIFIERMINI-BUDS真无线蓝牙5.0小巧入耳式手机音乐通话耳机 </a>
+                                    </h3>
+
+                                    <p class="dollor">
+                                        <em>￥199</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- //第七个li -->
+                        <li>
+                            <div class="lits">
+                                <div class="hd">
+                                    <a href="./shopping-brand7.html"> <img src="../images/b-7.jpg " alt=" " /></a>
+                                    <div class="redyuan">
+                                        <span>￥39</span>
+                                        <p>￥99</p>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <h3>
+                                        <span><em>特价</em> </span>
+                                        <a href="shopping-brand7.html" class="linkk">网易云音乐音乐江湖温显保温杯350ml</a>
+                                    </h3>
+
+                                    <p class="dollor">
+                                        <em>￥39</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- //第八个li -->
+                        <li>
+                            <div class="lits">
+                                <div class="hd">
+                                    <a href="./shopping-brand8.html"> <img src="../images/b-8.jpg " alt=" " /></a>
+                                    <!-- <div class="redyuan ">
+                              <span>￥229</span>
+                              <p>￥299</p>
+                          </div> -->
+                                </div>
+                                <div class="bd">
+                                    <h3>
+                                        <span><em>用卷减150</em> </span>
+                                        <a href="shopping-brand8.html " class="linkk">HT color 二代马卡龙无线多彩 智能触控 开盖弹窗 音乐通话蓝牙耳机</a>
+                                    </h3>
+
+                                    <p class="dollor">
+                                        <em>￥229</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 尾部版权信息模块开始 -->
+    <div class="ft_bottom">
+        <div class="w clearfix">
+            <!-- 左侧版权信息 -->
+            <div class="copyright">
+                <ul>
+                    <li><a href="javascript:;">服务条款</a><span>|</span></li>
+                    <li><a href="javascript:;">隐私政策</a><span>|</span></li>
+                    <li><a href="javascript:;">儿童隐私政策</a><span>|</span></li>
+                    <li><a href="javascript:;">版权投诉指引</a><span>|</span></li>
+                    <li><a href="javascript:;">意见反馈</a><span>|</span></li>
+                </ul>
+
+                <p>
+                    <span>网易公司版权所有©1997-2020</span>
+                    <span>杭州乐读科技有限公司运营：</span>
+                    <a href="javascript:;">浙网文[2018]3506-263号</a>
+                </p>
+
+                <p>
+                    <span>违法和不良信息举报电话：0571-89853516</span>
+                    <span>举报邮箱：</span>
+                    <a href="javascript:;">ncm5990@163.com</a>
+                </p>
+
+                <p>
+                    <span>粤B2-20090191-18</span>
+                    <a href="javascript:;">工业和信息化部备案管理系统网站</a>
+                    <a href="javascript:;">
+                        <span class="police-logo"></span>
+                        <span>浙公网安备 33010902002564号</span>
+                    </a>
+                </p>
+            </div>
+            <!-- 右侧 认证 -->
+            <ul class="enterFr">
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="logo_auth"></a>
+                    <span class="tt"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 尾部版权信息模块结束 -->
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/car.js"></script>
+</body>
+
+</html>

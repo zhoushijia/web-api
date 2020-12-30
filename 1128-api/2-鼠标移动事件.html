@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./imgs/angel.gif" alt="" />
+    <script>
+      var pic = document.querySelector('img')
+      //   var body = document.body
+      //   注意是文档对象来触发事件，事件类型是鼠标移动事件
+      document.addEventListener('mousemove', function (e) {
+        //   加px单位
+        pic.style.left = e.pageX + 'px'
+        pic.style.top = e.pageY + 'px'
+        pic.style.transform = 'translate(-50% , -50%)'
+      })
+    </script>
+  </body>
+</html>

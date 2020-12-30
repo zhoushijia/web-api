@@ -1,0 +1,79 @@
+{
+  "id": "2169299",
+  "name": "web58",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1833855",
+      "name": "下箭头",
+      "font_class": "xiajiantou1",
+      "unicode": "e733",
+      "unicode_decimal": 59187
+    },
+    {
+      "icon_id": "1984754",
+      "name": "放大镜",
+      "font_class": "magnifier",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "5203226",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "6071273",
+      "name": "基础图标-XC-目录",
+      "font_class": "jichutubiao-XC-mulu",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "10026290",
+      "name": "购物车",
+      "font_class": "gouwuchezhengpin",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "481508",
+      "name": "刷新 终结版",
+      "font_class": "shuaxinzhongjieban",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "959111",
+      "name": "下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "356472",
+      "name": "时钟",
+      "font_class": "shizhong",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "425649",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "7524619",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e770",
+      "unicode_decimal": 59248
+    }
+  ]
+}
